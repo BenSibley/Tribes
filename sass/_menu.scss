@@ -82,7 +82,7 @@
   transition: opacity 0.3s ease;
 
   ul {
-    margin: 0;
+    margin: $baseline-height 0;
     list-style: none;
   }
   li {
@@ -122,6 +122,57 @@
     &:focus {
       text-decoration: underline;
     }
+  }
+  /***** Tier 2 *****/
+  ul ul {
+    max-height: 0;
+    margin: 0 auto;
+    background: rgba(0,0,0,0.1);
+    overflow: hidden;
+    max-width: 754px;
+
+    li {
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  li.open {
+
+    > ul {
+      max-height: none;
+      margin: $baseline-height auto 0;
+      padding: $baseline-height;
+    }
+    > button i {
+      transform: rotate(180deg);
+    }
+  }
+}
+.toggle-dropdown {
+  position: absolute;
+  background: none;
+  border: solid 1px white;
+  border-radius: 50%;
+  color: white;
+  font-size: 1em;
+  width: $baseline-height;
+  height: $baseline-height;
+  margin-left: 8px;
+  transition: background 0.2s ease, border-color 0.2s ease;
+
+  &:hover {
+    cursor: pointer;
+  }
+  &:focus {
+    outline: none;
+  }
+  &:hover,
+  &:active,
+  &:focus {
+    background: $color-purple-dark;
+    border-color: $color-purple-dark;
   }
 }
 

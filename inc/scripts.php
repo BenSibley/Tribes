@@ -3,7 +3,7 @@
 // Front-end scripts
 function ct_tribes_load_scripts_styles() {
 
-	wp_enqueue_style( 'ct-tribes-google-fonts', '//fonts.googleapis.com/css?family=Playfair+Display:400|Raleway:400,700,400italic' );
+	wp_enqueue_style( 'ct-tribes-google-fonts', '//fonts.googleapis.com/css?family=Open+Sans:400,400italic,700|Damion:400' );
 
 	wp_enqueue_script( 'ct-tribes-js', get_template_directory_uri() . '/js/build/production.min.js', array( 'jquery' ), '', true );
 	wp_localize_script( 'ct-tribes-js', 'objectL10n', array(

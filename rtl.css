@@ -457,6 +457,14 @@ a img {
   transition: opacity 0.3s ease;
 }
 
+@media all and (min-width: 50em) {
+  .site-title {
+    font-size: 1.75em;
+    /* 28px / 16px */
+    line-height: 1.357;
+    /* 38px */
+  }
+}
 .toggle-navigation {
   position: relative;
   z-index: 109;
@@ -465,6 +473,7 @@ a img {
   background: none;
   border: none;
   float: left;
+  height: 24px;
 }
 .toggle-navigation:hover {
   cursor: pointer;
@@ -565,6 +574,11 @@ a img {
   text-decoration: underline;
 }
 
+@media all and (min-width: 50em) {
+  .toggle-navigation {
+    height: 37px;
+  }
+}
 .featured-image {
   position: relative;
   height: 0;

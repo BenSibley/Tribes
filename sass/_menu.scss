@@ -6,6 +6,7 @@
   background: none;
   border: none;
   float: right;
+  height: 24px;
 
   &:hover {
     cursor: pointer;
@@ -120,5 +121,12 @@
     &:focus {
       text-decoration: underline;
     }
+  }
+}
+
+@media all and (min-width: $eight-hundred) {
+
+  .toggle-navigation {
+    height: 37px;
   }
 }

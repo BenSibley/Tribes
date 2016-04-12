@@ -15,7 +15,8 @@
         </span>
     </div>
 </footer>
-</div>
+</div><!-- .max-width -->
+</div><!-- .theme-container -->
 </div><!-- .overflow-container -->
 
 <?php do_action( 'body_bottom' ); ?>

@@ -23,6 +23,11 @@ body {
   overflow: hidden;
   height: auto;
   min-height: 100%;
+  background: $color-gray-95;
+}
+.max-width {
+  max-width: 745px;
+  margin: 0 auto;
 }
 .main {
   margin: 0 auto;
@@ -281,8 +286,4 @@ a img {
   .skip-content:focus {
     top: 32px;
   }
-}
-.max-width {
-  max-width: 1400px;
-  margin: 0 auto;
 }

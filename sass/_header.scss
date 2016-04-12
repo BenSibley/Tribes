@@ -1,14 +1,25 @@
 .site-header {
   background: white;
-  padding: $baseline-height $column;
+  padding: $baseline-height $column * 1.5;
   margin: $baseline-height 0;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.1);
+
+  &:after {
+    @include clearfix;
+  }
 }
 .site-title {
-  font-family: $site-title-font;
   @extend %twenty-one-pixels;
+  font-family: $damion;
+  float: left;
 
   a {
     @extend %dark-link;
   }
+}
+.tagline {
+  @extend %twenty-one-pixels;
+  font-family: $damion;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }

@@ -490,9 +490,9 @@ function ct_tribes_svg_output( $type ) {
 				        <g transform="translate(-148.000000, -36.000000)" fill="#6B6B6B">
 				            <g transform="translate(123.000000, 25.000000)">
 				                <g transform="translate(25.000000, 11.000000)">
-				                    <rect x="0" y="16" width="24" height="2"></rect>
-				                    <rect x="0" y="8" width="24" height="2"></rect>
-				                    <rect x="0" y="0" width="24" height="2"></rect>
+				                    <rect class="rect1" x="0" y="16" width="24" height="2"></rect>
+				                    <rect class="rect2" x="0" y="8" width="24" height="2"></rect>
+				                    <rect class="rect3" x="0" y="0" width="24" height="2"></rect>
 				                </g>
 				            </g>
 				        </g>

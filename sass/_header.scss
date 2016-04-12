@@ -20,8 +20,40 @@
 .tagline {
   @extend %twenty-one-pixels;
   font-family: $damion;
+  margin: 36px auto;
   opacity: 0;
   transition: opacity 0.3s ease;
+}
+.social-media-icons {
+  list-style: none;
+  margin: $baseline-height * 1.5 auto;
+
+  li {
+    display: inline-block;
+    margin-right: $baseline-height / 2;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  a {
+    @extend %light-link;
+    @extend %twenty-one-pixels;
+    display: inline-block;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    border: solid 1px white;
+    border-radius: 50%;
+    transition: background 0.2s ease, border 0.2s ease;
+
+    &:hover,
+    &:active,
+    &:focus {
+      background: $color-purple-dark;
+      border-color: $color-purple-dark;
+    }
+  }
 }
 
 @media all and (min-width: $eight-hundred) {

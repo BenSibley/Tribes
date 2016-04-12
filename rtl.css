@@ -26,7 +26,7 @@ h1 {
   /* 38px */
 }
 
-h2, .site-title, .tagline {
+h2, .site-title, .tagline, .social-media-icons a {
   font-size: 1.3125em;
   /* 21px / 16px */
   line-height: 1.143;
@@ -50,11 +50,11 @@ textarea, input[type="submit"] {
   color: #1A1A1A;
 }
 
-.menu-primary a {
+.social-media-icons a, .menu-primary a {
   color: white;
   text-decoration: none;
 }
-.menu-primary a:link, .menu-primary a:visited, .menu-primary a:hover, .menu-primary a:active, .menu-primary a:focus {
+.social-media-icons a:link, .menu-primary a:link, .social-media-icons a:visited, .menu-primary a:visited, .social-media-icons a:hover, .menu-primary a:hover, .social-media-icons a:active, .menu-primary a:active, .social-media-icons a:focus, .menu-primary a:focus {
   color: white;
 }
 
@@ -452,9 +452,36 @@ a img {
 
 .tagline {
   font-family: "Damion", "Open Sans", "sans-serif";
+  margin: 36px auto;
   opacity: 0;
   -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
+}
+
+.social-media-icons {
+  list-style: none;
+  margin: 2.25em auto;
+}
+.social-media-icons li {
+  display: inline-block;
+  margin-left: 0.75em;
+}
+.social-media-icons li:last-child {
+  margin-left: 0;
+}
+.social-media-icons a {
+  display: inline-block;
+  width: 42px;
+  height: 42px;
+  line-height: 42px;
+  border: solid 1px white;
+  border-radius: 50%;
+  -webkit-transition: background 0.2s ease, border 0.2s ease;
+  transition: background 0.2s ease, border 0.2s ease;
+}
+.social-media-icons a:hover, .social-media-icons a:active, .social-media-icons a:focus {
+  background: #783A62;
+  border-color: #783A62;
 }
 
 @media all and (min-width: 50em) {
@@ -540,6 +567,7 @@ a img {
 }
 
 .menu-primary {
+  margin: 2.25em auto;
   opacity: 0;
   -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;

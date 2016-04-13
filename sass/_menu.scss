@@ -105,7 +105,7 @@
     &.current-menu-item,
     &.current_page_item {
 
-      a {
+      > a {
         position: relative;
 
         &:before,
@@ -123,6 +123,9 @@
         &:after {
           left: -18px;
         }
+      }
+      > .toggle-dropdown {
+        margin-left: 26px;
       }
     }
   }

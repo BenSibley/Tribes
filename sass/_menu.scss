@@ -149,6 +149,17 @@
       &:last-child {
         margin-bottom: 0;
       }
+      /***** Tier 3 *****/
+      &.open {
+
+        > a {
+          display: inline-block;
+          margin-bottom: $baseline-height;
+        }
+        > ul {
+          display: table-cell;
+        }
+      }
     }
   }
   li.open {

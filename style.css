@@ -622,8 +622,18 @@ a img {
   background: rgba(0, 0, 0, 0.1);
   overflow: hidden;
 }
+.menu-primary ul ul li {
+  /***** Tier 3 *****/
+}
 .menu-primary ul ul li:last-child {
   margin-bottom: 0;
+}
+.menu-primary ul ul li.open > a {
+  display: inline-block;
+  margin-bottom: 1.5em;
+}
+.menu-primary ul ul li.open > ul {
+  display: table-cell;
 }
 .menu-primary li.open > ul {
   display: table;

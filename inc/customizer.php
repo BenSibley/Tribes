@@ -41,14 +41,14 @@ function ct_tribes_add_customizer_content( $wp_customize ) {
 	) );
 	// Size - setting
 	$wp_customize->add_setting( 'logo_size', array(
-		'default'           => '48',
+		'default'           => '168',
 		'sanitize_callback' => 'absint',
 		'transport'         => 'postMessage'
 	) );
 	// Size - control
 	$wp_customize->add_control( 'logo_size', array(
-		'label'    => __( 'Adjust the size of the logo', 'period' ),
-		'section'  => 'ct_period_logo_upload',
+		'label'    => __( 'Adjust the size of the logo', 'tribes' ),
+		'section'  => 'ct_tribes_logo_upload',
 		'settings' => 'logo_size',
 		'type'     => 'range',
 		'input_attrs' => array(

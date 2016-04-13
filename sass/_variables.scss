@@ -129,13 +129,16 @@ $tencent-weibo: #20b8e5;
 %dark-link {
   color: $color-gray-10;
   text-decoration: none;
+  transition: color 0.2s ease;
 
   &:link,
-  &:visited,
+  &:visited {
+    color: $color-gray-10;
+  }
   &:hover,
   &:active,
   &:focus {
-    color: $color-gray-10;
+    color: $color-gray-30;
   }
 }
 %light-link {

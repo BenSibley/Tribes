@@ -15,7 +15,16 @@
 
   a {
     @extend %dark-link;
+    display: inline-block;
   }
+  &.has-logo {
+    line-height: 0;
+  }
+}
+.logo {
+  max-width: 100%;
+  width: 168px;
+  height: auto;
 }
 .tagline {
   @extend %twenty-one-pixels;

@@ -469,8 +469,15 @@ add_filter( 'post_class', 'ct_tribes_post_class' );
 function ct_tribes_custom_css_output() {
 
 	$custom_css = get_theme_mod( 'custom_css' );
+	$logo_size  = get_theme_mod( 'logo_size' );
 
-	if ( $custom_css ) {
+	if ( $logo_size != 168 && ! empty( $logo_size ) ) {
+		$logo_size_css = '.logo {
+							width: ' . $logo_size . 'px;
+						  }';
+		$custom_css .= $logo_size_css;
+	}
+	if ( ! empty( $custom_css ) ) {
 		$custom_css = ct_tribes_sanitize_css( $custom_css );
 
 		wp_add_inline_style( 'ct-tribes-style', $custom_css );

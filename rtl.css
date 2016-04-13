@@ -45,9 +45,14 @@ textarea, input[type="submit"] {
 .site-title a {
   color: #1A1A1A;
   text-decoration: none;
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease;
 }
-.site-title a:link, .site-title a:visited, .site-title a:hover, .site-title a:active, .site-title a:focus {
+.site-title a:link, .site-title a:visited {
   color: #1A1A1A;
+}
+.site-title a:hover, .site-title a:active, .site-title a:focus {
+  color: #4D4D4D;
 }
 
 .social-media-icons a, .menu-primary a {
@@ -448,6 +453,18 @@ a img {
 .site-title {
   font-family: "Damion", "Open Sans", "sans-serif";
   float: right;
+}
+.site-title a {
+  display: inline-block;
+}
+.site-title.has-logo {
+  line-height: 0;
+}
+
+.logo {
+  max-width: 100%;
+  width: 168px;
+  height: auto;
 }
 
 .tagline {

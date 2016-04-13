@@ -553,8 +553,8 @@ a img {
   text-align: center;
   margin: 0.75em;
   opacity: 0;
-  -webkit-transition: margin 0.1s ease;
-  transition: margin 0.1s ease;
+  -webkit-transition: margin 0.2s ease;
+  transition: margin 0.2s ease;
 }
 .menu-primary-container.open {
   z-index: 99;
@@ -569,8 +569,8 @@ a img {
 .menu-primary {
   margin: 2.25em auto;
   opacity: 0;
-  -webkit-transition: opacity 0.3s ease;
-  transition: opacity 0.3s ease;
+  -webkit-transition: opacity 0.4s ease;
+  transition: opacity 0.4s ease;
   /***** Tier 2 *****/
 }
 .menu-primary ul {
@@ -603,16 +603,17 @@ a img {
   text-decoration: underline;
 }
 .menu-primary ul ul {
+  min-width: 345px;
   max-height: 0;
   margin: 0 auto;
   background: rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  max-width: 754px;
 }
 .menu-primary ul ul li:last-child {
   margin-bottom: 0;
 }
 .menu-primary li.open > ul {
+  display: table;
   max-height: none;
   margin: 1.5em auto 0;
   padding: 1.5em;

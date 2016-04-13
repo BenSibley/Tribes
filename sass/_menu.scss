@@ -63,7 +63,7 @@
   text-align: center;
   margin: $baseline-height / 2;
   opacity: 0;
-  transition: margin 0.1s ease;
+  transition: margin 0.2s ease;
 
   &.open {
     z-index: 99;
@@ -79,7 +79,7 @@
 .menu-primary {
   margin: $baseline-height * 1.5 auto;
   opacity: 0;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.4s ease;
 
   ul {
     margin: $baseline-height 0;
@@ -125,11 +125,11 @@
   }
   /***** Tier 2 *****/
   ul ul {
+    min-width: 345px;
     max-height: 0;
     margin: 0 auto;
     background: rgba(0,0,0,0.1);
     overflow: hidden;
-    max-width: 754px;
 
     li {
 
@@ -141,6 +141,7 @@
   li.open {
 
     > ul {
+      display: table;
       max-height: none;
       margin: $baseline-height auto 0;
       padding: $baseline-height;

@@ -54,6 +54,32 @@
     }
   }
 }
+.entry {
+  background: white;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.1);
+  margin-bottom: $baseline-height;
+}
+.post-container {
+  padding: $baseline-height $column * 1.5;
+}
+.post-title {
+
+  a {
+    @extend %dark-link;
+  }
+}
+.post-byline {
+
+  span {
+    @extend %twelve-pixels;
+    color: $color-gray-30;
+
+    span {
+      font-size: 1em;
+      font-style: italic;
+    }
+  }
+}
 .post-content {
 
   iframe {
@@ -61,5 +87,20 @@
   }
   &:after {
     @include clearfix;
+  }
+}
+
+.sticky-status {
+  display: none;
+}
+
+@media all and (min-width: $eight-hundred) {
+
+  .post-container {
+    padding: $baseline-height * 1.5 $column * 2 $baseline-height;
+  }
+  .post-title {
+    font-size: 1.75em; /* 28px / 16px */
+    line-height: 1.357; /* 38px */
   }
 }

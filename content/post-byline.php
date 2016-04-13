@@ -1,16 +1,13 @@
 <div class="post-byline">
+	<span class="post-author">
+		<span><?php _e( 'By', 'tribes' ); ?></span>
+		<?php the_author(); ?>
+	</span>
     <span class="post-date">
+	    <span><?php _e( 'on', 'tribes' ); ?></span>
 		<?php
 		$date = date_i18n( get_option( 'date_format' ), strtotime( get_the_date( 'r' ) ) );
-		printf( __( 'Published %s', 'tribes' ), $date );
+		echo $date;
 		?>
 	</span>
-	<?php
-	$author = get_theme_mod( 'author_byline' );
-	if ( $author == 'yes' ) { ?>
-		<span class="post-author">
-			<span><?php _e( 'By', 'tribes' ); ?></span>
-			<?php the_author(); ?>
-		</span>
-	<?php } ?>
 </div>

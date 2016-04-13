@@ -541,7 +541,8 @@ a img {
 }
 
 .menu-primary-container {
-  position: absolute;
+  position: fixed;
+  overflow: hidden;
   z-index: -99;
   top: 0;
   left: 0;
@@ -565,6 +566,16 @@ a img {
 .menu-primary-container.open .tagline {
   opacity: 1;
 }
+.menu-primary-container .max-width {
+  height: 100%;
+}
+.menu-primary-container .scroll-container {
+  height: 100%;
+  overflow: auto;
+  /* hide scrollbar */
+  margin-left: -999px;
+  padding-left: 999px;
+}
 
 .menu-primary {
   margin: 2.25em auto;
@@ -578,6 +589,7 @@ a img {
   list-style: none;
 }
 .menu-primary li {
+  position: relative;
   text-transform: uppercase;
   letter-spacing: 0.06em;
   margin-bottom: 1.5em;
@@ -647,6 +659,10 @@ a img {
 .toggle-dropdown:hover, .toggle-dropdown:active, .toggle-dropdown:focus {
   background: #783A62;
   border-color: #783A62;
+}
+
+body.menu-open {
+  overflow: hidden;
 }
 
 @media all and (min-width: 50em) {

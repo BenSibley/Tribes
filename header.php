@@ -22,12 +22,16 @@
 					<?php echo ct_tribes_svg_output( 'toggle-navigation' ); ?>
 				</button>
 				<div id="menu-primary-container" class="menu-primary-container">
-					<?php if ( get_bloginfo( 'description' ) ) {
-						echo '<p class="tagline">' . get_bloginfo( 'description' ) . '</p>';
-					} ?>
-					<?php get_template_part( 'menu', 'primary' ); ?>
-					<?php get_template_part( 'content/search-bar' ); ?>
-					<?php ct_tribes_social_icons_output(); ?>
+					<div class="max-width">
+						<div class="scroll-container">
+							<?php if ( get_bloginfo( 'description' ) ) {
+								echo '<p class="tagline">' . get_bloginfo( 'description' ) . '</p>';
+							} ?>
+							<?php get_template_part( 'menu', 'primary' ); ?>
+							<?php get_template_part( 'content/search-bar' ); ?>
+							<?php ct_tribes_social_icons_output(); ?>
+						</div>
+					</div>
 				</div>
 			</header>
 			<?php do_action( 'after_header' ); ?>

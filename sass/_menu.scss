@@ -51,7 +51,8 @@
   }
 }
 .menu-primary-container {
-  position: absolute;
+  position: fixed;
+  overflow: hidden;
   z-index: -99;
   top: 0;
   right: 0;
@@ -75,6 +76,16 @@
       opacity: 1;
     }
   }
+  .max-width {
+    height: 100%;
+  }
+  .scroll-container {
+    height: 100%;
+    overflow: auto;
+    /* hide scrollbar */
+    margin-right: -999px;
+    padding-right: 999px;
+  }
 }
 .menu-primary {
   margin: $baseline-height * 1.5 auto;
@@ -86,6 +97,7 @@
     list-style: none;
   }
   li {
+    position: relative;
     text-transform: uppercase;
     letter-spacing: 0.06em;
     margin-bottom: $baseline-height;
@@ -176,6 +188,9 @@
     background: $color-purple-dark;
     border-color: $color-purple-dark;
   }
+}
+body.menu-open {
+  overflow: hidden;
 }
 
 @media all and (min-width: $eight-hundred) {

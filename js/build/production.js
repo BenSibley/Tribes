@@ -98,19 +98,6 @@ jQuery(document).ready(function($){
     toggleNavigation.on('click', openPrimaryMenu);
     toggleDropdown.on('click', openDropdownMenu);
 
-    $('.post-content').fitVids({
-        customSelector: 'iframe[src*="dailymotion.com"], iframe[src*="slideshare.net"], iframe[src*="animoto.com"], iframe[src*="blip.tv"], iframe[src*="funnyordie.com"], iframe[src*="hulu.com"], iframe[src*="ted.com"], iframe[src*="wordpress.tv"]'
-    });
-
-    $(window).resize(function(){
-        objectFitAdjustment();
-    });
-
-    // Jetpack infinite scroll event that reloads posts.
-    $( document.body ).on( 'post-load', function () {
-        objectFitAdjustment();
-    } );
-
     function openPrimaryMenu() {
 
         if( menuPrimaryContainer.hasClass('open') ) {

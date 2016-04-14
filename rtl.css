@@ -35,7 +35,8 @@ h2, .site-title, .tagline, .social-media-icons a {
 
 .wp-caption-text,
 .gallery-caption, input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):not([type="file"]):not([type="image"]),
-textarea, input[type="submit"], .post-byline span, .post-tags a, .further-reading span {
+textarea, input[type="submit"], .comment-footer span,
+.comment-footer a, .post-byline span, .post-tags a, .further-reading span {
   font-size: 0.75em;
   /* 12px / 16px */
   line-height: 1.5;
@@ -383,9 +384,47 @@ a img {
   }
 }
 .comments {
-  padding: 1.5em 6.249% 0.75em;
+  padding: 2.25em 6.249% 0.75em;
+  border-top: solid 1px #E6E6E6;
 }
 
+.comments-number {
+  margin-bottom: 2.25em;
+}
+
+.comment-list {
+  list-style: none;
+  margin: 1.5em 0;
+}
+
+li.comment,
+li.pingback {
+  margin: 1.5em 0 3em;
+}
+
+.comment-author .avatar {
+  border-radius: 50%;
+  float: right;
+  margin-left: 8px;
+}
+.comment-author .author-name {
+  line-height: 36px;
+}
+
+.comment-reply-link,
+.comment-edit-link {
+  margin-right: 6px;
+}
+
+@media all and (min-width: 50em) {
+  .comments {
+    padding: 3em 8.332% 0.75em;
+  }
+
+  .comments-number {
+    margin-bottom: 3em;
+  }
+}
 /**
  * 14.2 Galleries
  */

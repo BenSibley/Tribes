@@ -1,3 +1,46 @@
 .comments {
-  padding: $baseline-height $column * 1.5 $baseline-height / 2;
+  padding: $baseline-height * 1.5 $column * 1.5 $baseline-height / 2;
+  border-top: solid 1px $color-gray-90;
+}
+.comments-number {
+  margin-bottom: $baseline-height * 1.5;
+}
+.comment-list {
+  list-style: none;
+  margin: $baseline-height 0;
+}
+li.comment,
+li.pingback {
+  margin: $baseline-height 0 $baseline-height * 2;
+}
+.comment-author {
+
+  .avatar {
+    border-radius: 50%;
+    float: left;
+    margin-right: 8px;
+  }
+  .author-name {
+    line-height: 36px;
+  }
+}
+.comment-footer {
+
+  span,
+  a {
+    @extend %twelve-pixels;
+  }
+}
+.comment-reply-link,
+.comment-edit-link {
+  margin-left: 6px;
+}
+@media all and (min-width: $eight-hundred) {
+
+  .comments {
+    padding: $baseline-height * 2 $column * 2 $baseline-height / 2;
+  }
+  .comments-number {
+    margin-bottom: $baseline-height * 2;
+  }
 }

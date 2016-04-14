@@ -154,30 +154,6 @@ function ct_tribes_add_customizer_content( $wp_customize ) {
 		$priority = $priority + 5;
 	}
 
-	/***** Search Bar *****/
-
-	// section
-	$wp_customize->add_section( 'tribes_search_bar', array(
-		'title'    => __( 'Search Bar', 'tribes' ),
-		'priority' => 37
-	) );
-	// setting
-	$wp_customize->add_setting( 'search_bar', array(
-		'default'           => 'hide',
-		'sanitize_callback' => 'ct_tribes_sanitize_all_show_hide_settings'
-	) );
-	// control
-	$wp_customize->add_control( 'search_bar', array(
-		'type'    => 'radio',
-		'label'   => __( 'Show search bar at top of site?', 'tribes' ),
-		'section' => 'tribes_search_bar',
-		'setting' => 'search_bar',
-		'choices' => array(
-			'show' => __( 'Show', 'tribes' ),
-			'hide' => __( 'Hide', 'tribes' )
-		),
-	) );
-
 	/***** Blog *****/
 
 	// section

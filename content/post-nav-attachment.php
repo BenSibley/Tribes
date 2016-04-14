@@ -1,8 +1,8 @@
 <nav class="further-reading">
 	<div class="previous">
-		<span><?php previous_image_link( false, __( 'Previous Image', 'tribes' ) ); ?></span>
+		<?php previous_image_link( false, __( 'Previous Image', 'tribes' ) ); ?>
 	</div>
 	<div class="next">
-		<span><?php next_image_link( false, __( 'Next Image', 'tribes' ) ); ?></span>
+		<?php next_image_link( false, __( 'Next Image', 'tribes' ) ); ?>
 	</div>
 </nav>

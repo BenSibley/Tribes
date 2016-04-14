@@ -63,6 +63,9 @@
 .post-container {
   padding: $baseline-height $column * 1.5 $baseline-height / 2;
 }
+.post-header {
+  margin-bottom: $baseline-height;
+}
 .post-title {
 
   a {

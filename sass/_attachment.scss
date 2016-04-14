@@ -1,0 +1,23 @@
+.single-attachment {
+
+  .attachment-container {
+
+    img {
+      display: block;
+    }
+  }
+  .attachment-caption {
+    @extend %twelve-pixels;
+  }
+  .further-reading {
+
+    div {
+      display: inline-block;
+      width: 50%;
+      margin-right: -4px;
+    }
+    .next {
+      text-align: right;
+    }
+  }
+}

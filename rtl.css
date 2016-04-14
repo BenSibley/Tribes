@@ -36,7 +36,7 @@ h2, .comment-reply-title, .site-title, .tagline, .social-media-icons a {
 .wp-caption-text,
 .gallery-caption, input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):not([type="file"]):not([type="image"]),
 textarea, input[type="submit"], .sticky-status, .comment-footer span,
-.comment-footer a, .site-footer .design-credit, .post-byline span, .post-tags a, .further-reading span {
+.comment-footer a, .site-footer .design-credit, .post-byline span, .post-tags a, .further-reading span, .single-attachment .attachment-caption {
   font-size: 0.75em;
   /* 12px / 16px */
   line-height: 1.5;
@@ -976,6 +976,10 @@ body.menu-open {
   padding: 1.5em 6.249% 0.75em;
 }
 
+.post-header {
+  margin-bottom: 1.5em;
+}
+
 .post-byline span {
   color: #4D4D4D;
 }
@@ -1059,4 +1063,16 @@ body.menu-open {
 
 .search-bottom p {
   margin-top: 0;
+}
+
+.single-attachment .attachment-container img {
+  display: block;
+}
+.single-attachment .further-reading div {
+  display: inline-block;
+  width: 50%;
+  margin-left: -4px;
+}
+.single-attachment .further-reading .next {
+  text-align: left;
 }

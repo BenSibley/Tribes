@@ -218,43 +218,44 @@ function ct_tribes_add_customizer_content( $wp_customize ) {
 		'type'     => 'text'
 	) );
 
-	/***** Additional Options *****/
+	/***** Display Controls *****/
 
 	// section
-	$wp_customize->add_section( 'tribes_additional', array(
-		'title'    => __( 'Additional Options', 'tribes' ),
-		'priority' => 70
+	$wp_customize->add_section( 'tribes_display', array(
+		'title'       => __( 'Display Controls', 'tribes' ),
+		'priority'    => 55,
+		'description' => sprintf( __( 'Want more options like these? Check out the <a target="_blank" href="%s"> Tribes Pro plugin</a>.', 'tribes' ), 'https://www.competethemes.com/tribes-pro/' )
 	) );
-	// extra-wide post - setting
-	$wp_customize->add_setting( 'full_width_post', array(
-		'default'           => 'yes',
-		'sanitize_callback' => 'ct_tribes_sanitize_yes_no_settings'
+	// setting - post author
+	$wp_customize->add_setting( 'display_post_author', array(
+		'default'           => 'show',
+		'sanitize_callback' => 'ct_tribes_sanitize_show_hide'
 	) );
-	// extra-wide post - control
-	$wp_customize->add_control( 'full_width_post', array(
-		'label'    => __( 'Make first post on blog extra wide?', 'tribes' ),
-		'section'  => 'tribes_additional',
-		'settings' => 'full_width_post',
-		'type'     => 'radio',
-		'choices'  => array(
-			'yes' => __( 'Yes', 'tribes' ),
-			'no'  => __( 'No', 'tribes' )
+	// control - post author
+	$wp_customize->add_control( 'display_post_author', array(
+		'type'    => 'radio',
+		'label'   => __( 'Post author name in byline', 'tribes' ),
+		'section' => 'tribes_display',
+		'setting' => 'display_post_author',
+		'choices' => array(
+			'show' => __( 'Show', 'tribes' ),
+			'hide' => __( 'Hide', 'tribes' )
 		)
 	) );
-	// author byline - setting
-	$wp_customize->add_setting( 'author_byline', array(
-		'default'           => 'no',
-		'sanitize_callback' => 'ct_tribes_sanitize_yes_no_settings'
+	// setting - post date
+	$wp_customize->add_setting( 'display_post_date', array(
+		'default'           => 'show',
+		'sanitize_callback' => 'ct_tribes_sanitize_show_hide'
 	) );
-	// author byline - control
-	$wp_customize->add_control( 'author_byline', array(
-		'label'    => __( 'Display post author name in byline?', 'tribes' ),
-		'section'  => 'tribes_additional',
-		'settings' => 'author_byline',
-		'type'     => 'radio',
-		'choices'  => array(
-			'yes' => __( 'Yes', 'tribes' ),
-			'no'  => __( 'No', 'tribes' )
+	// control - post author
+	$wp_customize->add_control( 'display_post_date', array(
+		'type'    => 'radio',
+		'label'   => __( 'Post date in byline', 'tribes' ),
+		'section' => 'tribes_display',
+		'setting' => 'display_post_date',
+		'choices' => array(
+			'show' => __( 'Show', 'tribes' ),
+			'hide' => __( 'Hide', 'tribes' )
 		)
 	) );
 
@@ -309,6 +310,16 @@ function ct_tribes_sanitize_yes_no_settings( $input ) {
 	$valid = array(
 		'yes' => __( 'Yes', 'tribes' ),
 		'no'  => __( 'No', 'tribes' )
+	);
+
+	return array_key_exists( $input, $valid ) ? $input : '';
+}
+
+function ct_tribes_sanitize_show_hide( $input ) {
+
+	$valid = array(
+		'show' => __( 'Show', 'tribes' ),
+		'hide' => __( 'Hide', 'tribes' )
 	);
 
 	return array_key_exists( $input, $valid ) ? $input : '';

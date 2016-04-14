@@ -358,7 +358,7 @@ a img {
   display: block;
   text-align: center;
   color: white !important;
-  z-index: 99;
+  z-index: 119;
   padding: 1.5em;
   background: #924677;
   -webkit-transition: top 0.2s ease-in-out;
@@ -736,6 +736,9 @@ li.pingback ol ol {
 }
 .toggle-navigation:focus {
   outline: none;
+}
+.toggle-navigation:focus svg g {
+  fill: #924677;
 }
 .toggle-navigation svg g {
   fill: #1A1A1A;

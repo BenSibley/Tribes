@@ -13,6 +13,13 @@
   }
   &:focus {
     outline: none;
+
+    svg {
+
+      g {
+        fill: $color-purple;
+      }
+    }
   }
   svg {
 

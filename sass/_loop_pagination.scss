@@ -1,0 +1,49 @@
+.pagination {
+  position: relative;
+  padding: $baseline-height $column * 1.5;
+  background: white;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.1);
+  margin-bottom: $baseline-height;
+  text-align: center;
+
+  span,
+  a {
+    display: inline-block;
+    margin: 0 $baseline-height / 2;
+  }
+  .next,
+  .prev {
+    position: absolute;
+    text-decoration: none;
+  }
+  .next {
+    right: $column * 1.5;
+
+    &:after {
+      content: '\00BB';
+      margin-left: 4px;
+    }
+  }
+  .prev {
+    left: $column * 1.5;
+
+    &:before {
+      content: '\00AB';
+      margin-right: 4px;
+    }
+  }
+}
+
+@media all and (min-width: $eight-hundred) {
+
+  .pagination {
+    padding: $baseline-height $column * 2;
+
+    .next {
+      right: $column * 2;
+    }
+    .prev {
+      left: $column * 2;
+    }
+  }
+}

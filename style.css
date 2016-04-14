@@ -486,6 +486,7 @@ li.pingback ol ol {
 .site-footer {
   text-align: center;
   padding: 1.5em 6.249% 0.75em;
+  margin-top: 3em;
 }
 
 @media all and (min-width: 50em) {
@@ -650,6 +651,50 @@ li.pingback ol ol {
     /* 28px / 16px */
     line-height: 1.357;
     /* 38px */
+  }
+}
+.pagination {
+  position: relative;
+  padding: 1.5em 6.249%;
+  background: white;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5em;
+  text-align: center;
+}
+.pagination span,
+.pagination a {
+  display: inline-block;
+  margin: 0 0.75em;
+}
+.pagination .next,
+.pagination .prev {
+  position: absolute;
+  text-decoration: none;
+}
+.pagination .next {
+  right: 6.249%;
+}
+.pagination .next:after {
+  content: '\00BB';
+  margin-left: 4px;
+}
+.pagination .prev {
+  left: 6.249%;
+}
+.pagination .prev:before {
+  content: '\00AB';
+  margin-right: 4px;
+}
+
+@media all and (min-width: 50em) {
+  .pagination {
+    padding: 1.5em 8.332%;
+  }
+  .pagination .next {
+    right: 8.332%;
+  }
+  .pagination .prev {
+    left: 8.332%;
   }
 }
 .toggle-navigation {

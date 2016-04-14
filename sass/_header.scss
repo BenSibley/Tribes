@@ -67,6 +67,9 @@
 
 @media all and (min-width: $eight-hundred) {
 
+  .site-header {
+    padding: $baseline-height $column * 2;
+  }
   .site-title {
     font-size: 1.75em; /* 28px / 16px */
     line-height: 1.357; /* 38px */

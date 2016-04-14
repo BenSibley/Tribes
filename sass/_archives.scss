@@ -2,7 +2,6 @@
   @extend %light-link;
   display: inline-block;
   padding: 12px 24px;
-  margin-top: $baseline-height / 2;
   background: $color-purple;
   font-weight: 400;
   font-style: italic;
@@ -18,5 +17,15 @@
     font-family: "FontAwesome";
     margin-left: 3px;
     font-style: normal;
+  }
+}
+.sticky-status {
+  display: none;
+}
+
+@media all and (min-width: $eight-hundred) {
+
+  .more-link {
+    margin-top: $baseline-height / 2;
   }
 }

@@ -8,9 +8,9 @@ if ( comments_open() ) { ?>
 
     <section id="comments" class="comments">
         <div class="comments-number">
-            <h3>
+            <h2>
                 <?php comments_number( __( 'Be First to Comment', 'tribes' ), __( 'One Comment', 'tribes' ), __( '% Comments', 'tribes' ) ); ?>
-            </h3>
+            </h2>
         </div>
         <ol class="comment-list">
             <?php wp_list_comments( array( 'callback' => 'ct_tribes_customize_comments', 'max_depth' => '3' ) ); ?>
@@ -24,13 +24,14 @@ if ( comments_open() ) { ?>
         <?php } ?>
         <?php comment_form(); ?>
     </section>
+    </section>
     <?php
 } elseif ( ! comments_open() && have_comments() && pings_open() ) { ?>
     <section id="comments" class="comments">
         <div class="comments-number">
-            <h3>
+            <h2>
                 <?php comments_number( __( 'Be First to Comment', 'tribes' ), __( 'One Comment', 'tribes' ), __( '% Comments', 'tribes' ) ); ?>
-            </h3>
+            </h2>
         </div>
         <ol class="comment-list">
             <?php wp_list_comments( array( 'callback' => 'ct_tribes_customize_comments', 'max_depth' => '3' ) ); ?>
@@ -50,9 +51,9 @@ if ( comments_open() ) { ?>
 } elseif ( ! comments_open() && have_comments() ) { ?>
     <section id="comments" class="comments">
         <div class="comments-number">
-            <h3>
+            <h2>
                 <?php comments_number( __( 'Be First to Comment', 'tribes' ), __( 'One Comment', 'tribes' ), __( '% Comments', 'tribes' ) ); ?>
-            </h3>
+            </h2>
         </div>
         <ol class="comment-list">
             <?php wp_list_comments( array( 'callback' => 'ct_tribes_customize_comments', 'max_depth' => '3' ) ); ?>

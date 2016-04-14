@@ -360,6 +360,28 @@ a img {
   top: 32px;
 }
 
+.archive-header {
+  background: white;
+  padding: 1.5em 6.249%;
+  margin-bottom: 1.5em;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
+}
+.archive-header h1 {
+  font-size: 1em;
+  line-height: 1.5;
+}
+.archive-header p:last-of-type {
+  margin-bottom: 0;
+}
+.archive-header i {
+  margin-left: 2px;
+}
+
+@media all and (min-width: 50em) {
+  .archive-header {
+    padding: 1.5em 8.332%;
+  }
+}
 .more-link {
   display: inline-block;
   padding: 12px 24px;

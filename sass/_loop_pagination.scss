@@ -1,8 +1,6 @@
 .pagination {
+  @extend %white-box;
   position: relative;
-  padding: $baseline-height $column * 1.5;
-  background: white;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.1);
   margin-bottom: $baseline-height;
   text-align: center;
 
@@ -37,7 +35,6 @@
 @media all and (min-width: $eight-hundred) {
 
   .pagination {
-    padding: $baseline-height $column * 2;
 
     .next {
       right: $column * 2;

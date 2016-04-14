@@ -1,0 +1,11 @@
+.search-header {
+  @extend %white-box;
+  margin-bottom: $baseline-height;
+}
+.search-bottom {
+  @extend %white-box;
+
+  p {
+    margin-top: 0;
+  }
+}

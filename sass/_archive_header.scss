@@ -1,8 +1,6 @@
 .archive-header {
-  background: white;
-  padding: $baseline-height $column * 1.5;
+  @extend %white-box;
   margin-bottom: $baseline-height;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.1);
 
   h1 {
     font-size: 1em;
@@ -13,13 +11,5 @@
   }
   i {
     margin-right: 2px;
-  }
-}
-
-@media all and (min-width: $eight-hundred) {
-
-
-  .archive-header {
-    padding: $baseline-height $column * 2;
   }
 }

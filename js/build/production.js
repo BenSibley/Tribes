@@ -91,15 +91,9 @@ jQuery(document).ready(function($){
     var menuPrimary = $('#menu-primary');
     var menuPrimaryItems = $('#menu-primary-items');
     var toggleDropdown = $('.toggle-dropdown');
-    //var toggleSidebar = $('#toggle-sidebar');
-    //var sidebarPrimary = $('#sidebar-primary');
-    //var sidebarPrimaryContent = $('#sidebar-primary-content');
-    //var sidebarWidgets = $('#sidebar-primary-widgets');
-    //var socialMediaIcons = siteHeader.find('.social-media-icons');
     var menuLink = $('.menu-item').children('a');
 
     toggleNavigation.on('click', openPrimaryMenu);
-    body.on('click', '#search-icon', openSearchBar);
 
     function openPrimaryMenu() {
 
@@ -109,7 +103,7 @@ jQuery(document).ready(function($){
             body.removeClass('menu-open');
 
             // change screen reader text
-            //$(this).children('span').text(objectL10n.openMenu);
+            $(this).children('span').text(objectL10n.openMenu);
 
             // change aria text
             $(this).attr('aria-expanded', 'false');
@@ -120,7 +114,7 @@ jQuery(document).ready(function($){
             body.addClass('menu-open');
 
             // change screen reader text
-            //$(this).children('span').text(objectL10n.closeMenu);
+            $(this).children('span').text(objectL10n.closeMenu);
 
             // change aria text
             $(this).attr('aria-expanded', 'true');
@@ -142,7 +136,7 @@ jQuery(document).ready(function($){
             menuItem.removeClass('open');
 
             // change screen reader text
-            //$(this).children('span').text(objectL10n.openMenu);
+            $(this).children('span').text(objectL10n.openMenu);
 
             // change aria text
             $(this).attr('aria-expanded', 'false');
@@ -152,43 +146,10 @@ jQuery(document).ready(function($){
             menuItem.addClass('open');
 
             // change screen reader text
-            //$(this).children('span').text(objectL10n.closeMenu);
+            $(this).children('span').text(objectL10n.closeMenu);
 
             // change aria text
             $(this).attr('aria-expanded', 'true');
-        }
-    }
-
-    function openSearchBar(){
-
-        if( $(this).hasClass('open') ) {
-
-            $(this).removeClass('open');
-            socialMediaIcons.removeClass('fade');
-
-            // make search input inaccessible to keyboards
-            siteHeader.find('.search-field').attr('tabindex', -1);
-
-            // handle mobile width search bar sizing
-            if( window.innerWidth < 900 ) {
-                siteHeader.find('.search-form').attr('style', '');
-            }
-        } else {
-
-            $(this).addClass('open');
-            socialMediaIcons.addClass('fade');
-
-            // make search input keyboard accessible
-            siteHeader.find('.search-field').attr('tabindex', 0);
-
-            // handle mobile width search bar sizing
-            if( window.innerWidth < 800 ) {
-
-                // distance to other side (35px is width of icon space)
-                var leftDistance = window.innerWidth * 0.83332 - 35;
-
-                siteHeader.find('.search-form').css('left', -leftDistance + 'px')
-            }
         }
     }
 

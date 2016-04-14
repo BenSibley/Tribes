@@ -35,7 +35,7 @@ h2, .comment-reply-title, .site-title, .tagline, .social-media-icons a {
 
 .wp-caption-text,
 .gallery-caption, input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):not([type="file"]):not([type="image"]),
-textarea, input[type="submit"], .comment-footer span,
+textarea, input[type="submit"], .sticky-status, .comment-footer span,
 .comment-footer a, .site-footer .design-credit, .post-byline span, .post-tags a, .further-reading span {
   font-size: 0.75em;
   /* 12px / 16px */
@@ -407,7 +407,17 @@ a img {
 }
 
 .sticky-status {
-  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #1A1A1A;
+  color: white;
+  display: inline-block;
+  padding: 9px 16px;
+}
+
+.sticky:not(.has-post-thumbnail) {
+  padding-top: 1.5em;
 }
 
 @media all and (min-width: 50em) {
@@ -956,6 +966,7 @@ body.menu-open {
 }
 
 .entry {
+  position: relative;
   background: white;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
   margin-bottom: 1.5em;

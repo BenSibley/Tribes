@@ -1,0 +1,15 @@
+.site-footer {
+  text-align: center;
+  padding: $baseline-height $column * 1.5 $baseline-height / 2;
+
+  .design-credit {
+    @extend %twelve-pixels;
+  }
+}
+
+@media all and (min-width: $eight-hundred) {
+
+  .site-footer {
+    padding: $baseline-height $column * 2 $baseline-height / 2;
+  }
+}

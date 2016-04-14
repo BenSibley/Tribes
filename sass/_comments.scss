@@ -1,5 +1,5 @@
 .comments {
-  padding: $baseline-height * 1.5 $column * 1.5 $baseline-height / 2;
+  padding: $baseline-height * 1.5 $column * 1.5 $baseline-height;
   border-top: solid 1px $color-gray-90;
 }
 .comments-number {
@@ -8,12 +8,30 @@
 .comment-list {
   list-style: none;
   margin: $baseline-height 0;
+
+  .children {
+    list-style: none;
+    margin: $baseline-height * 2 0 0 0;
+    padding-left: $baseline-height;
+    border-left: solid 1px $color-gray-90;
+  }
 }
 li.comment,
 li.pingback {
   margin: $baseline-height 0 $baseline-height * 2;
+
+  ul,
+  ol {
+    margin: $baseline-height 0 $baseline-height $baseline-height;
+
+    ul,
+    ol {
+      margin: 0 0 0 $baseline-height;
+    }
+  }
 }
 .comment-author {
+  margin-bottom: $baseline-height;
 
   .avatar {
     border-radius: 50%;
@@ -35,10 +53,27 @@ li.pingback {
 .comment-edit-link {
   margin-left: 6px;
 }
+.comment-pagination {
+  margin: $baseline-height 0;
+
+  p {
+    display: inline-block;
+    width: 50%;
+    margin-right: -4px;
+  }
+  .next-comment {
+    text-align: right;
+  }
+}
+.bypostauthor {
+  padding: $baseline-height / 2;
+  background: rgba(146,70,119,0.2);
+}
+
 @media all and (min-width: $eight-hundred) {
 
   .comments {
-    padding: $baseline-height * 2 $column * 2 $baseline-height / 2;
+    padding: $baseline-height * 2 $column * 2 $baseline-height;
   }
   .comments-number {
     margin-bottom: $baseline-height * 2;

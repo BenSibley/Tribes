@@ -94,7 +94,10 @@
   span {
     font-style: italic;
     display: inline-block;
-    margin-right: $baseline-height / 2;
+    margin-right: 16px;
+  }
+  a {
+    margin-right: $baseline-height / 3;
   }
 }
 .post-tags {
@@ -135,9 +138,6 @@
   div {
     margin: $baseline-height 0;
   }
-  //.next {
-  //  text-align: right;
-  //}
 }
 
 @media all and (min-width: $eight-hundred) {

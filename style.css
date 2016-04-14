@@ -26,7 +26,7 @@ h1 {
   /* 38px */
 }
 
-h2, .site-title, .tagline, .social-media-icons a {
+h2, .comment-reply-title, .site-title, .tagline, .social-media-icons a {
   font-size: 1.3125em;
   /* 21px / 16px */
   line-height: 1.143;
@@ -255,8 +255,13 @@ textarea {
   border: solid 1px #E6E6E6;
   border-radius: 0;
   -webkit-appearance: none;
-  -webkit-transition: all 0.1s ease-in-out;
-  transition: all 0.1s ease-in-out;
+  -webkit-transition: background 0.2s ease;
+  transition: background 0.2s ease;
+}
+input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):not([type="file"]):not([type="image"]):focus,
+textarea:focus {
+  outline: none;
+  background: white;
 }
 
 textarea {
@@ -267,15 +272,15 @@ textarea {
 
 input[type="submit"] {
   font-family: "Open Sans", sans-serif;
-  padding: 10px 12px;
+  padding: 9px 12px;
   color: white;
   background: #924677;
   outline: none;
   border: none;
   border-radius: 0;
   -webkit-appearance: none;
-  -webkit-transition: all 0.1s ease-in-out;
-  transition: all 0.1s ease-in-out;
+  -webkit-transition: background 0.2s ease;
+  transition: background 0.2s ease;
 }
 input[type="submit"]:hover {
   cursor: pointer;
@@ -383,8 +388,19 @@ a img {
     margin-top: 0.75em;
   }
 }
+.comment-respond {
+  margin: 2.25em 0;
+}
+.comment-respond label {
+  display: block;
+  margin-bottom: 4px;
+}
+.comment-respond .form-submit {
+  margin-top: 2.25em;
+}
+
 .comments {
-  padding: 2.25em 6.249% 0.75em;
+  padding: 2.25em 6.249% 1.5em;
   border-top: solid 1px #E6E6E6;
 }
 
@@ -396,12 +412,37 @@ a img {
   list-style: none;
   margin: 1.5em 0;
 }
+.comment-list .children {
+  list-style: none;
+  margin: 3em 0 0 0;
+  padding-left: 1.5em;
+  border-left: solid 1px #E6E6E6;
+}
 
 li.comment,
 li.pingback {
   margin: 1.5em 0 3em;
 }
+li.comment ul,
+li.comment ol,
+li.pingback ul,
+li.pingback ol {
+  margin: 1.5em 0 1.5em 1.5em;
+}
+li.comment ul ul,
+li.comment ul ol,
+li.comment ol ul,
+li.comment ol ol,
+li.pingback ul ul,
+li.pingback ul ol,
+li.pingback ol ul,
+li.pingback ol ol {
+  margin: 0 0 0 1.5em;
+}
 
+.comment-author {
+  margin-bottom: 1.5em;
+}
 .comment-author .avatar {
   border-radius: 50%;
   float: left;
@@ -416,9 +457,26 @@ li.pingback {
   margin-left: 6px;
 }
 
+.comment-pagination {
+  margin: 1.5em 0;
+}
+.comment-pagination p {
+  display: inline-block;
+  width: 50%;
+  margin-right: -4px;
+}
+.comment-pagination .next-comment {
+  text-align: right;
+}
+
+.bypostauthor {
+  padding: 0.75em;
+  background: rgba(146, 70, 119, 0.2);
+}
+
 @media all and (min-width: 50em) {
   .comments {
-    padding: 3em 8.332% 0.75em;
+    padding: 3em 8.332% 1.5em;
   }
 
   .comments-number {
@@ -871,7 +929,10 @@ body.menu-open {
 .post-categories span {
   font-style: italic;
   display: inline-block;
-  margin-right: 0.75em;
+  margin-right: 16px;
+}
+.post-categories a {
+  margin-right: 0.5em;
 }
 
 .post-tags {

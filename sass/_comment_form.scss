@@ -1,0 +1,14 @@
+.comment-respond {
+  margin: $baseline-height * 1.5 0;
+
+  label {
+    display: block;
+    margin-bottom: 4px;
+  }
+  .form-submit {
+    margin-top: $baseline-height * 1.5;
+  }
+}
+.comment-reply-title {
+  @extend %twenty-one-pixels;
+}

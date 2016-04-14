@@ -183,7 +183,12 @@ textarea {
   border: solid 1px $color-gray-90;
   border-radius: 0;
   -webkit-appearance: none;
-  transition: all 0.1s ease-in-out;
+  transition: background 0.2s ease;
+
+  &:focus {
+    outline: none;
+    background: white;
+  }
 }
 textarea {
   max-width: $baseline-height * 15 * 1.85;
@@ -192,14 +197,14 @@ textarea {
 input[type="submit"] {
   @extend %twelve-pixels;
   font-family: $primary-font-stack;
-  padding: 10px 12px;
+  padding: 9px 12px;
   color: white;
   background: $color-purple;
   outline: none;
   border: none;
   border-radius: 0;
   -webkit-appearance: none;
-  transition: all 0.1s ease-in-out;
+  transition: background 0.2s ease;
 
   &:hover {
     cursor: pointer;
@@ -226,11 +231,6 @@ input[type="search"] {
 :-ms-input-placeholder {
   color: $color-gray-30;
 }
-//
-///* sticky */
-//.excerpt.sticky {
-//  outline: solid 3px $orange;
-//}
 
 /* ie image border fix */
 

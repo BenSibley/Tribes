@@ -404,12 +404,12 @@ function ct_tribes_reset_customizer_options() {
 
 	$mods_array = array(
 		'logo_upload',
-		'search_bar',
+		'logo_size',
 		'full_post',
 		'excerpt_length',
 		'read_more_text',
-		'full_width_post',
-		'author_byline',
+		'display_post_author',
+		'display_post_date',
 		'custom_css'
 	);
 

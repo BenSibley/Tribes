@@ -35,7 +35,7 @@ function ct_tribes_options_content() {
 			</p>
 		</div>
 		<div class="content content-premium-upgrade">
-			<h3><?php _e( 'Tribes', 'tribes' ); ?></h3>
+			<h3><?php _e( 'Tribes Pro', 'tribes' ); ?></h3>
 			<p><?php _e( 'Download the Tribes Pro plugin and unlock custom colors, new layouts, sliders, and more', 'tribes' ); ?>...</p>
 			<p>
 				<a target="_blank" class="button-primary"

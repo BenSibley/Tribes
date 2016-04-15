@@ -92,8 +92,8 @@
     height: 100%;
     overflow: auto;
     /* hide scrollbar */
-    margin-right: -999px;
-    padding-right: 999px;
+    margin-right: -1999px;
+    padding-right: 1999px;
   }
 }
 .menu-primary {
@@ -150,11 +150,12 @@
   /***** Tier 2 *****/
   ul ul {
     position: relative;
-    min-width: 345px;
+    min-width: 250px;
     max-height: 0;
     margin: 0 auto;
     background: rgba(0,0,0,0.1);
     overflow: hidden;
+    text-align: center;
 
     li {
 
@@ -222,7 +223,17 @@ body.menu-open {
   overflow-y: scroll;
   width: 100%;
 }
+.ie9 body.menu-open {
+  overflow: hidden;
+  position: static;
+}
 
+@media all and (min-width: $five-hundred) {
+
+  .menu-primary ul ul {
+    min-width: 345px;
+  }
+}
 @media all and (min-width: $eight-hundred) {
 
   .toggle-navigation {

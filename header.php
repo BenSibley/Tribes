@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 
+<!--[if gte IE 9]>
+<html class="ie9" <?php language_attributes(); ?>>
+<![endif]-->
 <html <?php language_attributes(); ?>>
 
 <head>

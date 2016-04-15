@@ -37,20 +37,6 @@ if ( ! function_exists( ( 'ct_tribes_theme_setup' ) ) ) {
 }
 add_action( 'after_setup_theme', 'ct_tribes_theme_setup', 10 );
 
-function ct_tribes_register_widget_areas() {
-
-	register_sidebar( array(
-		'name'          => __( 'Primary Sidebar', 'tribes' ),
-		'id'            => 'primary',
-		'description'   => __( 'Widgets in this area will be shown in the sidebar next to the main post content', 'tribes' ),
-		'before_widget' => '<section id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</section>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>'
-	) );
-}
-add_action( 'widgets_init', 'ct_tribes_register_widget_areas' );
-
 if ( ! function_exists( ( 'ct_tribes_customize_comments' ) ) ) {
 	function ct_tribes_customize_comments( $comment, $args, $depth ) {
 		$GLOBALS['comment'] = $comment;

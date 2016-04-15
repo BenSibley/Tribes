@@ -68,4 +68,5 @@ Tribes also uses:
 * Fitvids, by Chris Coyier & Dave Rupert, https://github.com/davatron5000/FitVids.js/, licensed under the WTFPL license.
 * Google Fonts, http://google.com/fonts, licensed under open source licenses, see: https://developers.google.com/fonts/faq#Any_Page_OK.
 * Font Awesome by Dave Gandy, licensed under open source licenses, see: http://fortawesome.github.io/Font-Awesome/license/.
-* New York city image in screenshot.png by Anthony Indraus, http://unsplash.com, licensed under Public Domain
+* City image in screenshot.png by Kevin Young, http://unsplash.com, licensed under Public Domain
+* Desk image in screenshot.png by William Iven, http://unsplash.com, licensed under Public Domain

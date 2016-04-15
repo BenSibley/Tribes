@@ -21,11 +21,13 @@ Tribes on Github: https://github.com/BenSibley/tribes
 Tribes includes the following features:
 
     * Custom logo
+    * Logo sizing tool
     * Social media icons
-    * Show full posts or experts
-    * Custom excerpt length
-    * Make first post on blog extra wide
-    * Custom CSS
+    * Show full posts or excerpts
+    * Excerpt length control
+    * Custom 'read more' button text
+    * Hide/show post byline elements
+    * Easily customize with CSS
 
 Tribes also has a premium plugin upgrade called Tribes Pro that includes the following features:
 
@@ -66,6 +68,4 @@ Tribes also uses:
 * Fitvids, by Chris Coyier & Dave Rupert, https://github.com/davatron5000/FitVids.js/, licensed under the WTFPL license.
 * Google Fonts, http://google.com/fonts, licensed under open source licenses, see: https://developers.google.com/fonts/faq#Any_Page_OK.
 * Font Awesome by Dave Gandy, licensed under open source licenses, see: http://fortawesome.github.io/Font-Awesome/license/.
-* HTML5shiv by Alexander Farkas, Jonathan Neal, Paul Irish, John-David Dalton, and Remy Sharp, licensed under MIT/GPL2, see: https://github.com/aFarkas/html5shiv
-* Respond.js by Scott Jehl, licensed under MIT, see: https://github.com/scottjehl/Respond
 * New York city image in screenshot.png by Anthony Indraus, http://unsplash.com, licensed under Public Domain

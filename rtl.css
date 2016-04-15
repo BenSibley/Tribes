@@ -905,6 +905,7 @@ li.pingback ol ol {
 body.menu-open {
   position: fixed;
   overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
   width: 100%;
 }
 

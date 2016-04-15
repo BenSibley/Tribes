@@ -221,6 +221,7 @@
 body.menu-open {
   position: fixed;
   overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
   width: 100%;
 }
 .ie9 body.menu-open {

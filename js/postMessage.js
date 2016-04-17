@@ -4,6 +4,7 @@
     var body = $('body');
     var siteTitle = $('#site-title');
     var tagline = $( '.tagline' );
+    var scrollContainer = $('#scroll-container');
     var inlineStyles = $('#ct-tribes-style-inline-css');
 
     // Site title
@@ -21,7 +22,7 @@
         value.bind( function( to ) {
             var tagline = $('.tagline');
             if( tagline.length == 0 ) {
-                $('#title-container').append('<p class="tagline"></p>');
+                scrollContainer.prepend('<p class="tagline"></p>');
             }
             tagline.text( to );
         } );

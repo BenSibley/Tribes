@@ -26,7 +26,7 @@
 				</button>
 				<div id="menu-primary-container" class="menu-primary-container">
 					<div class="max-width">
-						<div class="scroll-container">
+						<div id="scroll-container" class="scroll-container">
 							<?php if ( get_bloginfo( 'description' ) ) {
 								echo '<p class="tagline">' . get_bloginfo( 'description' ) . '</p>';
 							} ?>

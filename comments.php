@@ -24,7 +24,6 @@ if ( comments_open() ) { ?>
         <?php } ?>
         <?php comment_form(); ?>
     </section>
-    </section>
     <?php
 } elseif ( ! comments_open() && have_comments() && pings_open() ) { ?>
     <section id="comments" class="comments">

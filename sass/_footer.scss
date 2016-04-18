@@ -2,6 +2,7 @@
   text-align: center;
   padding: $baseline-height $column * 1.5 $baseline-height / 2;
   margin-top: $baseline-height * 2;
+  clear: both;
 
   .design-credit {
     @extend %twelve-pixels;

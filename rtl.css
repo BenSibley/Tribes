@@ -525,6 +525,7 @@ li.pingback ol ol {
   text-align: center;
   padding: 1.5em 6.249% 0.75em;
   margin-top: 3em;
+  clear: both;
 }
 
 @media all and (min-width: 50em) {

@@ -689,6 +689,7 @@ li.pingback ol ol {
   position: relative;
   margin-bottom: 1.5em;
   text-align: center;
+  clear: both;
 }
 .pagination span,
 .pagination a {

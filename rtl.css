@@ -773,7 +773,6 @@ li.pingback ol ol {
   left: 0;
   bottom: 0;
   right: 0;
-  background: rgba(146, 70, 119, 0.9);
   padding: 6em 10.415% 1.5em;
   color: white;
   text-align: center;
@@ -781,6 +780,17 @@ li.pingback ol ol {
   opacity: 0;
   -webkit-transition: margin 0.2s ease;
   transition: margin 0.2s ease;
+}
+.menu-primary-container:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #924677;
+  opacity: 0.9;
+  z-index: -1;
 }
 .menu-primary-container.open {
   z-index: 99;

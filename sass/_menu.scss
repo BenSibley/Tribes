@@ -67,13 +67,25 @@
   right: 0;
   bottom: 0;
   left: 0;
-  background: rgba(146,70,119,0.9);
   padding: $baseline-height * 4 $column * 2.5 $baseline-height;
   color: white;
   text-align: center;
   margin: $baseline-height / 2;
   opacity: 0;
   transition: margin 0.2s ease;
+
+  // so the Pro can change hex code instead of rgba
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: $color-purple;
+    opacity: 0.9;
+    z-index: -1;
+  }
 
   &.open {
     z-index: 99;

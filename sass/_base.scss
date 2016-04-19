@@ -198,7 +198,7 @@ textarea {
 input[type="submit"] {
   @extend %twelve-pixels;
   font-family: $primary-font-stack;
-  padding: 9px 12px;
+  padding: 15px 12px;
   min-width: $baseline-height * 4;
   color: white;
   background: $color-purple;
@@ -207,6 +207,7 @@ input[type="submit"] {
   border-radius: 0;
   -webkit-appearance: none;
   transition: background 0.2s ease;
+  vertical-align: top;
 
   &:hover {
     cursor: pointer;

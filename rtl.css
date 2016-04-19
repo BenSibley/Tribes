@@ -287,7 +287,7 @@ textarea {
 
 input[type="submit"] {
   font-family: "Open Sans", sans-serif;
-  padding: 9px 12px;
+  padding: 15px 12px;
   min-width: 6em;
   color: white;
   background: #924677;
@@ -297,6 +297,7 @@ input[type="submit"] {
   -webkit-appearance: none;
   -webkit-transition: background 0.2s ease;
   transition: background 0.2s ease;
+  vertical-align: top;
 }
 input[type="submit"]:hover {
   cursor: pointer;

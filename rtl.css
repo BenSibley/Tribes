@@ -134,6 +134,8 @@ p {
 a {
   color: #924677;
   font-weight: 700;
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease;
 }
 a:link, a:visited {
   color: #1A1A1A;

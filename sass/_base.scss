@@ -47,6 +47,7 @@ p {
 a {
   color: $color-purple;
   font-weight: 700;
+  transition: color 0.2s ease;
 
   &:link,
   &:visited {

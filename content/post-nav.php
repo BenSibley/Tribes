@@ -2,58 +2,52 @@
 
 global $post;
 
-// gets the previous post if it exists
-$previous_post = get_adjacent_post(false,'',true);
+$previous_post = get_adjacent_post( false, '', true );
+$previous_text = __( 'Previous Post', 'tribes' );
 
-// if there is a previous post
-if( $previous_post ) {
-	// text above the link
-	$previous_text = __('Previous Post', 'tribes');
-	// if there is a title use it, else call it "The Previous Post"
-	$previous_title = get_the_title( $previous_post ) ? get_the_title( $previous_post ) : __("The Previous Post", 'tribes');
-	// get the post link
-	$previous_link = get_permalink( $previous_post );
-}
-// if there isn't a previous post
-else {
-	// text above the link
-	$previous_text = __('No Older Posts', 'tribes');
-	// set the title to return to the blog
-	$previous_title = __('Return to Blog', 'tribes');
-	// link to blog
-	$previous_link = home_url();
+if ( $previous_post == '' ) {
+	$previous_text  = __( 'No Older Posts', 'tribes' );
+	if ( get_option( 'show_on_front' ) == 'page' ) {
+		$previous_url = get_permalink( get_option( 'page_for_posts' ) );
+	} else {
+		$previous_url = get_home_url();
+	}
+	$previous_link = '<a href="' . esc_url( $previous_url ) . '">' . esc_html__( 'Return to Blog', 'tribes' ) . '</a>';
 }
 
-// gets the next post if it exists
-$next_post = get_adjacent_post(false,'',false);
+$next_post  = get_adjacent_post( false, '', false );
+$next_text  = __( 'Next Post', 'tribes' );
 
-// if there is a next post
-if( $next_post ) {
-	// text above the link
-	$next_text = __('Next Post', 'tribes');
-	// if there is a title use it, else call it "The next Post"
-	$next_title = get_the_title( $next_post ) ? get_the_title( $next_post ) : __("The Next Post", 'tribes');
-	// get the post link
-	$next_link = get_permalink( $next_post );
-}
-// if there isn't a next post
-else {
-	// text above the link
-	$next_text = __('No Newer Posts', 'tribes');
-	// set the title to return to the blog
-	$next_title = __('Return to Blog', 'tribes');
-	// link to blog
-	$next_link = home_url();
+if ( $next_post == '' ) {
+	$next_text  = __( 'No Newer Posts', 'tribes' );
+	if ( get_option( 'show_on_front' ) == 'page' ) {
+		$next_url = get_permalink( get_option( 'page_for_posts' ) );
+	} else {
+		$next_url = get_home_url();
+	}
+	$next_link = '<a href="' . esc_url( $next_url ) . '">' . esc_html__( 'Return to Blog', 'tribes' ) . '</a>';
 }
 
 ?>
 <nav class="further-reading">
 	<div class="previous">
 		<span><?php echo esc_html( $previous_text ); ?></span>
-		<a href="<?php echo esc_url( $previous_link ); ?>"><?php echo esc_html( $previous_title ); ?></a>
+		<?php
+		if ( $previous_post == '' ) {
+			echo $previous_link;
+		} else {
+			previous_post_link( '%link' );
+		}
+		?>
 	</div>
 	<div class="next">
 		<span><?php echo esc_html( $next_text ); ?></span>
-		<a href="<?php echo esc_url( $next_link ); ?>"><?php echo esc_html( $next_title ); ?></a>
+		<?php
+		if ( $next_post == '' ) {
+			echo $next_link;
+		} else {
+			next_post_link( '%link' );
+		}
+		?>
 	</div>
 </nav>

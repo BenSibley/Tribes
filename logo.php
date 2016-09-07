@@ -10,13 +10,13 @@ if ( $image ) {
 	$logo = "<span class='screen-reader-text'>" . esc_html( get_bloginfo( 'name' ) ) . "</span><img class='logo' src='" . esc_url( get_theme_mod( 'logo_upload' ) ) . "' alt='" . esc_attr( $image_alt ) . "' />";
 	$title_classes = 'class="site-title has-logo"';
 } else {
-	$logo = get_bloginfo( 'name' );
+	$logo = esc_html( get_bloginfo( 'name' ) );
 	$title_classes = 'class="site-title"';
 }
 
 $output = "<div id='site-title' " . $title_classes . ">";
 $output .= "<a href='" . esc_url( home_url() ) . "'>";
-$output .= esc_html( $logo );
+$output .= $logo;
 $output .= "</a>";
 $output .= "</div>";
 

@@ -33,8 +33,6 @@ if ( ! function_exists( ( 'ct_tribes_theme_setup' ) ) ) {
 			'render'    => 'ct_tribes_infinite_scroll_render'
 		) );
 
-		
-
 		register_nav_menus( array(
 			'primary' => __( 'Primary', 'tribes' )
 		) );
@@ -146,18 +144,18 @@ if ( ! function_exists( 'ct_tribes_excerpt' ) ) {
 			if ( $ismore ) {
 				// Has to be written this way because i18n text CANNOT be stored in a variable
 				if ( ! empty( $read_more_text ) ) {
-					the_content( $read_more_text . " <span class='screen-reader-text'>" . get_the_title() . "</span>" );
+					the_content( esc_html( $read_more_text ) . " <span class='screen-reader-text'>" . esc_html( get_the_title() ) . "</span>" );
 				} else {
-					the_content( __( 'Continue reading', 'tribes' ) . " <span class='screen-reader-text'>" . get_the_title() . "</span>" );
+					the_content( esc_html__( 'Continue reading', 'tribes' ) . " <span class='screen-reader-text'>" . esc_html( get_the_title() ) . "</span>" );
 				}
 			} else {
 				the_content();
 			}
 		} elseif ( $ismore ) {
 			if ( ! empty( $read_more_text ) ) {
-				the_content( $read_more_text . " <span class='screen-reader-text'>" . get_the_title() . "</span>" );
+				the_content( esc_html( $read_more_text ) . " <span class='screen-reader-text'>" . esc_html( get_the_title() ) . "</span>" );
 			} else {
-				the_content( __( 'Continue reading', 'tribes' ) . " <span class='screen-reader-text'>" . get_the_title() . "</span>" );
+				the_content( esc_html__( 'Continue reading', 'tribes' ) . " <span class='screen-reader-text'>" . esc_html( get_the_title() ) . "</span>" );
 			}
 		} else {
 			the_excerpt();
@@ -171,9 +169,9 @@ if ( ! function_exists( 'ct_tribes_excerpt_read_more_link' ) ) {
 		$read_more_text = get_theme_mod( 'read_more_text' );
 
 		if ( ! empty( $read_more_text ) ) {
-			return $output . "<p><a class='more-link' href='" . esc_url( get_permalink() ) . "'>" . $read_more_text . " <span class='screen-reader-text'>" . get_the_title() . "</span></a></p>";
+			return $output . "<p><a class='more-link' href='" . esc_url( get_permalink() ) . "'>" . esc_html( $read_more_text ) . " <span class='screen-reader-text'>" . esc_html( get_the_title() ) . "</span></a></p>";
 		} else {
-			return $output . "<p><a class='more-link' href='" . esc_url( get_permalink() ) . "'>" . __( 'Continue reading', 'tribes' ) . " <span class='screen-reader-text'>" . get_the_title() . "</span></a></p>";
+			return $output . "<p><a class='more-link' href='" . esc_url( get_permalink() ) . "'>" . esc_html__( 'Continue reading', 'tribes' ) . " <span class='screen-reader-text'>" . esc_html( get_the_title() ) . "</span></a></p>";
 		}
 	}
 }
@@ -225,7 +223,7 @@ if ( ! function_exists( 'ct_tribes_featured_image' ) ) {
 			if ( is_singular() ) {
 				$featured_image = '<div class="featured-image">' . get_the_post_thumbnail( $post->ID, 'full' ) . '</div>';
 			} else {
-				$featured_image = '<div class="featured-image"><a href="' . esc_url( get_permalink() ) . '">' . get_the_title() . get_the_post_thumbnail( $post->ID, 'full' ) . '</a></div>';
+				$featured_image = '<div class="featured-image"><a href="' . esc_url( get_permalink() ) . '">' . esc_html( get_the_title() ) . get_the_post_thumbnail( $post->ID, 'full' ) . '</a></div>';
 			}
 		}
 

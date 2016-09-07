@@ -28,7 +28,7 @@
 					<div class="max-width">
 						<div id="scroll-container" class="scroll-container">
 							<?php if ( get_bloginfo( 'description' ) ) {
-								echo '<p class="tagline">' . get_bloginfo( 'description' ) . '</p>';
+								echo '<p class="tagline">' . esc_html( get_bloginfo( 'description' ) ) . '</p>';
 							} ?>
 							<?php get_template_part( 'menu', 'primary' ); ?>
 							<?php get_template_part( 'content/search-bar' ); ?>

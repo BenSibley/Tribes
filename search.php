@@ -6,9 +6,9 @@
             $total_results = $wp_query->found_posts;
             $s             = htmlentities( $s );
             if ( $total_results ) {
-                printf( _n( '%d search result for "%s"', '%d search results for "%s"', $total_results, 'tribes' ), $total_results, $s );
+                printf( esc_html( _n( '%d search result for "%s"', '%d search results for "%s"', $total_results, 'tribes' ) ), $total_results, $s );
             } else {
-                printf( __( 'No search results for "%s"', 'tribes' ), $s );
+                printf( esc_html__( 'No search results for "%s"', 'tribes' ), $s );
             }
             ?>
         </h1>

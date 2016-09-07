@@ -341,140 +341,157 @@ if ( ! function_exists( 'ct_tribes_social_icons_output' ) ) {
  * WP will apply the ".menu-primary-items" class & id to the containing <div> instead of <ul>
  * making styling difficult and confusing. Using this wrapper to add a unique class to make styling easier.
  */
-function ct_tribes_wp_page_menu() {
-	wp_page_menu( array(
-			"menu_class" => "menu-unset",
-			"depth"      => - 1
-		)
-	);
-}
-
-function ct_tribes_nav_dropdown_buttons( $item_output, $item, $depth, $args ) {
-
-	if ( $args->theme_location == 'primary' ) {
-
-		if ( in_array( 'menu-item-has-children', $item->classes ) || in_array( 'page_item_has_children', $item->classes ) ) {
-			$item_output = str_replace( $args->link_after . '</a>', $args->link_after . '</a><button class="toggle-dropdown" aria-expanded="false" name="toggle-dropdown"><i class="fa fa-angle-down"></i><span class="screen-reader-text">' . __( "open menu", "tribes" ) . '</span></button>', $item_output );
-		}
+if ( ! function_exists( ( 'ct_tribes_wp_page_menu' ) ) ) {
+	function ct_tribes_wp_page_menu() {
+		wp_page_menu( array(
+				"menu_class" => "menu-unset",
+				"depth"      => - 1
+			)
+		);
 	}
+}
+if ( ! function_exists( ( 'ct_tribes_nav_dropdown_buttons' ) ) ) {
+	function ct_tribes_nav_dropdown_buttons( $item_output, $item, $depth, $args ) {
 
-	return $item_output;
+		if ( $args->theme_location == 'primary' ) {
+
+			if ( in_array( 'menu-item-has-children', $item->classes ) || in_array( 'page_item_has_children', $item->classes ) ) {
+				$item_output = str_replace( $args->link_after . '</a>', $args->link_after . '</a><button class="toggle-dropdown" aria-expanded="false" name="toggle-dropdown"><i class="fa fa-angle-down"></i><span class="screen-reader-text">' . __( "open menu", "tribes" ) . '</span></button>', $item_output );
+			}
+		}
+
+		return $item_output;
+	}
 }
 add_filter( 'walker_nav_menu_start_el', 'ct_tribes_nav_dropdown_buttons', 10, 4 );
 
-function ct_tribes_sticky_post_marker() {
+if ( ! function_exists( ( 'ct_tribes_sticky_post_marker' ) ) ) {
+	function ct_tribes_sticky_post_marker() {
 
-	if ( is_sticky() && ! is_archive() ) {
-		echo '<div class="sticky-status"><span>' . __( "Featured", "tribes" ) . '</span></div>';
+		if ( is_sticky() && ! is_archive() ) {
+			echo '<div class="sticky-status"><span>' . __( "Featured", "tribes" ) . '</span></div>';
+		}
 	}
 }
 add_action( 'sticky_post_status', 'ct_tribes_sticky_post_marker' );
 
-function ct_tribes_reset_customizer_options() {
+if ( ! function_exists( ( 'ct_tribes_reset_customizer_options' ) ) ) {
+	function ct_tribes_reset_customizer_options() {
 
-	if ( empty( $_POST['tribes_reset_customizer'] ) || 'tribes_reset_customizer_settings' !== $_POST['tribes_reset_customizer'] ) {
-		return;
+		if ( empty( $_POST['tribes_reset_customizer'] ) || 'tribes_reset_customizer_settings' !== $_POST['tribes_reset_customizer'] ) {
+			return;
+		}
+
+		if ( ! wp_verify_nonce( $_POST['tribes_reset_customizer_nonce'], 'tribes_reset_customizer_nonce' ) ) {
+			return;
+		}
+
+		if ( ! current_user_can( 'edit_theme_options' ) ) {
+			return;
+		}
+
+		$mods_array = array(
+			'logo_upload',
+			'logo_size',
+			'full_post',
+			'excerpt_length',
+			'read_more_text',
+			'display_post_author',
+			'display_post_date',
+			'custom_css'
+		);
+
+		$social_sites = ct_tribes_social_array();
+
+		// add social site settings to mods array
+		foreach ( $social_sites as $social_site => $value ) {
+			$mods_array[] = $social_site;
+		}
+
+		$mods_array = apply_filters( 'ct_tribes_mods_to_remove', $mods_array );
+
+		foreach ( $mods_array as $theme_mod ) {
+			remove_theme_mod( $theme_mod );
+		}
+
+		$redirect = admin_url( 'themes.php?page=tribes-options' );
+		$redirect = add_query_arg( 'tribes_status', 'deleted', $redirect );
+
+		// safely redirect
+		wp_safe_redirect( $redirect );
+		exit;
 	}
-
-	if ( ! wp_verify_nonce( $_POST['tribes_reset_customizer_nonce'], 'tribes_reset_customizer_nonce' ) ) {
-		return;
-	}
-
-	if ( ! current_user_can( 'edit_theme_options' ) ) {
-		return;
-	}
-
-	$mods_array = array(
-		'logo_upload',
-		'logo_size',
-		'full_post',
-		'excerpt_length',
-		'read_more_text',
-		'display_post_author',
-		'display_post_date',
-		'custom_css'
-	);
-
-	$social_sites = ct_tribes_social_array();
-
-	// add social site settings to mods array
-	foreach ( $social_sites as $social_site => $value ) {
-		$mods_array[] = $social_site;
-	}
-
-	$mods_array = apply_filters( 'ct_tribes_mods_to_remove', $mods_array );
-
-	foreach ( $mods_array as $theme_mod ) {
-		remove_theme_mod( $theme_mod );
-	}
-
-	$redirect = admin_url( 'themes.php?page=tribes-options' );
-	$redirect = add_query_arg( 'tribes_status', 'deleted', $redirect );
-
-	// safely redirect
-	wp_safe_redirect( $redirect );
-	exit;
 }
 add_action( 'admin_init', 'ct_tribes_reset_customizer_options' );
 
-function ct_tribes_delete_settings_notice() {
+if ( ! function_exists( ( 'ct_tribes_delete_settings_notice' ) ) ) {
+	function ct_tribes_delete_settings_notice() {
 
-	if ( isset( $_GET['tribes_status'] ) ) {
-		?>
-		<div class="updated">
-			<p><?php _e( 'Customizer settings deleted', 'tribes' ); ?>.</p>
-		</div>
-		<?php
+		if ( isset( $_GET['tribes_status'] ) ) {
+			?>
+			<div class="updated">
+				<p><?php _e( 'Customizer settings deleted', 'tribes' ); ?>.</p>
+			</div>
+			<?php
+		}
 	}
 }
 add_action( 'admin_notices', 'ct_tribes_delete_settings_notice' );
 
-function ct_tribes_body_class( $classes ) {
+if ( ! function_exists( ( 'ct_tribes_body_class' ) ) ) {
+	function ct_tribes_body_class( $classes ) {
 
-	global $post;
-	$full_post       = get_theme_mod( 'full_post' );
+		global $post;
+		$full_post = get_theme_mod( 'full_post' );
 
-	if ( $full_post == 'yes' ) {
-		$classes[] = 'full-post';
+		if ( $full_post == 'yes' ) {
+			$classes[] = 'full-post';
+		}
+
+		return $classes;
 	}
-
-	return $classes;
 }
 add_filter( 'body_class', 'ct_tribes_body_class' );
 
-function ct_tribes_post_class( $classes ) {
-	$classes[] = 'entry';
-	return $classes;
+if ( ! function_exists( ( 'ct_tribes_post_class' ) ) ) {
+	function ct_tribes_post_class( $classes ) {
+		$classes[] = 'entry';
+
+		return $classes;
+	}
 }
 add_filter( 'post_class', 'ct_tribes_post_class' );
 
-function ct_tribes_custom_css_output() {
+if ( ! function_exists( ( 'ct_tribes_custom_css_output' ) ) ) {
+	function ct_tribes_custom_css_output() {
 
-	$custom_css = get_theme_mod( 'custom_css' );
-	$logo_size  = get_theme_mod( 'logo_size' );
+		$custom_css = get_theme_mod( 'custom_css' );
+		$logo_size  = get_theme_mod( 'logo_size' );
 
-	if ( $logo_size != 168 && ! empty( $logo_size ) ) {
-		$logo_size_css = '.logo {
+		if ( $logo_size != 168 && ! empty( $logo_size ) ) {
+			$logo_size_css = '.logo {
 							width: ' . $logo_size . 'px;
 						  }';
-		$custom_css .= $logo_size_css;
-	}
-	if ( ! empty( $custom_css ) ) {
-		$custom_css = ct_tribes_sanitize_css( $custom_css );
+			$custom_css .= $logo_size_css;
+		}
+		if ( ! empty( $custom_css ) ) {
+			$custom_css = ct_tribes_sanitize_css( $custom_css );
 
-		wp_add_inline_style( 'ct-tribes-style', $custom_css );
-		wp_add_inline_style( 'ct-tribes-style-rtl', $custom_css );
+			wp_add_inline_style( 'ct-tribes-style', $custom_css );
+			wp_add_inline_style( 'ct-tribes-style-rtl', $custom_css );
+		}
 	}
 }
 add_action( 'wp_enqueue_scripts', 'ct_tribes_custom_css_output', 20 );
 
-function ct_tribes_svg_output( $type ) {
+if ( ! function_exists( ( 'ct_tribes_svg_output' ) ) ) {
+	function ct_tribes_svg_output( $type ) {
 
-	$svg = '';
+		$svg = '';
 
-	if ( $type == 'toggle-navigation' ) {
+		if ( $type == 'toggle-navigation' ) {
 
-		$svg = '<svg width="24px" height="18px" viewBox="0 0 24 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+			$svg = '<svg width="24px" height="18px" viewBox="0 0 24 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 				    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
 				        <g transform="translate(-148.000000, -36.000000)" fill="#6B6B6B">
 				            <g transform="translate(123.000000, 25.000000)">
@@ -487,23 +504,26 @@ function ct_tribes_svg_output( $type ) {
 				        </g>
 				    </g>
 				</svg>';
-	}
+		}
 
-	return $svg;
+		return $svg;
+	}
 }
 
-function ct_tribes_add_meta_elements() {
+if ( ! function_exists( ( 'ct_tribes_add_meta_elements' ) ) ) {
+	function ct_tribes_add_meta_elements() {
 
-	$meta_elements = '';
+		$meta_elements = '';
 
-	$meta_elements .= sprintf( '<meta charset="%s" />' . "\n", esc_html( get_bloginfo( 'charset' ) ) );
-	$meta_elements .= '<meta name="viewport" content="width=device-width, initial-scale=1" />' . "\n";
+		$meta_elements .= sprintf( '<meta charset="%s" />' . "\n", esc_html( get_bloginfo( 'charset' ) ) );
+		$meta_elements .= '<meta name="viewport" content="width=device-width, initial-scale=1" />' . "\n";
 
-	$theme    = wp_get_theme( get_template() );
-	$template = sprintf( '<meta name="template" content="%s %s" />' . "\n", esc_attr( $theme->get( 'Name' ) ), esc_attr( $theme->get( 'Version' ) ) );
-	$meta_elements .= $template;
+		$theme    = wp_get_theme( get_template() );
+		$template = sprintf( '<meta name="template" content="%s %s" />' . "\n", esc_attr( $theme->get( 'Name' ) ), esc_attr( $theme->get( 'Version' ) ) );
+		$meta_elements .= $template;
 
-	echo $meta_elements;
+		echo $meta_elements;
+	}
 }
 add_action( 'wp_head', 'ct_tribes_add_meta_elements', 1 );
 
@@ -511,10 +531,12 @@ add_action( 'wp_head', 'ct_tribes_add_meta_elements', 1 );
 remove_action( 'wp_head', 'wp_generator' );
 add_action( 'wp_head', 'wp_generator', 1 );
 
-function ct_tribes_infinite_scroll_render() {
-	while ( have_posts() ) {
-		the_post();
-		get_template_part( 'content', 'archive' );
+if ( ! function_exists( ( 'ct_tribes_infinite_scroll_render' ) ) ) {
+	function ct_tribes_infinite_scroll_render() {
+		while ( have_posts() ) {
+			the_post();
+			get_template_part( 'content', 'archive' );
+		}
 	}
 }
 
@@ -544,8 +566,11 @@ if ( ! function_exists( 'ct_tribes_get_content_template' ) ) {
 }
 
 // allow skype URIs to be used
-function ct_tribes_allow_skype_protocol( $protocols ){
-	$protocols[] = 'skype';
-	return $protocols;
+if ( ! function_exists( ( 'ct_tribes_allow_skype_protocol' ) ) ) {
+	function ct_tribes_allow_skype_protocol( $protocols ) {
+		$protocols[] = 'skype';
+
+		return $protocols;
+	}
 }
 add_filter( 'kses_allowed_protocols' , 'ct_tribes_allow_skype_protocol' );

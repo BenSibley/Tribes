@@ -1,10 +1,10 @@
-<?php do_action( 'main_bottom' ); ?>
+<?php do_action( 'ct_tribes_main_bottom' ); ?>
 </section> <!-- .main -->
 
-<?php do_action( 'after_main' ); ?>
+<?php do_action( 'ct_tribes_after_main' ); ?>
 
 <footer id="site-footer" class="site-footer" role="contentinfo">
-    <?php do_action( 'footer_top' ); ?>
+    <?php do_action( 'ct_tribes_footer_top' ); ?>
     <div class="design-credit">
         <span>
             <?php
@@ -19,7 +19,7 @@
 </div><!-- .theme-container -->
 </div><!-- .overflow-container -->
 
-<?php do_action( 'body_bottom' ); ?>
+<?php do_action( 'ct_tribes_body_bottom' ); ?>
 
 <?php wp_footer(); ?>
 

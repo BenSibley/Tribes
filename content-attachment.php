@@ -1,5 +1,5 @@
 <div <?php post_class(); ?>>
-	<?php do_action( 'attachment_before' ); ?>
+	<?php do_action( 'ct_tribes_attachment_before' ); ?>
 	<article>
 		<div class="post-container">
 			<div class='post-header'>
@@ -21,6 +21,6 @@
 			</div>
 		</div>
 	</article>
-	<?php do_action( 'attachment_after' ); ?>
+	<?php do_action( 'ct_tribes_attachment_after' ); ?>
 	<?php comments_template(); ?>
 </div>

@@ -1,5 +1,5 @@
 <div <?php post_class(); ?>>
-	<?php do_action( 'post_before' ); ?>
+	<?php do_action( 'ct_tribes_post_before' ); ?>
 	<article>
 		<?php ct_tribes_featured_image(); ?>
 		<div class="post-container">
@@ -13,7 +13,7 @@
 					'before' => '<p class="singular-pagination">' . __( 'Pages:', 'tribes' ),
 					'after'  => '</p>',
 				) ); ?>
-				<?php do_action( 'post_after' ); ?>
+				<?php do_action( 'ct_tribes_post_after' ); ?>
 			</div>
 			<div class="post-meta">
 				<?php get_template_part( 'content/post-categories' ); ?>

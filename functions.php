@@ -373,7 +373,7 @@ if ( ! function_exists( ( 'ct_tribes_sticky_post_marker' ) ) ) {
 		}
 	}
 }
-add_action( 'sticky_post_status', 'ct_tribes_sticky_post_marker' );
+add_action( 'ct_tribes_sticky_post_status', 'ct_tribes_sticky_post_marker' );
 
 if ( ! function_exists( ( 'ct_tribes_reset_customizer_options' ) ) ) {
 	function ct_tribes_reset_customizer_options() {

@@ -1,5 +1,10 @@
 <?php
 
+require_once( trailingslashit( get_template_directory() ) . 'theme-options.php' );
+foreach ( glob( trailingslashit( get_template_directory() ) . 'inc/*' ) as $filename ) {
+	include $filename;
+}
+
 if ( ! function_exists( ( 'ct_tribes_set_content_width' ) ) ) {
 	function ct_tribes_set_content_width() {
 		if ( ! isset( $content_width ) ) {
@@ -28,10 +33,7 @@ if ( ! function_exists( ( 'ct_tribes_theme_setup' ) ) ) {
 			'render'    => 'ct_tribes_infinite_scroll_render'
 		) );
 
-		require_once( trailingslashit( get_template_directory() ) . 'theme-options.php' );
-		foreach ( glob( trailingslashit( get_template_directory() ) . 'inc/*' ) as $filename ) {
-			include $filename;
-		}
+		
 
 		register_nav_menus( array(
 			'primary' => __( 'Primary', 'tribes' )

@@ -6,11 +6,11 @@ function ct_tribes_load_scripts_styles() {
 	wp_enqueue_style( 'ct-tribes-google-fonts', '//fonts.googleapis.com/css?family=Open+Sans:400,400italic,700|Damion:400' );
 
 	wp_enqueue_script( 'ct-tribes-js', get_template_directory_uri() . '/js/build/production.min.js', array( 'jquery' ), '', true );
-	wp_localize_script( 'ct-tribes-js', 'objectL10n', array(
-		'openMenu'       => __( 'open menu', 'tribes' ),
-		'closeMenu'      => __( 'close menu', 'tribes' ),
-		'openChildMenu'  => __( 'open dropdown menu', 'tribes' ),
-		'closeChildMenu' => __( 'close dropdown menu', 'tribes' )
+	wp_localize_script( 'ct-tribes-js', 'ct_tribes_objectL10n', array(
+		'openMenu'       => esc_html__( 'open menu', 'tribes' ),
+		'closeMenu'      => esc_html__( 'close menu', 'tribes' ),
+		'openChildMenu'  => esc_html__( 'open dropdown menu', 'tribes' ),
+		'closeChildMenu' => esc_html__( 'close dropdown menu', 'tribes' )
 	) );
 
 	wp_enqueue_style( 'font-awesome', get_template_directory_uri() . '/assets/font-awesome/css/font-awesome.min.css' );

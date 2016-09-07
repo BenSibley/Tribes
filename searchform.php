@@ -2,7 +2,7 @@
     <form role="search" method="get" class="search-form" action="<?php echo esc_url( home_url( '/' ) ); ?>">
         <label class="screen-reader-text" for="search-field"><?php _e( 'Search', 'tribes' ); ?></label>
         <input id="search-field" type="search" class="search-field" value="" name="s"
-               title="<?php _e( 'Search for:', 'tribes' ); ?>"/>
-        <input type="submit" class="search-submit" value='<?php _e( 'Go', 'tribes' ); ?>'/>
+               title="<?php esc_attr_e( 'Search for:', 'tribes' ); ?>"/>
+        <input type="submit" class="search-submit" value='<?php esc_attr_e( 'Go', 'tribes' ); ?>'/>
     </form>
 </div>

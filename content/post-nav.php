@@ -8,7 +8,7 @@ $previous_text = __( 'Previous Post', 'tribes' );
 if ( $previous_post == '' ) {
 	$previous_text  = __( 'No Older Posts', 'tribes' );
 	if ( get_option( 'show_on_front' ) == 'page' ) {
-		$previous_url = get_permalink( get_option( 'page_for_posts' ) );
+		$previous_url = esc_url( get_permalink( get_option( 'page_for_posts' ) ) );
 	} else {
 		$previous_url = get_home_url();
 	}
@@ -21,7 +21,7 @@ $next_text  = __( 'Next Post', 'tribes' );
 if ( $next_post == '' ) {
 	$next_text  = __( 'No Newer Posts', 'tribes' );
 	if ( get_option( 'show_on_front' ) == 'page' ) {
-		$next_url = get_permalink( get_option( 'page_for_posts' ) );
+		$next_url = esc_url( get_permalink( get_option( 'page_for_posts' ) ) );
 	} else {
 		$next_url = get_home_url();
 	}

@@ -2,9 +2,9 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Tribes 1.01\n"
+"Project-Id-Version: Tribes 1.03\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/support/theme/style\n"
-"POT-Creation-Date: 2016-04-19 19:31:33+00:00\n"
+"POT-Creation-Date: 2016-10-31 12:29:10+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -66,6 +66,10 @@ msgstr ""
 msgid "Leave a Comment"
 msgstr ""
 
+#: content/post-author.php:6
+msgid "View more posts"
+msgstr ""
+
 #: content/post-byline.php:15
 msgid "By"
 msgstr ""
@@ -90,31 +94,23 @@ msgstr ""
 msgid "Next Image"
 msgstr ""
 
-#: content/post-nav.php:11
+#: content/post-nav.php:6
 msgid "Previous Post"
 msgstr ""
 
-#: content/post-nav.php:13
-msgid "The Previous Post"
-msgstr ""
-
-#: content/post-nav.php:20
+#: content/post-nav.php:9
 msgid "No Older Posts"
 msgstr ""
 
-#: content/post-nav.php:22 content/post-nav.php:44
+#: content/post-nav.php:15 content/post-nav.php:28
 msgid "Return to Blog"
 msgstr ""
 
-#: content/post-nav.php:33
+#: content/post-nav.php:19
 msgid "Next Post"
 msgstr ""
 
-#: content/post-nav.php:35
-msgid "The Next Post"
-msgstr ""
-
-#: content/post-nav.php:42
+#: content/post-nav.php:22
 msgid "No Newer Posts"
 msgstr ""
 
@@ -142,59 +138,59 @@ msgstr ""
 msgid "<a href=\"%s\">Tribes WordPress Theme</a> by Compete Themes."
 msgstr ""
 
-#: functions.php:32
+#: functions.php:43
 msgid "Primary"
 msgstr ""
 
-#: functions.php:55
+#: functions.php:66
 msgid "Your comment is awaiting moderation."
 msgstr ""
 
-#: functions.php:63
+#: functions.php:74
 msgid "Reply"
 msgstr ""
 
-#: functions.php:67
+#: functions.php:78
 msgid "Edit"
 msgstr ""
 
-#: functions.php:79
+#: functions.php:90
 msgid "(optional)"
 msgstr ""
 
-#: functions.php:84
+#: functions.php:95
 msgid "Name"
 msgstr ""
 
-#: functions.php:91
+#: functions.php:102
 msgid "Email"
 msgstr ""
 
-#: functions.php:98
+#: functions.php:109
 msgid "Website"
 msgstr ""
 
-#: functions.php:113
+#: functions.php:124
 msgid "Comment"
 msgstr ""
 
-#: functions.php:144 functions.php:153 functions.php:169
+#: functions.php:155 functions.php:164 functions.php:180
 msgid "Continue reading"
 msgstr ""
 
-#: functions.php:312
+#: functions.php:323
 msgid "email"
 msgstr ""
 
-#: functions.php:361 header.php:24 inc/scripts.php:10
+#: functions.php:365 header.php:24 inc/scripts.php:16
 msgid "open menu"
 msgstr ""
 
-#: functions.php:372
+#: functions.php:378
 msgid "Featured"
 msgstr ""
 
-#: functions.php:429
+#: functions.php:439
 msgid "Customizer settings deleted"
 msgstr ""
 
@@ -206,113 +202,131 @@ msgstr ""
 msgid "Front Page"
 msgstr ""
 
-#: inc/customizer.php:27
-msgid "Logo"
+#: inc/customizer.php:29
+msgid ""
+"<a target=\"_blank\" href=\"%s\">Tribes Pro</a> is the plugin that makes "
+"advanced customization simple - and fun too."
+msgstr ""
+
+#: inc/customizer.php:31
+msgid "Sidebar Layouts"
+msgstr ""
+
+#: inc/customizer.php:32
+msgid "Custom Colors"
+msgstr ""
+
+#: inc/customizer.php:33
+msgid "New Fonts"
+msgstr ""
+
+#: inc/customizer.php:34
+msgid "+ 9 more features"
+msgstr ""
+
+#: inc/customizer.php:36
+msgid "Download the Tribes Pro Plugin to get started now."
 msgstr ""
 
 #: inc/customizer.php:37
-msgid "Upload custom logo."
+msgid "Get Tribes Pro"
 msgstr ""
 
-#: inc/customizer.php:50
-msgid "Adjust the size of the logo"
-msgstr ""
-
-#: inc/customizer.php:71
-msgid "Social Media Icons"
+#: inc/customizer.php:47 theme-options.php:38
+msgid "Tribes Pro"
 msgstr ""
 
 #: inc/customizer.php:73
+msgid "Social Media Icons"
+msgstr ""
+
+#: inc/customizer.php:75
 msgid "Add the URL for each of your social profiles."
 msgstr ""
 
-#: inc/customizer.php:86
+#: inc/customizer.php:88
 msgid "Email Address"
 msgstr ""
 
-#: inc/customizer.php:135
+#: inc/customizer.php:137
 msgid ""
 "Accepts Skype link protocol (<a href=\"%s\" target=\"_blank\">learn "
 "more</a>)"
 msgstr ""
 
-#: inc/customizer.php:161
+#: inc/customizer.php:163
 msgid "Blog"
 msgstr ""
 
-#: inc/customizer.php:171
+#: inc/customizer.php:173
 msgid "Show full posts on blog?"
 msgstr ""
 
-#: inc/customizer.php:176 inc/customizer.php:295
+#: inc/customizer.php:178 inc/customizer.php:297
 msgid "Yes"
 msgstr ""
 
-#: inc/customizer.php:177 inc/customizer.php:296
+#: inc/customizer.php:179 inc/customizer.php:298
 msgid "No"
 msgstr ""
 
-#: inc/customizer.php:187
+#: inc/customizer.php:189
 msgid "Excerpt word count"
 msgstr ""
 
-#: inc/customizer.php:194
+#: inc/customizer.php:196
 msgid "Continue Reading"
 msgstr ""
 
-#: inc/customizer.php:199
+#: inc/customizer.php:201
 msgid "Read More button text"
 msgstr ""
 
-#: inc/customizer.php:209
+#: inc/customizer.php:211
 msgid "Display Controls"
 msgstr ""
 
-#: inc/customizer.php:211
+#: inc/customizer.php:213
 msgid ""
 "Want more options like these? Check out the <a target=\"_blank\" "
 "href=\"%s\"> Tribes Pro plugin</a>."
 msgstr ""
 
-#: inc/customizer.php:221
+#: inc/customizer.php:223
 msgid "Post author name in byline"
 msgstr ""
 
-#: inc/customizer.php:225 inc/customizer.php:241 inc/customizer.php:276
-#: inc/customizer.php:305
+#: inc/customizer.php:227 inc/customizer.php:243 inc/customizer.php:278
+#: inc/customizer.php:307
 msgid "Show"
 msgstr ""
 
-#: inc/customizer.php:226 inc/customizer.php:242 inc/customizer.php:277
-#: inc/customizer.php:306
+#: inc/customizer.php:228 inc/customizer.php:244 inc/customizer.php:279
+#: inc/customizer.php:308
 msgid "Hide"
 msgstr ""
 
-#: inc/customizer.php:237
+#: inc/customizer.php:239
 msgid "Post date in byline"
 msgstr ""
 
-#: inc/customizer.php:250
+#: inc/customizer.php:252
 msgid "Custom CSS"
 msgstr ""
 
-#: inc/customizer.php:261
+#: inc/customizer.php:263
 msgid "Add Custom CSS Here:"
 msgstr ""
 
-#: inc/customizer.php:331
-msgid "View the Tribes Pro Plugin"
-msgstr ""
-
-#: inc/scripts.php:11
+#: inc/scripts.php:17
 msgid "close menu"
 msgstr ""
 
-#: inc/scripts.php:12
+#: inc/scripts.php:18
 msgid "open dropdown menu"
 msgstr ""
 
-#: inc/scripts.php:13
+#: inc/scripts.php:19
 msgid "close dropdown menu"
 msgstr ""
 
@@ -325,8 +339,8 @@ msgid "Next"
 msgstr ""
 
 #: search.php:9
-msgid "%d search result for \"%s\""
-msgid_plural "%d search results for \"%s\""
+msgid "%1$d search result for \"%2$s\""
+msgid_plural "%1$d search results for \"%2$s\""
 msgstr[0] ""
 msgstr[1] ""
 
@@ -372,10 +386,6 @@ msgstr ""
 
 #: theme-options.php:34
 msgid "Visit Support Center"
-msgstr ""
-
-#: theme-options.php:38
-msgid "Tribes Pro"
 msgstr ""
 
 #: theme-options.php:39

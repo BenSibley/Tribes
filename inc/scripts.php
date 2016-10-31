@@ -52,6 +52,9 @@ add_action( 'customize_controls_enqueue_scripts', 'ct_tribes_enqueue_customizer_
  */
 function ct_tribes_enqueue_customizer_post_message_scripts() {
 	wp_enqueue_script( 'ct-tribes-customizer-post-message-js', get_template_directory_uri() . '/js/build/postMessage.min.js', array( 'jquery' ), '', true );
+	wp_localize_script( 'ct-tribes-customizer-post-message-js', 'ct_tribes_postmessage', array(
+		'siteURL'       => esc_url( get_site_url() )
+	) );
 
 }
 add_action( 'customize_preview_init', 'ct_tribes_enqueue_customizer_post_message_scripts' );

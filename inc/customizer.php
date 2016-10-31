@@ -19,6 +19,7 @@ function ct_tribes_add_customizer_content( $wp_customize ) {
 
 	$wp_customize->get_setting( 'blogname' )->transport        = 'postMessage';
 	$wp_customize->get_setting( 'blogdescription' )->transport = 'postMessage';
+	$wp_customize->get_setting( 'custom_logo' )->transport     = 'postMessage';
 
 	/***** Tribes Pro Control *****/
 

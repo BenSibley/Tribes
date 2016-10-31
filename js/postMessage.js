@@ -17,6 +17,19 @@
         } );
     } );
 
+    // logo
+    wp.customize( 'custom_logo', function( value ) {
+        value.bind( function( to ) {
+            if ( to == '' ) {
+                var title = panel.find('#customize-control-blogname').find('input').val();
+                var link = '<a href="' + ct_tribes_postmessage.siteURL  + '">' + title + '</a>';
+                siteTitle.append(link);
+            } else {
+                siteTitle.empty();
+            }
+        } );
+    } );
+
     // Tagline
     wp.customize( 'blogdescription', function( value ) {
         value.bind( function( to ) {

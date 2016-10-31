@@ -1,23 +1,17 @@
 <?php
 
-$image = get_theme_mod( 'logo_upload' );
+$logo = get_theme_mod( 'custom_logo' );
 
-if ( $image ) {
-	$image_alt = get_post_meta( attachment_url_to_postid( $image ), '_wp_attachment_image_alt', true);
-	if ( empty( $image_alt ) ) {
-		$image_alt = get_bloginfo( 'name' );
-	}
-	$logo = "<span class='screen-reader-text'>" . esc_html( get_bloginfo( 'name' ) ) . "</span><img class='logo' src='" . esc_url( get_theme_mod( 'logo_upload' ) ) . "' alt='" . esc_attr( $image_alt ) . "' />";
-	$title_classes = 'class="site-title has-logo"';
+if ( $logo ) {
+	echo "<div id='site-title' class='site-title'>";
+		if ( function_exists( 'the_custom_logo' ) ) {
+			the_custom_logo();
+		}
+	echo "</div>";
 } else {
-	$logo = esc_html( get_bloginfo( 'name' ) );
-	$title_classes = 'class="site-title"';
+	echo "<div id='site-title' class='site-title'>";
+		echo "<a href='" . esc_url( home_url() ) . "'>";
+			bloginfo( 'name' );
+		echo "</a>";
+	echo "</div>";
 }
-
-$output = "<div id='site-title' " . $title_classes . ">";
-$output .= "<a href='" . esc_url( home_url() ) . "'>";
-$output .= $logo;
-$output .= "</a>";
-$output .= "</div>";
-
-echo $output;

@@ -32,6 +32,12 @@ if ( ! function_exists( ( 'ct_tribes_theme_setup' ) ) ) {
 			'footer'    => 'overflow-container',
 			'render'    => 'ct_tribes_infinite_scroll_render'
 		) );
+		add_theme_support( 'custom-logo', array(
+			'height'      => 50,
+			'width'       => 200,
+			'flex-height' => true,
+			'flex-width'  => true
+		) );
 
 		register_nav_menus( array(
 			'primary' => __( 'Primary', 'tribes' )

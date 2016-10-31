@@ -58,44 +58,6 @@ function ct_tribes_add_customizer_content( $wp_customize ) {
 			)
 		) );
 	}
-	
-	/***** Logo Upload *****/
-
-	// section
-	$wp_customize->add_section( 'ct_tribes_logo_upload', array(
-		'title'    => __( 'Logo', 'tribes' ),
-		'priority' => 20
-	) );
-	// Upload - setting
-	$wp_customize->add_setting( 'logo_upload', array(
-		'sanitize_callback' => 'esc_url_raw'
-	) );
-	// Upload - control
-	$wp_customize->add_control( new WP_Customize_Image_Control(
-		$wp_customize, 'logo_image', array(
-			'label'    => __( 'Upload custom logo.', 'tribes' ),
-			'section'  => 'ct_tribes_logo_upload',
-			'settings' => 'logo_upload'
-		)
-	) );
-	// Size - setting
-	$wp_customize->add_setting( 'logo_size', array(
-		'default'           => '168',
-		'sanitize_callback' => 'absint',
-		'transport'         => 'postMessage'
-	) );
-	// Size - control
-	$wp_customize->add_control( 'logo_size', array(
-		'label'    => __( 'Adjust the size of the logo', 'tribes' ),
-		'section'  => 'ct_tribes_logo_upload',
-		'settings' => 'logo_size',
-		'type'     => 'range',
-		'input_attrs' => array(
-			'min'  => 5,
-			'max'  => 750,
-			'step' => 1
-		)
-	) );
 
 	/***** Social Media Icons *****/
 

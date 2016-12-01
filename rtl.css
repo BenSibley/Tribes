@@ -1092,6 +1092,10 @@ body.menu-open {
   margin-top: 0;
 }
 
+.search .sticky-status {
+  display: none;
+}
+
 .single-attachment .attachment-container img {
   display: block;
 }

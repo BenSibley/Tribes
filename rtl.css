@@ -48,7 +48,7 @@ textarea, input[type="submit"], .sticky-status, .comment-footer span,
   color: #1A1A1A;
   text-decoration: none;
   -webkit-transition: color 0.2s ease;
-  transition: color 0.2s ease;
+          transition: color 0.2s ease;
 }
 .site-title a:link, .post-title a:link, .site-title a:visited, .post-title a:visited {
   color: #1A1A1A;
@@ -135,7 +135,7 @@ a {
   color: #924677;
   font-weight: 700;
   -webkit-transition: color 0.2s ease;
-  transition: color 0.2s ease;
+          transition: color 0.2s ease;
 }
 a:link, a:visited {
   color: #1A1A1A;
@@ -271,7 +271,7 @@ textarea {
   border-radius: 0;
   -webkit-appearance: none;
   -webkit-transition: background 0.2s ease;
-  transition: background 0.2s ease;
+          transition: background 0.2s ease;
 }
 input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):not([type="file"]):not([type="image"]):focus,
 textarea:focus {
@@ -296,7 +296,7 @@ input[type="submit"] {
   border-radius: 0;
   -webkit-appearance: none;
   -webkit-transition: background 0.2s ease;
-  transition: background 0.2s ease;
+          transition: background 0.2s ease;
   vertical-align: top;
 }
 input[type="submit"]:hover {
@@ -366,7 +366,7 @@ a img {
   padding: 1.5em;
   background: #924677;
   -webkit-transition: top 0.2s ease-in-out;
-  transition: top 0.2s ease-in-out;
+          transition: top 0.2s ease-in-out;
 }
 .skip-content:focus {
   top: 0;
@@ -398,7 +398,7 @@ a img {
   font-weight: 400;
   font-style: italic;
   -webkit-transition: background 0.2s ease;
-  transition: background 0.2s ease;
+          transition: background 0.2s ease;
 }
 .more-link:hover, .more-link:active, .more-link:focus {
   background: #AB528C;
@@ -651,7 +651,7 @@ li.pingback ol ol {
   margin: 36px auto;
   opacity: 0;
   -webkit-transition: opacity 0.3s ease;
-  transition: opacity 0.3s ease;
+          transition: opacity 0.3s ease;
 }
 
 .social-media-icons {
@@ -673,7 +673,7 @@ li.pingback ol ol {
   border: solid 1px white;
   border-radius: 50%;
   -webkit-transition: background 0.2s ease, border 0.2s ease;
-  transition: background 0.2s ease, border 0.2s ease;
+          transition: background 0.2s ease, border 0.2s ease;
 }
 .social-media-icons a:hover, .social-media-icons a:active, .social-media-icons a:focus {
   background: #783A62;
@@ -752,7 +752,7 @@ li.pingback ol ol {
 .toggle-navigation svg rect {
   opacity: 1;
   -webkit-transition: -webkit-transform 0.3s ease, opacity 0.3s ease, x 0.3s ease, y 0.3s ease, width 0.3s ease, height 0.3s ease;
-  transition: transform 0.3s ease, opacity 0.3s ease, x 0.3s ease, y 0.3s ease, width 0.3s ease, height 0.3s ease;
+          transition: transform 0.3s ease, opacity 0.3s ease, x 0.3s ease, y 0.3s ease, width 0.3s ease, height 0.3s ease;
 }
 .toggle-navigation.open svg g {
   fill: white;
@@ -782,7 +782,7 @@ li.pingback ol ol {
   margin: 0.75em;
   opacity: 0;
   -webkit-transition: margin 0.2s ease;
-  transition: margin 0.2s ease;
+          transition: margin 0.2s ease;
 }
 .menu-primary-container:after {
   content: '';
@@ -819,7 +819,7 @@ li.pingback ol ol {
   margin: 2.25em auto;
   opacity: 0;
   -webkit-transition: opacity 0.4s ease;
-  transition: opacity 0.4s ease;
+          transition: opacity 0.4s ease;
   /***** Tier 2 *****/
 }
 .menu-primary ul {
@@ -885,8 +885,7 @@ li.pingback ol ol {
 }
 .menu-primary li.open > button i {
   -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .toggle-dropdown {
@@ -901,7 +900,7 @@ li.pingback ol ol {
   margin: 0 8px 0 0;
   padding: 0;
   -webkit-transition: background 0.2s ease, border-color 0.2s ease;
-  transition: background 0.2s ease, border-color 0.2s ease;
+          transition: background 0.2s ease, border-color 0.2s ease;
 }
 .toggle-dropdown:hover {
   cursor: pointer;
@@ -964,7 +963,7 @@ body.menu-open {
   background: white;
   opacity: 0;
   -webkit-transition: opacity 0.1s ease-in-out;
-  transition: opacity 0.1s ease-in-out;
+          transition: opacity 0.1s ease-in-out;
 }
 .featured-image > a:focus:after {
   opacity: 0.2;
@@ -975,7 +974,8 @@ body.menu-open {
   right: 0;
   height: 100%;
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .featured-image > img.no-object-fit,
 .featured-image > a > img.no-object-fit {
@@ -989,8 +989,7 @@ body.menu-open {
   left: 50%;
   right: auto;
   -webkit-transform: translateX(50%) translateY(-50%);
-  -ms-transform: translateX(50%) translateY(-50%);
-  transform: translateX(50%) translateY(-50%);
+          transform: translateX(50%) translateY(-50%);
 }
 
 .entry {
@@ -1055,7 +1054,7 @@ body.menu-open {
   margin-left: 6px;
   font-weight: 400;
   -webkit-transition: background 0.2s ease;
-  transition: background 0.2s ease;
+          transition: background 0.2s ease;
 }
 .post-tags a:hover, .post-tags a:active, .post-tags a:focus {
   background: #AB528C;

@@ -26,15 +26,16 @@ function ct_tribes_add_customizer_content( $wp_customize ) {
 	class ct_tribes_pro_ad extends WP_Customize_Control {
 		public function render_content() {
 			$link = 'https://www.competethemes.com/tribes-pro/';
-			echo "<p class='bold'>" . sprintf( __('<a target="_blank" href="%s">Tribes Pro</a> is the plugin that makes advanced customization simple - and fun too.', 'tribes'), $link) . "</p>";
+			echo "<a href='" . $link . "' target='_blank'><img src='" . get_template_directory_uri() . "/assets/images/tribes-pro.png' srcset='" . get_template_directory_uri() . "/assets/images/tribes-pro-2x.png 2x' /></a>";
+			echo "<p class='bold'>" . sprintf( __('<a target="_blank" href="%s">Tribes Pro</a> is the plugin that makes advanced customization simple - and fun too!', 'tribes'), $link) . "</p>";
+			echo "<p>" . __('Tribes Pro adds the following features to Tribes:', 'tribes') . "</p>";
 			echo "<ul>
-					<li>" . __('Sidebar Layouts', 'tribes') . "</li>
-					<li>" . __('Custom Colors', 'tribes') . "</li>
-					<li>" . __('New Fonts', 'tribes') . "</li>
+					<li>" . __('7 new layouts', 'tribes') . "</li>
+					<li>" . __('Custom colors', 'tribes') . "</li>
+					<li>" . __('New fonts', 'tribes') . "</li>
 					<li>" . __('+ 9 more features', 'tribes') . "</li>
 				  </ul>";
-			echo "<p>" . __('Download the Tribes Pro Plugin to get started now.', 'tribes') . "</p>";
-			echo "<p class='button-wrapper'><a target=\"_blank\" class='tribes-pro-button' href='" . $link . "'>" . __('Get Tribes Pro', 'tribes') . "</a></p>";
+			echo "<p class='button-wrapper'><a target=\"_blank\" class='tribes-pro-button' href='" . $link . "'>" . __('View Tribes Pro', 'tribes') . "</a></p>";
 		}
 	}
 

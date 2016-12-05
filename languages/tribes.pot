@@ -2,9 +2,9 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Tribes 1.03\n"
+"Project-Id-Version: Tribes 1.04\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/support/theme/style\n"
-"POT-Creation-Date: 2016-10-31 12:29:10+00:00\n"
+"POT-Creation-Date: 2016-12-05 13:17:27+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -178,20 +178,24 @@ msgstr ""
 msgid "Continue reading"
 msgstr ""
 
-#: functions.php:323
+#: functions.php:331
 msgid "email"
 msgstr ""
 
-#: functions.php:365 header.php:24 inc/scripts.php:16
+#: functions.php:373 header.php:24 inc/scripts.php:16
 msgid "open menu"
 msgstr ""
 
-#: functions.php:378
+#: functions.php:386
 msgid "Featured"
 msgstr ""
 
-#: functions.php:439
-msgid "Customizer settings deleted"
+#: functions.php:448
+msgid "Customizer settings deleted."
+msgstr ""
+
+#: functions.php:454
+msgid "Tribes successfully activated!"
 msgstr ""
 
 #: header.php:14
@@ -202,119 +206,119 @@ msgstr ""
 msgid "Front Page"
 msgstr ""
 
-#: inc/customizer.php:29
+#: inc/customizer.php:30
 msgid ""
 "<a target=\"_blank\" href=\"%s\">Tribes Pro</a> is the plugin that makes "
-"advanced customization simple - and fun too."
+"advanced customization simple - and fun too!"
 msgstr ""
 
 #: inc/customizer.php:31
-msgid "Sidebar Layouts"
-msgstr ""
-
-#: inc/customizer.php:32
-msgid "Custom Colors"
+msgid "Tribes Pro adds the following features to Tribes:"
 msgstr ""
 
 #: inc/customizer.php:33
-msgid "New Fonts"
+msgid "7 new layouts"
 msgstr ""
 
 #: inc/customizer.php:34
-msgid "+ 9 more features"
+msgid "Custom colors"
+msgstr ""
+
+#: inc/customizer.php:35
+msgid "New fonts"
 msgstr ""
 
 #: inc/customizer.php:36
-msgid "Download the Tribes Pro Plugin to get started now."
+msgid "+ 9 more features"
 msgstr ""
 
-#: inc/customizer.php:37
-msgid "Get Tribes Pro"
+#: inc/customizer.php:38
+msgid "View Tribes Pro"
 msgstr ""
 
-#: inc/customizer.php:47 theme-options.php:38
+#: inc/customizer.php:48 theme-options.php:32
 msgid "Tribes Pro"
 msgstr ""
 
-#: inc/customizer.php:73
+#: inc/customizer.php:74
 msgid "Social Media Icons"
 msgstr ""
 
-#: inc/customizer.php:75
+#: inc/customizer.php:76
 msgid "Add the URL for each of your social profiles."
 msgstr ""
 
-#: inc/customizer.php:88
+#: inc/customizer.php:89
 msgid "Email Address"
 msgstr ""
 
-#: inc/customizer.php:137
+#: inc/customizer.php:138
 msgid ""
 "Accepts Skype link protocol (<a href=\"%s\" target=\"_blank\">learn "
 "more</a>)"
 msgstr ""
 
-#: inc/customizer.php:163
+#: inc/customizer.php:164
 msgid "Blog"
 msgstr ""
 
-#: inc/customizer.php:173
+#: inc/customizer.php:174
 msgid "Show full posts on blog?"
 msgstr ""
 
-#: inc/customizer.php:178 inc/customizer.php:297
+#: inc/customizer.php:179 inc/customizer.php:311
 msgid "Yes"
 msgstr ""
 
-#: inc/customizer.php:179 inc/customizer.php:298
+#: inc/customizer.php:180 inc/customizer.php:312
 msgid "No"
 msgstr ""
 
-#: inc/customizer.php:189
+#: inc/customizer.php:190
 msgid "Excerpt word count"
 msgstr ""
 
-#: inc/customizer.php:196
+#: inc/customizer.php:197
 msgid "Continue Reading"
 msgstr ""
 
-#: inc/customizer.php:201
+#: inc/customizer.php:202
 msgid "Read More button text"
 msgstr ""
 
-#: inc/customizer.php:211
+#: inc/customizer.php:212
 msgid "Display Controls"
 msgstr ""
 
-#: inc/customizer.php:213
+#: inc/customizer.php:214
 msgid ""
 "Want more options like these? Check out the <a target=\"_blank\" "
 "href=\"%s\"> Tribes Pro plugin</a>."
 msgstr ""
 
-#: inc/customizer.php:223
+#: inc/customizer.php:224
 msgid "Post author name in byline"
 msgstr ""
 
-#: inc/customizer.php:227 inc/customizer.php:243 inc/customizer.php:278
-#: inc/customizer.php:307
+#: inc/customizer.php:228 inc/customizer.php:244 inc/customizer.php:292
+#: inc/customizer.php:321
 msgid "Show"
 msgstr ""
 
-#: inc/customizer.php:228 inc/customizer.php:244 inc/customizer.php:279
-#: inc/customizer.php:308
+#: inc/customizer.php:229 inc/customizer.php:245 inc/customizer.php:293
+#: inc/customizer.php:322
 msgid "Hide"
 msgstr ""
 
-#: inc/customizer.php:239
+#: inc/customizer.php:240
 msgid "Post date in byline"
 msgstr ""
 
-#: inc/customizer.php:252
+#: inc/customizer.php:265
 msgid "Custom CSS"
 msgstr ""
 
-#: inc/customizer.php:263
+#: inc/customizer.php:276
 msgid "Add Custom CSS Here:"
 msgstr ""
 
@@ -360,71 +364,43 @@ msgstr ""
 msgid "Tribes Dashboard"
 msgstr ""
 
-#: theme-options.php:22
-msgid "Customization"
-msgstr ""
-
 #: theme-options.php:23
+msgid "Get Started"
+msgstr ""
+
+#: theme-options.php:24
 msgid ""
-"Click the \"Customize\" link in your menu, or use the button below to get "
-"started customizing Tribes"
+"Not sure where to start? The Tribes Support Center is filled with tutorials "
+"that will take you step-by-step through every feature in Tribes."
 msgstr ""
 
-#: theme-options.php:26
-msgid "Use Customizer"
-msgstr ""
-
-#: theme-options.php:30
-msgid "Support"
-msgstr ""
-
-#: theme-options.php:31
-msgid ""
-"You can find the knowledgebase, changelog, support forum, and more in the "
-"Tribes Support Center"
-msgstr ""
-
-#: theme-options.php:34
+#: theme-options.php:27
 msgid "Visit Support Center"
 msgstr ""
 
-#: theme-options.php:39
+#: theme-options.php:33
 msgid ""
 "Download the Tribes Pro plugin and unlock custom colors, new layouts, "
 "sliders, and more"
 msgstr ""
 
-#: theme-options.php:42
+#: theme-options.php:36
 msgid "See Full Feature List"
 msgstr ""
 
-#: theme-options.php:46
-msgid "WordPress Resources"
-msgstr ""
-
-#: theme-options.php:47
-msgid ""
-"Save time and money searching for WordPress products by following our "
-"recommendations"
-msgstr ""
-
-#: theme-options.php:50
-msgid "View Resources"
-msgstr ""
-
-#: theme-options.php:54 theme-options.php:56
+#: theme-options.php:41 theme-options.php:43
 msgid "Leave a Review"
 msgstr ""
 
-#: theme-options.php:55
+#: theme-options.php:42
 msgid "Help others find Tribes by leaving a review on wordpress.org."
 msgstr ""
 
-#: theme-options.php:59 theme-options.php:67
+#: theme-options.php:46 theme-options.php:54
 msgid "Reset Customizer Settings"
 msgstr ""
 
-#: theme-options.php:61
+#: theme-options.php:48
 msgid ""
 "<strong>Warning:</strong> Clicking this button will erase the Tribes "
 "theme's current settings in the <a href='%s'>Customizer</a>."
@@ -436,7 +412,7 @@ msgid ""
 "content-focused theme presents your posts beautifully across phones, "
 "tablets, computers – screens of all sizes. Improve your readership and "
 "highlight your images with a distraction-free minimalist design. It’s time "
-"to make your best content better. Grab a free copy of Tribes today, or see "
-"our fully-setup live demo here: "
-"https://www.competethemes.com/tribes-live-demo/"
+"to make your best content better. Preview on desktop, tablets, and mobile "
+"with our interactive live demo: "
+"https://www.competethemes.com/demos/?theme=tribes"
 msgstr ""

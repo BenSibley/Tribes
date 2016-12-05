@@ -40,7 +40,7 @@ function ct_tribes_options_content() {
 			<div class="content content-review">
 				<h3><?php _e( 'Leave a Review', 'tribes' ); ?></h3>
 				<p><?php _e( 'Help others find Tribes by leaving a review on wordpress.org.', 'tribes' ); ?></p>
-				<a target="_blank" class="button-primary" href="https://wordpress.org/support/view/theme-reviews/tribes"><?php _e( 'Leave a Review', 'tribes' ); ?></a>
+				<a target="_blank" class="button-primary" href="https://wordpress.org/support/theme/tribes/reviews/"><?php _e( 'Leave a Review', 'tribes' ); ?></a>
 			</div>
 			<div class="content content-delete-settings">
 				<h3><?php _e( 'Reset Customizer Settings', 'tribes' ); ?></h3>

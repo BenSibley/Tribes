@@ -991,6 +991,16 @@ body.menu-open {
   -webkit-transform: translateX(50%) translateY(-50%);
           transform: translateX(50%) translateY(-50%);
 }
+.featured-image .ccfic {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.7);
+  color: #eeeeee;
+  padding: 4px 8px;
+  font-size: 13px;
+}
 
 .entry {
   position: relative;

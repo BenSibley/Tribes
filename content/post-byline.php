@@ -12,7 +12,7 @@ if ( $author_display == 'hide' && $date_display == 'hide' ) {
 <div class="post-byline">
 	<?php if ( $author_display != 'hide' ) : ?>
 		<span class="post-author">
-			<span><?php _e( 'By', 'tribes' ); ?></span>
+			<span><?php _ex( 'By', 'blog post BY author name', 'tribes' ); ?></span>
 			<?php the_author(); ?>
 		</span>
 	<?php endif; ?>
@@ -21,7 +21,7 @@ if ( $author_display == 'hide' && $date_display == 'hide' ) {
 	        <span>
 				<?php
 				if ( $author_display != 'hide' ) {
-					_e( 'on', 'tribes' );
+					_ex( 'on', 'post published ON date', 'tribes' );
 				}
 				?>
 			</span>

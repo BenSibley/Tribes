@@ -116,6 +116,8 @@ function ct_tribes_add_customizer_content( $wp_customize ) {
 				$label = 'QQ';
 			} elseif ( $social_site == 'vk' ) {
 				$label = 'VK';
+			} elseif ( $social_site == 'google-wallet' ) {
+				$label = 'Google Wallet';
 			} elseif ( $social_site == 'wechat' ) {
 				$label = 'WeChat';
 			} elseif ( $social_site == 'tencent-weibo' ) {

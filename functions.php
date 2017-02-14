@@ -446,7 +446,7 @@ if ( ! function_exists( ( 'ct_tribes_delete_settings_notice' ) ) ) {
 			} else if ( $_GET['tribes_status'] == 'activated' ) {
 				?>
 				<div class="updated">
-					<p><?php _e( 'Tribes successfully activated!', 'tribes' ); ?></p>
+					<p><?php printf( __( '%s successfully activated!', 'tribes' ), wp_get_theme( get_template() ) ); ?></p>
 				</div>
 				<?php
 			}

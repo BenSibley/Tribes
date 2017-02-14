@@ -27,15 +27,15 @@ function ct_tribes_add_customizer_content( $wp_customize ) {
 		public function render_content() {
 			$link = 'https://www.competethemes.com/tribes-pro/';
 			echo "<a href='" . $link . "' target='_blank'><img src='" . get_template_directory_uri() . "/assets/images/tribes-pro.png' srcset='" . get_template_directory_uri() . "/assets/images/tribes-pro-2x.png 2x' /></a>";
-			echo "<p class='bold'>" . sprintf( __('<a target="_blank" href="%s">Tribes Pro</a> is the plugin that makes advanced customization simple - and fun too!', 'tribes'), $link) . "</p>";
-			echo "<p>" . __('Tribes Pro adds the following features to Tribes:', 'tribes') . "</p>";
+			echo "<p class='bold'>" . sprintf( __('<a target="_blank" href="%1$s">%2$s Pro</a> is the plugin that makes advanced customization simple - and fun too!', 'tribes'), $link, wp_get_theme( get_template() )) . "</p>";
+			echo "<p>" . sprintf( __('%1$s Pro adds the following features to %1$s:', 'tribes'), wp_get_theme( get_template() ) ) . "</p>";
 			echo "<ul>
 					<li>" . __('7 new layouts', 'tribes') . "</li>
 					<li>" . __('Custom colors', 'tribes') . "</li>
 					<li>" . __('New fonts', 'tribes') . "</li>
 					<li>" . __('+ 9 more features', 'tribes') . "</li>
 				  </ul>";
-			echo "<p class='button-wrapper'><a target=\"_blank\" class='tribes-pro-button' href='" . $link . "'>" . __('View Tribes Pro', 'tribes') . "</a></p>";
+			echo "<p class='button-wrapper'><a target=\"_blank\" class='tribes-pro-button' href='" . $link . "'>" . sprintf( __('View %s Pro', 'tribes'), wp_get_theme( get_template() ) ) . "</a></p>";
 		}
 	}
 
@@ -45,7 +45,7 @@ function ct_tribes_add_customizer_content( $wp_customize ) {
 	if ( !function_exists( 'ct_tribes_pro_init' ) ) {
 		// section
 		$wp_customize->add_section( 'ct_tribes_pro', array(
-			'title'    => __( 'Tribes Pro', 'tribes' ),
+			'title'    => sprintf( __( '%s Pro', 'tribes' ), wp_get_theme( get_template() ) ),
 			'priority' => 1
 		) );
 		// Upload - setting
@@ -211,7 +211,7 @@ function ct_tribes_add_customizer_content( $wp_customize ) {
 	$wp_customize->add_section( 'tribes_display', array(
 		'title'       => __( 'Display Controls', 'tribes' ),
 		'priority'    => 55,
-		'description' => sprintf( __( 'Want more options like these? Check out the <a target="_blank" href="%s"> Tribes Pro plugin</a>.', 'tribes' ), 'https://www.competethemes.com/tribes-pro/' )
+		'description' => sprintf( __( 'Want more options like these? Check out the <a target="_blank" href="%1$s"> %2$s Pro plugin</a>.', 'tribes' ), 'https://www.competethemes.com/tribes-pro/', wp_get_theme( get_template() ) )
 	) );
 	// setting - post author
 	$wp_customize->add_setting( 'display_post_author', array(

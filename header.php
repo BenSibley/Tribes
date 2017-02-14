@@ -21,7 +21,7 @@
 					<?php get_template_part( 'logo' ) ?>
 				</div>
 				<button id="toggle-navigation" class="toggle-navigation" name="toggle-navigation" aria-expanded="false">
-					<span class="screen-reader-text"><?php _e( 'open menu', 'tribes' ); ?></span>
+					<span class="screen-reader-text"><?php _ex( 'open menu', 'verb: open the menu', 'tribes' ); ?></span>
 					<?php echo ct_tribes_svg_output( 'toggle-navigation' ); ?>
 				</button>
 				<div id="menu-primary-container" class="menu-primary-container">

@@ -161,7 +161,7 @@ function ct_tribes_add_customizer_content( $wp_customize ) {
 
 	// section
 	$wp_customize->add_section( 'tribes_blog', array(
-		'title'    => __( 'Blog', 'tribes' ),
+		'title'    => _x( 'Blog', 'noun: Blog section', 'tribes' ),
 		'priority' => 45
 	) );
 	// setting

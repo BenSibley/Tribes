@@ -71,11 +71,11 @@ if ( ! function_exists( ( 'ct_tribes_customize_comments' ) ) ) {
 			<div class="comment-footer">
 				<span class="comment-date"><?php comment_date(); ?></span>
 				<?php comment_reply_link( array_merge( $args, array(
-					'reply_text' => __( 'Reply', 'tribes' ),
+					'reply_text' => _x( 'Reply', 'verb: Reply to this comment', 'tribes' ),
 					'depth'      => $depth,
 					'max_depth'  => $args['max_depth']
 				) ) ); ?>
-				<?php edit_comment_link( __( 'Edit', 'tribes' ) ); ?>
+				<?php edit_comment_link( _x( 'Edit', 'verb: Edit this comment', 'tribes' ) ); ?>
 			</div>
 		</article>
 		<?php
@@ -92,14 +92,14 @@ if ( ! function_exists( 'ct_tribes_update_fields' ) ) {
 
 		$fields['author'] =
 			'<p class="comment-form-author">
-	            <label for="author">' . __( "Name", "tribes" ) . $label . '</label>
+	            <label for="author">' . _x( "Name", "noun", "tribes" ) . $label . '</label>
 	            <input id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) .
 			'" size="30" ' . $aria_req . ' />
 	        </p>';
 
 		$fields['email'] =
 			'<p class="comment-form-email">
-	            <label for="email">' . __( "Email", "tribes" ) . $label . '</label>
+	            <label for="email">' . _x( "Email", "noun", "tribes" ) . $label . '</label>
 	            <input id="email" name="email" type="email" value="' . esc_attr( $commenter['comment_author_email'] ) .
 			'" size="30" ' . $aria_req . ' />
 	        </p>';
@@ -121,7 +121,7 @@ if ( ! function_exists( 'ct_tribes_update_comment_field' ) ) {
 
 		$comment_field =
 			'<p class="comment-form-comment">
-	            <label for="comment">' . __( "Comment", "tribes" ) . '</label>
+	            <label for="comment">' . _x( "Comment", "noun", "tribes" ) . '</label>
 	            <textarea required id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea>
 	        </p>';
 
@@ -323,7 +323,7 @@ if ( ! function_exists( 'ct_tribes_social_icons_output' ) ) {
 				if ( $active_site == 'email' ) { ?>
 					<a class="email" target="_blank"
 					   href="mailto:<?php echo antispambot( is_email( get_theme_mod( $key ) ) ); ?>">
-						<i class="fa fa-envelope" title="<?php esc_attr_e( 'email', 'tribes' ); ?>"></i>
+						<i class="fa fa-envelope" title="<?php echo esc_attr_x( 'email', 'noun', 'tribes' ); ?>"></i>
 					</a>
 				<?php } elseif ( $active_site == 'skype' ) { ?>
 					<a class="<?php echo esc_attr( $active_site ); ?>" target="_blank"
@@ -365,7 +365,7 @@ if ( ! function_exists( ( 'ct_tribes_nav_dropdown_buttons' ) ) ) {
 		if ( $args->theme_location == 'primary' ) {
 
 			if ( in_array( 'menu-item-has-children', $item->classes ) || in_array( 'page_item_has_children', $item->classes ) ) {
-				$item_output = str_replace( $args->link_after . '</a>', $args->link_after . '</a><button class="toggle-dropdown" aria-expanded="false" name="toggle-dropdown"><i class="fa fa-angle-down"></i><span class="screen-reader-text">' . __( "open menu", "tribes" ) . '</span></button>', $item_output );
+				$item_output = str_replace( $args->link_after . '</a>', $args->link_after . '</a><button class="toggle-dropdown" aria-expanded="false" name="toggle-dropdown"><i class="fa fa-angle-down"></i><span class="screen-reader-text">' . _x( "open menu", "verb: open the menu", "tribes" ) . '</span></button>', $item_output );
 			}
 		}
 

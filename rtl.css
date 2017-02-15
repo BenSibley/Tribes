@@ -1000,6 +1000,7 @@ body.menu-open {
   color: #eeeeee;
   padding: 4px 8px;
   font-size: 13px;
+  font-weight: 400;
 }
 
 .entry {

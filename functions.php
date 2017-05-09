@@ -276,6 +276,7 @@ if ( ! function_exists( 'ct_tribes_social_array' ) ) {
 			'yelp'          => 'tribes_yelp_profile',
 			'amazon'        => 'tribes_amazon_profile',
 			'google-wallet' => 'tribes_google_wallet_profile',
+			'twitch'        => 'tribes_twitch_profile',
 			'steam'         => 'tribes_steam_profile',
 			'vk'            => 'tribes_vk_profile',
 			'weibo'         => 'tribes_weibo_profile',

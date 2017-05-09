@@ -263,7 +263,7 @@ input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):not([type=
 textarea {
   width: 100%;
   font-family: "Open Sans", sans-serif;
-  padding: 8px 12px;
+  padding: 14px 12px;
   max-width: 27.75em;
   background: #F2F2F2;
   color: #1A1A1A;
@@ -287,7 +287,7 @@ textarea {
 
 input[type="submit"] {
   font-family: "Open Sans", sans-serif;
-  padding: 15px 12px;
+  padding: 15px 18px;
   min-width: 6em;
   color: white;
   background: #924677;

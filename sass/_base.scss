@@ -177,7 +177,7 @@ textarea {
   @extend %twelve-pixels;
   width: 100%;
   font-family: $primary-font-stack;
-  padding: 8px 12px;
+  padding: 14px 12px;
   max-width: $baseline-height * 10 * 1.85;
   background: $color-gray-95;
   color: $color-gray-10;
@@ -198,7 +198,7 @@ textarea {
 input[type="submit"] {
   @extend %twelve-pixels;
   font-family: $primary-font-stack;
-  padding: 15px 12px;
+  padding: 15px 18px;
   min-width: $baseline-height * 4;
   color: white;
   background: $color-purple;

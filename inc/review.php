@@ -109,8 +109,8 @@ if ( ! class_exists( 'WP_Review_Me' ) ) {
 				'type'       => '',
 				'slug'       => '',
 				'rating'     => 5,
-				'message'    => sprintf( esc_html__( 'Hey! It&#039;s been a little while that you&#039;ve been using this product. You might not realize it, but user reviews are such a great help to us. We would be so grateful if you could take a minute to leave a review on WordPress.org. Many thanks in advance :)', 'wp-review-me' ) ),
-				'link_label' => esc_html__( 'Click here to leave your review', 'wp-review-me' ),
+				'message'    => sprintf( esc_html( 'Hey! It&#039;s been a little while that you&#039;ve been using this product. You might not realize it, but user reviews are such a great help to us. We would be so grateful if you could take a minute to leave a review on WordPress.org. Many thanks in advance :)' ) ),
+				'link_label' => esc_html( 'Click here to leave your review', 'tribes' ),
 				// Parameters used in WP Dismissible Notices Handler
 				'cap'        => 'administrator',
 				'scope'      => 'global',
@@ -130,25 +130,11 @@ if ( ! class_exists( 'WP_Review_Me' ) ) {
 
 			// Make sure WordPress is compatible
 			if ( ! $this->is_wp_compatible() ) {
-				$this->spit_error(
-					sprintf(
-						esc_html__( 'The library can not be used because your version of WordPress is too old. You need version %s at least.', 'wp-review-me' ),
-						$this->wordpress_version_required
-					)
-				);
-
 				return;
 			}
 
 			// Make sure PHP is compatible
 			if ( ! $this->is_php_compatible() ) {
-				$this->spit_error(
-					sprintf(
-						esc_html__( 'The library can not be used because your version of PHP is too old. You need version %s at least.', 'wp-review-me' ),
-						$this->php_version_required
-					)
-				);
-
 				return;
 			}
 
@@ -164,7 +150,7 @@ if ( ! class_exists( 'WP_Review_Me' ) ) {
 				if ( ! function_exists( 'dnh_register_notice' ) ) {
 					$this->spit_error(
 						sprintf(
-							esc_html__( 'Dependencies are missing. Please run a %s.', 'wp-review-me' ),
+							esc_html( 'Dependencies are missing. Please run a %s.' ),
 							'<code>composer install</code>'
 						)
 					);
@@ -225,7 +211,7 @@ if ( ! class_exists( 'WP_Review_Me' ) ) {
 		protected function spit_error( $error ) {
 			printf(
 				'<div style="margin: 20px; text-align: center;"><strong>%1$s</strong> %2$s</pre></div>',
-				esc_html__( 'WP Review Me Error:', 'wp-review-me' ),
+				esc_html( 'WP Review Me Error:' ),
 				wp_kses_post( $error )
 			);
 		}

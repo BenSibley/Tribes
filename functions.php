@@ -10,7 +10,7 @@ new WP_Review_Me( array(
 	'days_after' => 14,
 	'type' => 'theme',
 	'slug' => 'tribes',
-	'message' => 'Hey! Sorry to interrupt, but you\'ve been using Tribes for a little while now. If you\'re happy with this theme, could you take a minute to leave a review? <i>You won\'t see this notice again after closing it.</i>'
+	'message' => __('Hey! Sorry to interrupt, but you\'ve been using Tribes for a little while now. If you\'re happy with this theme, could you take a minute to leave a review? <i>You won\'t see this notice again after closing it.</i>', 'tribes' )
 	)
 );
 

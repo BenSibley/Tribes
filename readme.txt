@@ -69,5 +69,6 @@ Tribes also uses:
 * Google Fonts, http://google.com/fonts, Copyright 2010, Google, open source licenses, see: https://developers.google.com/fonts/faq#Any_Page_OK.
 * Font Awesome, http://fontawesome.io/, Copyright 2011, Dave Gandy, MIT license, https://opensource.org/licenses/mit-license.html
 * WP Review Me, https://github.com/julien731/WP-Review-Me, Copyright 2016, Julien Liabeuf, GPL-2.0+, https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html
+* Dismissible Notices Handler, https://github.com/julien731/WP-Dismissible-Notices-Handler, Copyright 2016, Julien Liabeuf,  GPL-2.0+, https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html
 * City image in screenshot.png : CC0 by Kevin Young, https://images.unsplash.com/photo-1422393462206-207b0fbd8d6b?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=47c990a481bb8bf7a6d9816d4a3f65dc
 * Desk image in screenshot.png : CC0 by William Iven, https://images.unsplash.com/photo-1421757295538-9c80958e75b0?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=db57fba346c5cfa0a651bceaa4106cf4

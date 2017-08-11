@@ -445,6 +445,11 @@ a img {
   border-top: solid 1px #E6E6E6;
 }
 
+#disqus_thread {
+  padding: 2.25em 6.249% 1.5em;
+  border-top: solid 1px #E6E6E6;
+}
+
 .comments-number {
   margin-bottom: 2.25em;
 }
@@ -517,6 +522,10 @@ li.pingback ol ol {
 
 @media all and (min-width: 50em) {
   .comments {
+    padding: 3em 8.332% 1.5em;
+  }
+
+  #disqus_thread {
     padding: 3em 8.332% 1.5em;
   }
 

@@ -2,6 +2,10 @@
   padding: $baseline-height * 1.5 $column * 1.5 $baseline-height;
   border-top: solid 1px $color-gray-90;
 }
+#disqus_thread {
+  padding: $baseline-height * 1.5 $column * 1.5 $baseline-height;
+  border-top: solid 1px $color-gray-90;
+}
 .comments-number {
   margin-bottom: $baseline-height * 1.5;
 }
@@ -73,6 +77,9 @@ li.pingback {
 @media all and (min-width: $eight-hundred) {
 
   .comments {
+    padding: $baseline-height * 2 $column * 2 $baseline-height;
+  }
+  #disqus_thread {
     padding: $baseline-height * 2 $column * 2 $baseline-height;
   }
   .comments-number {

@@ -373,7 +373,7 @@ if ( ! class_exists( 'WP_Review_Me' ) ) {
 			// Get the DNH notice ID ready
 			$notice_id = DNH()->get_id( str_replace( 'wrm-review-link-', '', $id ) );
 			$dismissed = DNH()->dismiss_notice( $notice_id );
-			
+
 			echo $dismissed;
 
 			/**

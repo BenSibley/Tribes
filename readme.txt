@@ -3,7 +3,7 @@ Contributors: bensibley
 Tags: one-column, custom-logo, custom-menu, featured-images, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, blog, education, news
 Requires at least: 4.5
 Tested up to: 4.8
-Stable tag: 1.07
+Stable tag: 1.08
 
 Tribes is a theme for publishers with powerful messages.
 

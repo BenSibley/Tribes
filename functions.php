@@ -402,7 +402,7 @@ add_filter( 'walker_nav_menu_start_el', 'ct_tribes_nav_dropdown_buttons', 10, 4 
 if ( ! function_exists( ( 'ct_tribes_sticky_post_marker' ) ) ) {
 	function ct_tribes_sticky_post_marker() {
 
-		if ( is_sticky() && ! is_archive() ) {
+		if ( is_sticky() && !is_archive() && !is_search() ) {
 			echo '<div class="sticky-status"><span>' . __( "Featured", "tribes" ) . '</span></div>';
 		}
 	}

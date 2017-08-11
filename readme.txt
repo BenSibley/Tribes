@@ -1,6 +1,6 @@
 === Tribes ===
 Contributors: bensibley
-Tags: blog, education, photography, one-column, custom-menu, featured-images, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
+Tags: one-column, custom-logo, custom-menu, featured-images, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, blog, education, news
 Requires at least: 4.5
 Tested up to: 4.8
 Stable tag: 1.07
@@ -9,7 +9,7 @@ Tribes is a theme for publishers with powerful messages.
 
 == Description ==
 
-Tribes is a theme for publishers with powerful messages. This content-focused theme presents your posts beautifully across phones, tablets, computers – screens of all sizes. Improve your readership and highlight your images with a distraction-free minimalist design. It’s time to make your best content better.
+Tribes is a theme for publishers with powerful messages. This content-focused theme presents your posts beautifully across phones, tablets, and laptops thanks to its responsive design. Improve your readership and highlight your images with a distraction-free minimalist design. Tribes’ simple layout makes it great for blogging. Use it to write about business, food, music, or your personal travels. You can even publish a resume, podcast, or use it to showcase your photography.
 
 **Live Demo**
 

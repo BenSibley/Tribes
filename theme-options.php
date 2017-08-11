@@ -42,6 +42,11 @@ function ct_tribes_options_content() {
 				<p><?php printf( __( 'Help others find %s by leaving a review on wordpress.org.', 'tribes' ), wp_get_theme( get_template() ) ); ?></p>
 				<a target="_blank" class="button-primary" href="https://wordpress.org/support/theme/tribes/reviews/"><?php _e( 'Leave a Review', 'tribes' ); ?></a>
 			</div>
+			<div class="content content-presspad">
+				<h3><?php esc_html_e( 'Turn Tribes into a Mobile App', 'tribes' ); ?></h3>
+				<p><?php printf( esc_html__( '%s can be converted into a mobile app and listed on the App Store and Google Play Store with the help of PressPad News. Read our tutorial to learn more.', 'tribes' ), wp_get_theme( get_template() ) ); ?></p>
+				<a target="_blank" class="button-primary" href="https://www.competethemes.com/help/convert-mobile-app-tribes/"><?php esc_html_e( 'Read Tutorial', 'tribes' ); ?></a>
+			</div>
 			<div class="content content-delete-settings">
 				<h3><?php _e( 'Reset Customizer Settings', 'tribes' ); ?></h3>
 				<p>

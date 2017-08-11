@@ -222,6 +222,18 @@ if ( ! function_exists( 'ct_tribes_remove_more_link_scroll' ) ) {
 }
 add_filter( 'the_content_more_link', 'ct_tribes_remove_more_link_scroll' );
 
+// Yoast OG description has "Read the postContinue reading" due to its use of get_the_excerpt(). This fixes that.
+function ct_tribes_update_yoast_og_description( $ogdesc ) {
+	$read_more_text = get_theme_mod( 'read_more_text' );
+	if ( empty( $read_more_text ) ) {
+		$read_more_text = __( 'Continue reading', 'tribes' );
+	}
+	$ogdesc = substr( $ogdesc, 0, strpos( $ogdesc, $read_more_text ) );
+
+	return $ogdesc;
+}
+add_filter( 'wpseo_opengraph_desc', 'ct_tribes_update_yoast_og_description' );
+
 if ( ! function_exists( 'ct_tribes_featured_image' ) ) {
 	function ct_tribes_featured_image() {
 

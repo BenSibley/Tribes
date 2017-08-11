@@ -1,74 +1,41 @@
+=== Tribes ===
+Contributors: bensibley
+Tags: blog, education, photography, one-column, custom-menu, featured-images, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
+Requires at least: 4.5
+Tested up to: 4.8
+Stable tag: 1.07
 
-Thanks for downloading Tribes!
+Tribes is a theme for publishers with powerful messages.
 
--------------------------------------------------------
-    Support
--------------------------------------------------------
+== Description ==
 
-You can find tutorials and other support resources for Tribes in the Tribes Support Center:
-https://www.competethemes.com/documentation/tribes-support-center/
+Tribes is a theme for publishers with powerful messages. This content-focused theme presents your posts beautifully across phones, tablets, computers – screens of all sizes. Improve your readership and highlight your images with a distraction-free minimalist design. It’s time to make your best content better.
 
-Additional support resources:
+**Live Demo**
 
-Support forum: http://wordpress.org/support/theme/tribes
-Changelog: https://www.competethemes.com/tribes-changelog/
-Tribes on Github: https://github.com/BenSibley/tribes
+View a fully-setup live demo of Tribes here: [Live demo](https://www.competethemes.com/demos/?theme=tribes)
 
--------------------------------------------------------
-    Features
--------------------------------------------------------
+**Features**
 
-Tribes includes the following features:
+Tribes comes with the following features:
 
-    * Custom logo
-    * Logo sizing tool
-    * Social media icons
-    * Show full posts or excerpts
-    * Excerpt length control
-    * Custom 'read more' button text
-    * Hide/show post byline elements
-    * Easily customize with CSS
+* Custom logo
+* Over 50+ social media icons
+* Show full posts or excerpts
+* Excerpt length control
+* Custom 'read more' button text
+* Hide/show post byline elements
 
-Tribes also has a premium plugin upgrade called Tribes Pro that includes the following features:
+**Tribes Pro**
 
-    * Custom colors
-    * Featured sliders
-    * Featured videos
-    * Additional layouts
-    * Flexible header image
-    * Google fonts
-    * More widget areas
-    * Display controls
-    * Custom footer text
+Tribes also has an upgrade called [Tribes Pro](https://www.competethemes.com/tribes-pro/) that comes with the following features:
 
-Tribes Pro: https://www.competethemes.com/tribes-pro/
-
--------------------------------------------------------
-    Additional Info:
--------------------------------------------------------
-
-    * All menus in Tribes can have 1-3 tiers
-    * Featured Images have a 2x1 ratio at all screen sizes
-    * Tribes is child theme compatible. Download a starter child theme here:
-        https://www.competethemes.com/help/child-theme-tribes/
-
-
--------------------------------------------------------
-    Licenses:
--------------------------------------------------------
-
-Tribes WordPress Theme, Copyright 2016 Compete Themes
-Tribes is distributed under the terms of the GNU GPL
-
-License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-
-Tribes also uses:
-
-* Fitvids, https://github.com/davatron5000/FitVids.js/, Copyright 2011, Chris Coyier & Dave Rupert, WTFPL license, http://www.wtfpl.net/.
-* Google Fonts, http://google.com/fonts, Copyright 2010, Google, open source licenses, see: https://developers.google.com/fonts/faq#Any_Page_OK.
-* Font Awesome, http://fontawesome.io/, Copyright 2011, Dave Gandy, MIT license, https://opensource.org/licenses/mit-license.html
-* WP Review Me, https://github.com/julien731/WP-Review-Me, Copyright 2016, Julien Liabeuf, GPL-2.0+, https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html
-* Dismissible Notices Handler, https://github.com/julien731/WP-Dismissible-Notices-Handler, Copyright 2016, Julien Liabeuf,  GPL-2.0+, https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html
-* City image in screenshot.png : CC0 by Kevin Young, https://images.unsplash.com/photo-1422393462206-207b0fbd8d6b?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=47c990a481bb8bf7a6d9816d4a3f65dc
-* Desk image in screenshot.png : CC0 by William Iven, https://images.unsplash.com/photo-1421757295538-9c80958e75b0?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=db57fba346c5cfa0a651bceaa4106cf4
+* Custom colors
+* Featured sliders
+* Featured videos
+* Additional layouts
+* Flexible header image
+* Google fonts
+* More widget areas
+* Display controls
+* Custom footer text

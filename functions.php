@@ -285,6 +285,7 @@ if ( ! function_exists( 'ct_tribes_social_array' ) ) {
 			'deviantart'    => 'tribes_deviantart_profile',
 			'digg'          => 'tribes_digg_profile',
 			'github'        => 'tribes_github_profile',
+			'bitbucket'     => 'tribes_bitbucket_profile',
 			'hacker-news'   => 'tribes_hacker-news_profile',
 			'snapchat'      => 'tribes_snapchat_profile',
 			'bandcamp'      => 'tribes_bandcamp_profile',
@@ -638,3 +639,11 @@ if ( ! function_exists( 'ct_tribes_modify_archive_descriptions' ) ) {
 	}
 }
 add_filter( 'get_the_archive_description', 'ct_tribes_modify_archive_descriptions' );
+
+//----------------------------------------------------------------------------------
+// Registers an editor stylesheet
+//----------------------------------------------------------------------------------
+function ct_tribes_theme_add_editor_styles() {
+	add_editor_style( trailingslashit(get_template_directory_uri()) . 'styles/editor.css' );
+}
+add_action( 'admin_init', 'ct_tribes_theme_add_editor_styles' );

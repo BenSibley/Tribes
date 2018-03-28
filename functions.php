@@ -300,6 +300,7 @@ if ( ! function_exists( 'ct_tribes_social_array' ) ) {
 			'twitch'        => 'tribes_twitch_profile',
 			'steam'         => 'tribes_steam_profile',
 			'vk'            => 'tribes_vk_profile',
+			'ok-ru'         => 'tribes_ok_ru_profile',
 			'weibo'         => 'tribes_weibo_profile',
 			'tencent-weibo' => 'tribes_tencent_weibo_profile',
 			'500px'         => 'tribes_500px_profile',
@@ -340,6 +341,8 @@ if ( ! function_exists( 'ct_tribes_social_icons_output' ) ) {
 
 				if ( $active_site == 'email-form' ) {
 					$class = 'fa fa-envelope-o';
+				} elseif ( $active_site == 'ok-ru' ) {
+					$class = 'fa fa-odnoklassniki';
 				} else {
 					$class = 'fa fa-' . $active_site;
 				}

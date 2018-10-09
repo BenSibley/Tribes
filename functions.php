@@ -297,6 +297,7 @@ if ( ! function_exists( 'ct_tribes_social_array' ) ) {
 			'delicious'     => 'tribes_delicious_profile',
 			'stumbleupon'   => 'tribes_stumbleupon_profile',
 			'deviantart'    => 'tribes_deviantart_profile',
+			'discrod'    		=> 'tribes_discord_profile',
 			'digg'          => 'tribes_digg_profile',
 			'github'        => 'tribes_github_profile',
 			'bitbucket'     => 'tribes_bitbucket_profile',

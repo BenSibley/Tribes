@@ -329,6 +329,7 @@ if ( ! function_exists( 'ct_tribes_social_array' ) ) {
 			'xing'          => 'tribes_xing_profile',
 			'paypal'        => 'tribes_paypal_profile',
 			'email'         => 'tribes_email_profile',
+			'phone'					=> 'tribes_phone_profile',
 			'email-form'    => 'tribes_email_form_profile'
 		);
 
@@ -381,6 +382,12 @@ if ( ! function_exists( 'ct_tribes_social_icons_output' ) ) {
 					   href="<?php echo esc_url( get_theme_mod( $key ), array( 'http', 'https', 'skype' ) ); ?>">
 						<i class="<?php echo esc_attr( $class ); ?>"
 						   title="<?php echo esc_attr( $active_site ); ?>"></i>
+					</a>
+				<?php } elseif ( $active_site == 'phone' ) { ?>
+					<a class="<?php echo esc_attr( $active_site ); ?>" target="_blank"
+							href="<?php echo esc_url( get_theme_mod( $active_site ), array( 'tel' ) ); ?>">
+						<i class="<?php echo esc_attr( $class ); ?>"></i>
+						<span class="screen-reader-text"><?php echo esc_html( $active_site );  ?></span>
 					</a>
 				<?php } else { ?>
 					<a class="<?php echo esc_attr( $active_site ); ?>" target="_blank"
@@ -681,3 +688,11 @@ function ct_tribes_scroll_to_top_arrow() {
 	}
 }
 add_action( 'ct_tribes_body_bottom', 'ct_tribes_scroll_to_top_arrow');
+
+function ct_tribes_sanitize_phone( $input ) {
+	if ( $input != '' ) {
+		return esc_url_raw( 'tel:' . $input, array( 'tel' ) );
+	} else {
+		return '';
+	}
+}

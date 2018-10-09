@@ -381,3 +381,11 @@ function ct_tribes_sanitize_css( $css ) {
 
 	return $css;
 }
+
+function ct_tribes_sanitize_phone( $input ) {
+	if ( $input != '' ) {
+		return esc_url_raw( 'tel:' . $input, array( 'tel' ) );
+	} else {
+		return '';
+	}
+}

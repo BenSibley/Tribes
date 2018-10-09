@@ -697,11 +697,3 @@ function ct_tribes_scroll_to_top_arrow() {
 	}
 }
 add_action( 'ct_tribes_body_bottom', 'ct_tribes_scroll_to_top_arrow');
-
-function ct_tribes_sanitize_phone( $input ) {
-	if ( $input != '' ) {
-		return esc_url_raw( 'tel:' . $input, array( 'tel' ) );
-	} else {
-		return '';
-	}
-}

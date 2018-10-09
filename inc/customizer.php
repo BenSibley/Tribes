@@ -95,39 +95,39 @@ function ct_tribes_add_customizer_content( $wp_customize ) {
 			$label = ucfirst( $social_site );
 
 			if ( $social_site == 'google-plus' ) {
-				$label = 'Google Plus';
+				$label = __('Google Plus', 'tribes');
 			} elseif ( $social_site == 'rss' ) {
-				$label = 'RSS';
+				$label = __('RSS', 'tribes');
 			} elseif ( $social_site == 'soundcloud' ) {
-				$label = 'SoundCloud';
+				$label = __('SoundCloud', 'tribes');
 			} elseif ( $social_site == 'slideshare' ) {
-				$label = 'SlideShare';
+				$label = __('SlideShare', 'tribes');
 			} elseif ( $social_site == 'codepen' ) {
-				$label = 'CodePen';
+				$label = __('CodePen', 'tribes');
 			} elseif ( $social_site == 'stumbleupon' ) {
-				$label = 'StumbleUpon';
+				$label = __('StumbleUpon', 'tribes');
 			} elseif ( $social_site == 'deviantart' ) {
-				$label = 'DeviantArt';
+				$label = __('DeviantArt', 'tribes');
 			} elseif ( $social_site == 'hacker-news' ) {
-				$label = 'Hacker News';
+				$label = __('Hacker News', 'tribes');
 			} elseif ( $social_site == 'whatsapp' ) {
-				$label = 'WhatsApp';
+				$label = __('WhatsApp', 'tribes');
 			} elseif ( $social_site == 'qq' ) {
-				$label = 'QQ';
+				$label = __('QQ', 'tribes');
 			} elseif ( $social_site == 'vk' ) {
-				$label = 'VK';
+				$label = __('VK', 'tribes');
 			} elseif ( $social_site == 'ok-ru' ) {
-				$label = 'OK.ru';
+				$label = __('OK.ru', 'tribes');
 			} elseif ( $social_site == 'google-wallet' ) {
-				$label = 'Google Wallet';
+				$label = __('Google Wallet', 'tribes');
 			} elseif ( $social_site == 'wechat' ) {
-				$label = 'WeChat';
+				$label = __('WeChat', 'tribes');
 			} elseif ( $social_site == 'tencent-weibo' ) {
-				$label = 'Tencent Weibo';
+				$label = __('Tencent Weibo', 'tribes');
 			} elseif ( $social_site == 'paypal' ) {
-				$label = 'PayPal';
+				$label = __('PayPal', 'tribes');
 			} elseif ( $social_site == 'email-form' ) {
-				$label = 'Contact Form';
+				$label = __('Contact Form', 'tribes');
 			}
 
 			if ( $social_site == 'skype' ) {

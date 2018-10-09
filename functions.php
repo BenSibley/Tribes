@@ -661,3 +661,15 @@ function ct_tribes_theme_add_editor_styles() {
 	add_editor_style( trailingslashit(get_template_directory_uri()) . 'styles/editor.css' );
 }
 add_action( 'admin_init', 'ct_tribes_theme_add_editor_styles' );
+
+//----------------------------------------------------------------------------------
+// Output the markup for the optional scroll-to-top arrow 
+//----------------------------------------------------------------------------------
+function ct_tribes_scroll_to_top_arrow() {
+	$setting = get_theme_mod('scroll_to_top');
+	
+	if ( $setting == 'yes' ) {
+		echo '<button id="scroll-to-top" class="scroll-to-top"><span class="screen-reader-text">'. esc_html__('Scroll to the top', 'tribes') .'</span><i class="fas fa-arrow-up"></i></button>';
+	}
+}
+add_action( 'ct_tribes_body_bottom', 'ct_tribes_scroll_to_top_arrow');

@@ -138,6 +138,8 @@ function ct_tribes_add_customizer_content( $wp_customize ) {
 				$label = __('Tencent Weibo', 'tribes');
 			} elseif ( $social_site == 'paypal' ) {
 				$label = __('PayPal', 'tribes');
+			} elseif ( $social_site == 'stack-overflow' ) {
+				$label = __('Stack Overflow', 'tribes');
 			} elseif ( $social_site == 'email-form' ) {
 				$label = __('Contact Form', 'tribes');
 			}

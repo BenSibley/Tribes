@@ -314,6 +314,7 @@ if ( ! function_exists( 'ct_tribes_social_array' ) ) {
 			'amazon'        => 'tribes_amazon_profile',
 			'google-wallet' => 'tribes_google_wallet_profile',
 			'twitch'        => 'tribes_twitch_profile',
+			'stack-overflow' => 'tribes_stack_overflow_profile',
 			'steam'         => 'tribes_steam_profile',
 			'vk'            => 'tribes_vk_profile',
 			'ok-ru'         => 'tribes_ok_ru_profile',

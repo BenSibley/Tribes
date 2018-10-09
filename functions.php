@@ -307,6 +307,7 @@ if ( ! function_exists( 'ct_tribes_social_array' ) ) {
 			'etsy'          => 'tribes_etsy_profile',
 			'quora'         => 'tribes_quora_profile',
 			'ravelry'       => 'tribes_ravelry_profile',
+			'medium'        => 'tribes_medium_profile',
 			'meetup'        => 'tribes_meetup_profile',
 			'mixcloud'      => 'tribes_mixcloud_profile',
 			'telegram'      => 'tribes_telegram_profile',

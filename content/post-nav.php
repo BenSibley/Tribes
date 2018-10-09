@@ -3,10 +3,10 @@
 global $post;
 
 $previous_post = get_adjacent_post( false, '', true );
-$previous_text = __( 'Previous Post', 'tribes' );
+$previous_text = esc_html__( 'Previous Post', 'tribes' );
 
 if ( $previous_post == '' ) {
-	$previous_text  = __( 'No Older Posts', 'tribes' );
+	$previous_text  = esc_html__( 'No Older Posts', 'tribes' );
 	if ( get_option( 'show_on_front' ) == 'page' ) {
 		$previous_url = esc_url( get_permalink( get_option( 'page_for_posts' ) ) );
 	} else {
@@ -16,10 +16,10 @@ if ( $previous_post == '' ) {
 }
 
 $next_post  = get_adjacent_post( false, '', false );
-$next_text  = __( 'Next Post', 'tribes' );
+$next_text  = esc_html__( 'Next Post', 'tribes' );
 
 if ( $next_post == '' ) {
-	$next_text  = __( 'No Newer Posts', 'tribes' );
+	$next_text  = esc_html__( 'No Newer Posts', 'tribes' );
 	if ( get_option( 'show_on_front' ) == 'page' ) {
 		$next_url = esc_url( get_permalink( get_option( 'page_for_posts' ) ) );
 	} else {

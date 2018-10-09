@@ -11,7 +11,7 @@
 
 <body id="<?php print get_stylesheet(); ?>" <?php body_class(); ?>>
 <?php do_action( 'ct_tribes_body_top' ); ?>
-<a class="skip-content" href="#main"><?php _e( 'Press "Enter" to skip to content', 'tribes' ); ?></a>
+<a class="skip-content" href="#main"><?php esc_html_e( 'Press "Enter" to skip to content', 'tribes' ); ?></a>
 <div id="overflow-container" class="overflow-container">
 	<div id="theme-container" class="theme-container">
 		<div id="max-width" class="max-width">
@@ -21,7 +21,7 @@
 					<?php get_template_part( 'logo' ) ?>
 				</div>
 				<button id="toggle-navigation" class="toggle-navigation" name="toggle-navigation" aria-expanded="false">
-					<span class="screen-reader-text"><?php _ex( 'open menu', 'verb: open the menu', 'tribes' ); ?></span>
+					<span class="screen-reader-text"><?php echo esc_html_x( 'open menu', 'verb: open the menu', 'tribes' ); ?></span>
 					<?php echo ct_tribes_svg_output( 'toggle-navigation' ); ?>
 				</button>
 				<div id="menu-primary-container" class="menu-primary-container">

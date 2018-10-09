@@ -123,10 +123,10 @@ jQuery(document).ready(function($){
     }
 
     /* allow keyboard access/visibility for dropdown menu items */
-    menuLink.focus(function(){
+    menuLink.on('focus', function(){
         $(this).parents('ul').addClass('focused');
     });
-    menuLink.focusout(function(){
+    menuLink.on('focusout', function(){
         $(this).parents('ul').removeClass('focused');
     });
 

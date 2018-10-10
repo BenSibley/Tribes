@@ -24,7 +24,7 @@ function ct_tribes_options_content() {
 				<p><?php printf( __( 'Not sure where to start? The <strong>%1$s Getting Started Guide</strong> will take you step-by-step through every feature in %1$s.', 'tribes' ), wp_get_theme( get_template() ) ); ?></p>
 				<p>
 					<a target="_blank" class="button-primary"
-					   href="https://www.competethemes.com/documentation/tribes-support-center/"><?php esc_html_e( 'Visit Support Center', 'tribes' ); ?></a>
+					   href="https://www.competethemes.com/help/getting-started-tribes/"><?php esc_html_e( 'View Guide', 'tribes' ); ?></a>
 				</p>
 			</div>
 			<?php if ( !function_exists( 'ct_tribes_pro_init' ) ) : ?>

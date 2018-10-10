@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 	<div class="entry">
 		<article>
-			<div class="post-padding-container">
+			<div class="post-container">
 				<div class='post-header'>
 					<h1 class='post-title'><?php esc_html_e('404: Page Not Found', 'tribes'); ?></h1>
 				</div>

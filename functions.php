@@ -432,7 +432,7 @@ if ( ! function_exists( ( 'ct_tribes_nav_dropdown_buttons' ) ) ) {
 		if ( $args->theme_location == 'primary' ) {
 
 			if ( in_array( 'menu-item-has-children', $item->classes ) || in_array( 'page_item_has_children', $item->classes ) ) {
-				$item_output = str_replace( $args->link_after . '</a>', $args->link_after . '</a><button class="toggle-dropdown" aria-expanded="false" name="toggle-dropdown"><i class="fa fa-angle-down"></i><span class="screen-reader-text">' . esc_html_x( "open menu", "verb: open the menu", "tribes" ) . '</span></button>', $item_output );
+				$item_output = str_replace( $args->link_after . '</a>', $args->link_after . '</a><button class="toggle-dropdown" aria-expanded="false" name="toggle-dropdown"><i class="fas fa-angle-down"></i><span class="screen-reader-text">' . esc_html_x( "open menu", "verb: open the menu", "tribes" ) . '</span></button>', $item_output );
 			}
 		}
 

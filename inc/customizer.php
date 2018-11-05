@@ -21,46 +21,6 @@ function ct_tribes_add_customizer_content( $wp_customize ) {
 	$wp_customize->get_setting( 'blogdescription' )->transport = 'postMessage';
 	$wp_customize->get_setting( 'custom_logo' )->transport     = 'postMessage';
 
-	/***** Tribes Pro Control *****/
-
-	class ct_tribes_pro_ad extends WP_Customize_Control {
-		public function render_content() {
-			$link = 'https://www.competethemes.com/tribes-pro/';
-			echo "<a href='" . $link . "' target='_blank'><img src='" . get_template_directory_uri() . "/assets/images/tribes-pro.gif' /></a>";
-			echo "<p class='bold'>" . sprintf( __('<a target="_blank" href="%1$s">%2$s Pro</a> is the plugin that makes advanced customization simple - and fun too!', 'tribes'), $link, wp_get_theme( get_template() )) . "</p>";
-			echo "<p>" . sprintf( __('%1$s Pro adds the following features to %1$s:', 'tribes'), wp_get_theme( get_template() ) ) . "</p>";
-			echo "<ul>
-					<li>" . __('7 new layouts', 'tribes') . "</li>
-					<li>" . __('Custom colors', 'tribes') . "</li>
-					<li>" . __('New fonts', 'tribes') . "</li>
-					<li>" . __('+ 9 more features', 'tribes') . "</li>
-				  </ul>";
-			echo "<p class='button-wrapper'><a target=\"_blank\" class='tribes-pro-button' href='" . $link . "'>" . sprintf( __('View %s Pro', 'tribes'), wp_get_theme( get_template() ) ) . "</a></p>";
-		}
-	}
-
-	/***** Tribes Pro Section *****/
-
-	// don't add if Tribes Pro is active
-	if ( !function_exists( 'ct_tribes_pro_init' ) ) {
-		// section
-		$wp_customize->add_section( 'ct_tribes_pro', array(
-			'title'    => sprintf( __( '%s Pro', 'tribes' ), wp_get_theme( get_template() ) ),
-			'priority' => 1
-		) );
-		// Upload - setting
-		$wp_customize->add_setting( 'tribes_pro', array(
-			'sanitize_callback' => 'absint'
-		) );
-		// Upload - control
-		$wp_customize->add_control( new ct_tribes_pro_ad(
-			$wp_customize, 'tribes_pro', array(
-				'section'  => 'ct_tribes_pro',
-				'settings' => 'tribes_pro'
-			)
-		) );
-	}
-
 	/***** Social Media Icons *****/
 
 	// get the social sites array
@@ -389,3 +349,12 @@ function ct_tribes_sanitize_phone( $input ) {
 		return '';
 	}
 }
+
+function ct_tribes_customize_preview_js() {
+	if ( !function_exists( 'ct_tribes_pro_init' ) ) {
+		$url = 'https://www.competethemes.com/tribes-pro/?utm_source=wp-dashboard&utm_medium=Customizer&utm_campaign=Tribes%20Pro%20-%20Customizer';
+		$content = "<script>jQuery('#customize-info').prepend('<div class=\"upgrades-ad\"><a href=\"". $url ."\" target=\"_blank\">Customize Colors with Tribes Pro <span>&rarr;</span></a></div>')</script>";
+		echo apply_filters('ct_tribes_customizer_ad', $content);
+	}
+}
+add_action('customize_controls_print_footer_scripts', 'ct_tribes_customize_preview_js');

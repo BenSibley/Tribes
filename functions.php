@@ -311,6 +311,7 @@ if ( ! function_exists( 'ct_tribes_social_array' ) ) {
 			'meetup'        => 'tribes_meetup_profile',
 			'mixcloud'      => 'tribes_mixcloud_profile',
 			'ok-ru'         => 'tribes_ok_ru_profile',
+			'patreon'       => 'tribes_patreon_profile',
 			'paypal'        => 'tribes_paypal_profile',
 			'podcast'       => 'tribes_podcast_profile',
 			'qq'            => 'tribes_qq_profile',

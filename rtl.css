@@ -1143,6 +1143,23 @@ body.menu-open {
   margin: 1.5em 0;
 }
 
+.wp-block-image.alignfull,
+.wp-block-cover {
+  position: relative;
+  right: -7%;
+  width: 114%;
+  max-width: none;
+}
+
+.wp-block-quote.is-large {
+  padding-right: 0;
+  border-right: none;
+}
+
+.wp-block-embed {
+  margin: 1.5em 0;
+}
+
 @media all and (min-width: 50em) {
   .post-container {
     padding: 2.25em 8.332% 1.5em;
@@ -1153,6 +1170,19 @@ body.menu-open {
     /* 28px / 16px */
     line-height: 1.357;
     /* 38px */
+  }
+
+  .wp-block-image.alignfull,
+  .wp-block-cover {
+    right: -10%;
+    width: 120%;
+  }
+
+  .wp-block-image.alignwide {
+    position: relative;
+    right: -7%;
+    width: 114%;
+    max-width: none;
   }
 }
 .search-form-container {

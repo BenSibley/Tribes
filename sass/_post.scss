@@ -155,6 +155,22 @@
   }
 }
 
+// New Gutenberg blocks
+.wp-block-image.alignfull,
+.wp-block-cover {
+  position: relative;
+  left: -7%;
+  width: 114%;
+  max-width: none;
+}
+.wp-block-quote.is-large {
+  padding-left: 0;
+  border-left: none;
+}
+.wp-block-embed {
+  margin: $baseline-height 0;
+}
+
 @media all and (min-width: $eight-hundred) {
 
   .post-container {
@@ -163,5 +179,17 @@
   .post-title {
     font-size: 1.75em; /* 28px / 16px */
     line-height: 1.357; /* 38px */
+  }
+
+  .wp-block-image.alignfull,
+  .wp-block-cover {
+    left: -10%;
+    width: 120%;
+  }
+  .wp-block-image.alignwide {
+    position: relative;
+    left: -7%;
+    width: 114%;
+    max-width: none;
   }
 }

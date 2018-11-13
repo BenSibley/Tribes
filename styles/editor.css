@@ -382,6 +382,22 @@ body {
   color: #1A1A1A;
 }
 
+.has-small-font-size {
+  font-size: 12px;
+}
+
+.has-regular-font-size {
+  font-size: 16px;
+}
+
+.has-large-font-size {
+  font-size: 28px;
+}
+
+.has-extra-large-font-size {
+  font-size: 38px;
+}
+
 @media all and (min-width: 50em) {
   .mce-content-body {
     margin: 12px auto;

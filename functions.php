@@ -59,6 +59,7 @@ if ( ! function_exists( ( 'ct_tribes_theme_setup' ) ) ) {
 
 		// Add WooCommerce support
 		add_theme_support( 'woocommerce' );
+
 		// Add support for WooCommerce image gallery features
 		add_theme_support( 'wc-product-gallery-zoom' );
 		add_theme_support( 'wc-product-gallery-lightbox' );
@@ -67,8 +68,37 @@ if ( ! function_exists( ( 'ct_tribes_theme_setup' ) ) ) {
 		// Gutenberg - wide & full images
 		add_theme_support( 'align-wide' );
 		add_theme_support( 'align-full' );
+
 		// Gutenberg - load editor stylesheet
 		add_theme_support('editor-styles');
+
+		// Gutenberg - modify the font sizes
+		add_theme_support( 'editor-font-sizes', array(
+			array(
+					'name' => __( 'small', 'tribes' ),
+					'shortName' => __( 'S', 'tribes' ),
+					'size' => 12,
+					'slug' => 'small'
+			),
+			array(
+					'name' => __( 'regular', 'tribes' ),
+					'shortName' => __( 'M', 'tribes' ),
+					'size' => 16,
+					'slug' => 'regular'
+			),
+			array(
+					'name' => __( 'large', 'tribes' ),
+					'shortName' => __( 'L', 'tribes' ),
+					'size' => 28,
+					'slug' => 'large'
+			),
+			array(
+					'name' => __( 'larger', 'tribes' ),
+					'shortName' => __( 'XL', 'tribes' ),
+					'size' => 38,
+					'slug' => 'larger'
+			)
+	) );
 
 		load_theme_textdomain( 'tribes', get_template_directory() . '/languages' );
 	}

@@ -10,9 +10,40 @@
   -webkit-font-smoothing: subpixel-antialiased !important;
 }
 
+// Gutenberg
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  background: white;
+}
+.wp-block-quote {
+  border-left: solid 3px $color-purple !important;
+}
+.wp-block-quote.is-large {
+  padding-left: 0;
+  border-left: none !important;
+}
+.wp-block {
+  max-width: 650px;
+}
+.wp-block[data-align="wide"],
+.wp-block[data-align="full"] {
+  max-width: none;
+}
+.editor-post-title textarea {
+  @extend %twenty-one-pixels;
+  font-family: $primary-font-stack;
+  font-weight: 700;
+  color: $color-gray-10;
+}
+
 @media all and (min-width: $eight-hundred) {
 
   .mce-content-body {
     margin: 12px auto;
+  }
+  .editor-post-title textarea {
+    font-size: 1.75em; /* 28px / 16px */
+    line-height: 1.357; /* 38px */
   }
 }

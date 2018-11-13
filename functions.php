@@ -67,6 +67,8 @@ if ( ! function_exists( ( 'ct_tribes_theme_setup' ) ) ) {
 		// Gutenberg - wide & full images
 		add_theme_support( 'align-wide' );
 		add_theme_support( 'align-full' );
+		// Gutenberg - load editor stylesheet
+		add_theme_support('editor-styles');
 
 		load_theme_textdomain( 'tribes', get_template_directory() . '/languages' );
 	}

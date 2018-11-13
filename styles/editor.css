@@ -11,7 +11,7 @@ h1 {
   /* 38px */
 }
 
-h2 {
+h2, .editor-post-title textarea {
   font-size: 1.3125em;
   /* 21px / 16px */
   line-height: 1.143;
@@ -352,8 +352,45 @@ a img {
   -webkit-font-smoothing: subpixel-antialiased !important;
 }
 
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  background: white;
+}
+
+.wp-block-quote {
+  border-left: solid 3px #924677 !important;
+}
+
+.wp-block-quote.is-large {
+  padding-left: 0;
+  border-left: none !important;
+}
+
+.wp-block {
+  max-width: 650px;
+}
+
+.wp-block[data-align="wide"],
+.wp-block[data-align="full"] {
+  max-width: none;
+}
+
+.editor-post-title textarea {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  color: #1A1A1A;
+}
+
 @media all and (min-width: 50em) {
   .mce-content-body {
     margin: 12px auto;
+  }
+
+  .editor-post-title textarea {
+    font-size: 1.75em;
+    /* 28px / 16px */
+    line-height: 1.357;
+    /* 38px */
   }
 }

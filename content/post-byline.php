@@ -26,7 +26,7 @@ if ( $author_display == 'hide' && $date_display == 'hide' ) {
 				?>
 			</span>
 		    <?php
-			$date = date_i18n( get_option( 'date_format' ), strtotime( get_the_date( 'r' ) ) );
+			$date = date_i18n( get_option( 'date_format' ), strtotime( get_the_date( 'c' ) ) );
 			echo $date;
 			?>
 		</span>

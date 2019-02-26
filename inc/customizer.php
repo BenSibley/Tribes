@@ -224,6 +224,30 @@ function ct_tribes_add_customizer_content( $wp_customize ) {
 		)
 	) );
 
+	/***** Additional Options  *****/
+
+	// section
+	$wp_customize->add_section( 'ct_tribes_additional_options', array(
+		'title'    => __( 'Additional Options', 'tribes' ),
+		'priority' => 75
+	) );
+	// setting - last updated
+	$wp_customize->add_setting( 'last_updated', array(
+		'default'           => 'no',
+		'sanitize_callback' => 'ct_tribes_sanitize_yes_no_settings'
+	) );
+	// control - last updated
+	$wp_customize->add_control( 'last_updated', array(
+		'label'    => __( 'Display the date each post was last updated?', 'tribes' ),
+		'section'  => 'ct_tribes_additional_options',
+		'settings' => 'last_updated',
+		'type'     => 'radio',
+		'choices'  => array(
+			'yes' => __( 'Yes', 'tribes' ),
+			'no'  => __( 'No', 'tribes' )
+		)
+	) );
+
 	/***** Scroll-to-stop Arrow  *****/
 
 	// section

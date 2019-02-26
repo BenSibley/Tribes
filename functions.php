@@ -735,3 +735,22 @@ function ct_tribes_scroll_to_top_arrow() {
 	}
 }
 add_action( 'ct_tribes_body_bottom', 'ct_tribes_scroll_to_top_arrow');
+
+//----------------------------------------------------------------------------------
+// Output the "Last Updated" date on posts
+//----------------------------------------------------------------------------------
+function ct_tribes_output_last_updated_date() {
+	
+	global $post;
+
+	if ( get_the_modified_date() != get_the_date() ) {
+		$updated_post = get_post_meta( $post->ID, 'ct_tribes_last_updated', true );
+		$updated_customizer = get_theme_mod( 'last_updated' );
+		if ( 
+			( $updated_customizer == 'yes' && ($updated_post != 'no') )
+			|| $updated_post == 'yes' 
+			) {
+				echo '<p class="last-updated">'. esc_html__("Last updated on", "tribes") . ' ' . get_the_modified_date() . ' </p>';
+			}
+	}
+}

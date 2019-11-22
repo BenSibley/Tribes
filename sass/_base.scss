@@ -156,6 +156,9 @@ th {
 
 /* Images */
 
+.wp-block-image {
+  margin: 0;
+}
 .alignleft {
   float: left;
   margin: 0 $baseline-height $baseline-height 0;
@@ -181,15 +184,25 @@ img,
 .size-full,
 .size-large,
 .size-medium,
-.size-thumbnail {
+.size-thumbnail,
+.wp-block-image {
   max-width: 100%;
   height: auto;
+
+  figcaption {
+    @extend %twelve-pixels;
+    margin: 3px 0 0 0;
+    color: $color-gray-10;
+    text-align: center;
+  }
 }
 .wp-caption-text,
-.gallery-caption {
+.gallery-caption,
+.wp-caption-dd {
   @extend %twelve-pixels;
-  margin: 0 0 $baseline-height / 0.813;
-  color: $color-gray-30;
+  margin: 3px 0 0 0;
+  color: $color-gray-10;
+  text-align: center;
 }
 
 /* Form styles */

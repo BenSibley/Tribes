@@ -520,6 +520,10 @@ a img {
   display: inline-block;
 }
 
+.comment-reply-title {
+  font-weight: 700;
+}
+
 .comments {
   padding: 2.25em 6.249% 1.5em;
   border-top: solid 1px #E6E6E6;

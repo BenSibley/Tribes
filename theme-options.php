@@ -1,7 +1,13 @@
 <?php
 
 function ct_tribes_register_theme_page() {
-	add_theme_page( sprintf( esc_html__( '%s Dashboard', 'tribes' ), wp_get_theme() ), sprintf( esc_html__( '%s Dashboard', 'tribes' ), wp_get_theme() ), 'edit_theme_options', 'tribes-options', 'ct_tribes_options_content', 'ct_tribes_options_content' );
+	add_theme_page( 
+		sprintf( esc_html__( '%s Dashboard', 'tribes' ), wp_get_theme() ), 
+		sprintf( esc_html__( '%s Dashboard', 'tribes' ), wp_get_theme() ), 
+		'edit_theme_options', 
+		'tribes-options', 
+		'ct_tribes_options_content'
+	);
 }
 add_action( 'admin_menu', 'ct_tribes_register_theme_page' );
 

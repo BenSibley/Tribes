@@ -8,6 +8,9 @@
   .form-submit {
     margin-top: $baseline-height * 1.5;
   }
+  .comment-form-cookies-consent label {
+    display: inline-block;
+  }
 }
 .comment-reply-title {
   @extend %twenty-one-pixels;

@@ -4,8 +4,9 @@
 function ct_tribes_load_scripts_styles() {
 
 	$font_args = array(
-		'family' => urlencode( 'Open Sans:400,400italic,700|Damion:400' ),
-		'subset' => urlencode( 'latin,latin-ext' )
+		'family' 	=> urlencode( 'Open Sans:400,400italic,700|Damion:400' ),
+		'subset' 	=> urlencode( 'latin,latin-ext' ),
+		'display' => 'swap'
 	);
 	$fonts_url = add_query_arg( $font_args, '//fonts.googleapis.com/css' );
 	wp_enqueue_style( 'ct-tribes-google-fonts', $fonts_url );

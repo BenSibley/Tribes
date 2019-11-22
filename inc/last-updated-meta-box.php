@@ -25,7 +25,7 @@ function ct_tribes_last_updated_callback( $post ) {
 
   ?>
 	<p>
-		<select name="tribes-last-updated" id="tribes-last-updated" class="widefat">
+		<select name="tribes-last-updated" id="tribes-last-updated" style="box-sizing: border-box; width: 100%;">
 			<option value="default"><?php esc_html_e( 'Use Customizer setting', 'tribes' ); ?></option>
 			<option value="yes" <?php if ( $display == 'yes' ) {
 				echo 'selected';

@@ -100,6 +100,8 @@ function ct_tribes_add_customizer_content( $wp_customize ) {
 				$label = __('PayPal', 'tribes');
 			} elseif ( $social_site == 'stack-overflow' ) {
 				$label = __('Stack Overflow', 'tribes');
+			} elseif ( $social_site == 'artstation' ) {
+				$label = __('ArtStation', 'tribes');
 			} elseif ( $social_site == 'email-form' ) {
 				$label = __('Contact Form', 'tribes');
 			}

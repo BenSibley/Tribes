@@ -328,6 +328,7 @@ if ( ! function_exists( 'ct_tribes_social_array' ) ) {
 			'phone'					=> 'tribes_phone_profile',
 			'email-form'    => 'tribes_email_form_profile',
 			'amazon'        => 'tribes_amazon_profile',
+			'artstation'    => 'tribes_artstation_profile',
 			'bandcamp'      => 'tribes_bandcamp_profile',
 			'behance'       => 'tribes_behance_profile',
 			'bitbucket'     => 'tribes_bitbucket_profile',

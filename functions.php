@@ -553,12 +553,6 @@ if ( ! function_exists( ( 'ct_tribes_delete_settings_notice' ) ) ) {
 					<p><?php esc_html_e( 'Customizer settings deleted.', 'tribes' ); ?></p>
 				</div>
 				<?php
-			} else if ( $_GET['tribes_status'] == 'activated' ) {
-				?>
-				<div class="updated">
-					<p><?php printf( esc_html__( '%s successfully activated!', 'tribes' ), wp_get_theme( get_template() ) ); ?></p>
-				</div>
-				<?php
 			}
 		}
 	}
@@ -691,20 +685,6 @@ if ( ! function_exists( ( 'ct_tribes_allow_skype_protocol' ) ) ) {
 	}
 }
 add_filter( 'kses_allowed_protocols' , 'ct_tribes_allow_skype_protocol' );
-
-// trigger theme switch on link click and send to Appearance menu
-function ct_tribes_welcome_redirect() {
-
-	$welcome_url = add_query_arg(
-		array(
-			'page'          => 'tribes-options',
-			'tribes_status' => 'activated'
-		),
-		admin_url( 'themes.php' )
-	);
-	wp_safe_redirect( esc_url_raw( $welcome_url ) );
-}
-add_action( 'after_switch_theme', 'ct_tribes_welcome_redirect' );
 
 //----------------------------------------------------------------------------------
 // Add paragraph tags for author bio displayed in content/archive-header.php.

@@ -192,7 +192,7 @@ if ( ! function_exists( 'ct_tribes_update_comment_field' ) ) {
 		return $comment_field;
 	}
 }
-add_filter( 'comment_form_field_comment', 'ct_tribes_update_comment_field' );
+add_filter( 'comment_form_field_comment', 'ct_tribes_update_comment_field', 7 );
 
 if ( ! function_exists( 'ct_tribes_remove_comments_notes_after' ) ) {
 	function ct_tribes_remove_comments_notes_after( $defaults ) {

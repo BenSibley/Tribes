@@ -173,6 +173,14 @@
 .wp-block-embed {
   margin: $baseline-height 0;
 }
+.wp-block-button a {
+  color: #fff;
+
+  &:link,
+  &:visited {
+    color: #fff;
+  }
+}
 
 @media all and (min-width: $eight-hundred) {
 

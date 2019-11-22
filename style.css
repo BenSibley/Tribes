@@ -1184,6 +1184,13 @@ body.menu-open {
   margin: 1.5em 0;
 }
 
+.wp-block-button a {
+  color: #fff;
+}
+.wp-block-button a:link, .wp-block-button a:visited {
+  color: #fff;
+}
+
 @media all and (min-width: 50em) {
   .post-container {
     padding: 2.25em 8.332% 1.5em;

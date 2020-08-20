@@ -370,6 +370,7 @@ if ( ! function_exists( 'ct_tribes_social_array' ) ) {
 			'tencent-weibo' => 'tribes_tencent_weibo_profile',
 			'tumblr'        => 'tribes_tumblr_profile',
 			'twitch'        => 'tribes_twitch_profile',
+			'untappd'       => 'tribes_untappd_profile',
 			'vimeo'         => 'tribes_vimeo_profile',
 			'vine'          => 'tribes_vine_profile',
 			'vk'            => 'tribes_vk_profile',

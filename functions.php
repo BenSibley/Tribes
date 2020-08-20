@@ -346,7 +346,6 @@ if ( ! function_exists( 'ct_tribes_social_array' ) ) {
 			'foursquare'    => 'tribes_foursquare_profile',
 			'github'        => 'tribes_github_profile',
 			'goodreads'   	=> 'tribes_goodreads_profile',
-			'google-plus'   => 'tribes_googleplus_profile',
 			'google-wallet' => 'tribes_google_wallet_profile',
 			'hacker-news'   => 'tribes_hacker-news_profile',
 			'medium'        => 'tribes_medium_profile',

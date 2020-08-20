@@ -16,6 +16,10 @@
 	<div id="theme-container" class="theme-container">
 		<div id="max-width" class="max-width">
 			<?php do_action( 'ct_tribes_before_header' ); ?>
+			<?php
+			// Elementor `header` location
+			if ( ! function_exists( 'elementor_theme_do_location' ) || ! elementor_theme_do_location( 'header' ) ) :
+			?>
 			<header class="site-header" id="site-header" role="banner">
 				<div id="title-container" class="title-container">
 					<?php get_template_part( 'logo' ) ?>
@@ -37,6 +41,7 @@
 					</div>
 				</div>
 			</header>
+			<?php endif; ?>
 			<?php do_action( 'ct_tribes_after_header' ); ?>
 			<section id="main" class="main" role="main">
 				<?php do_action( 'ct_tribes_main_top' );

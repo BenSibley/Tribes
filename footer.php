@@ -3,6 +3,10 @@
 
 <?php do_action( 'ct_tribes_after_main' ); ?>
 
+<?php 
+// Elementor `footer` location
+if ( ! function_exists( 'elementor_theme_do_location' ) || ! elementor_theme_do_location( 'footer' ) ) :
+?>
 <footer id="site-footer" class="site-footer" role="contentinfo">
     <?php do_action( 'ct_tribes_footer_top' ); ?>
     <div class="design-credit">
@@ -15,6 +19,7 @@
         </span>
     </div>
 </footer>
+<?php endif; ?>
 </div><!-- .max-width -->
 </div><!-- .theme-container -->
 </div><!-- .overflow-container -->

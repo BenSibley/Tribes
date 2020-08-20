@@ -39,10 +39,6 @@ module.exports = function(grunt) {
         },
         sass: {
             dist: {
-                options: {
-                    style: 'expanded',
-                    sourcemap: 'none'
-                },
                 files: {
                     'style.css': 'sass/style.scss',
                     'styles/customizer.css': 'sass/customizer.scss',
@@ -120,7 +116,7 @@ module.exports = function(grunt) {
                     'rm -R /Users/bensibley/Documents/compete-themes/dist/tribes || true',
                     'rm -R /Users/bensibley/Documents/compete-themes/dist/tribes.zip || true',
                     // copy folder without any project/meta files
-                    'rsync -r "/Users/bensibley/Local Sites/tribes/app/public/wp-content/themes/tribes" /Users/bensibley/Documents/compete-themes/dist/ <%= excludeFiles %>',
+                    'rsync -r "/Users/bensibley/Sites/tribes/wp-content/themes/tribes" /Users/bensibley/Documents/compete-themes/dist/ <%= excludeFiles %>',
                     // open dist
                     'cd /Users/bensibley/Documents/compete-themes/dist/',
                     // zip the tribes folder

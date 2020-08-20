@@ -374,7 +374,7 @@ function ct_tribes_sanitize_phone( $input ) {
 }
 
 function ct_tribes_customize_preview_js() {
-	if ( !function_exists( 'ct_tribes_pro_init' ) ) {
+	if ( !function_exists( 'ct_tribes_pro_init' ) && !(isset($_GET['mailoptin_optin_campaign_id']) || isset($_GET['mailoptin_email_campaign_id'])) ) {
 		$url = 'https://www.competethemes.com/tribes-pro/?utm_source=wp-dashboard&utm_medium=Customizer&utm_campaign=Tribes%20Pro%20-%20Customizer';
 		$content = "<script>jQuery('#customize-info').prepend('<div class=\"upgrades-ad\"><a href=\"". $url ."\" target=\"_blank\">Customize Colors with Tribes Pro <span>&rarr;</span></a></div>')</script>";
 		echo apply_filters('ct_tribes_customizer_ad', $content);

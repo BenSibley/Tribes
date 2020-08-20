@@ -27,14 +27,24 @@ h1 {
   /* 38px */
 }
 
-h2, .comment-reply-title, .site-title, .tagline, .social-media-icons a {
+.social-media-icons a, .tagline, .site-title, .comment-reply-title, h2 {
   font-size: 1.3125em;
   /* 21px / 16px */
   line-height: 1.143;
   /* 24px */
 }
 
-img figcaption,
+.single-attachment .attachment-caption, .further-reading span, .post-tags a, .post-byline span, .site-footer .design-credit, .comment-footer span,
+.comment-footer a, .sticky-status, input[type=submit], input[type=text],
+input[type=email],
+input[type=password],
+input[type=number],
+input[type=search],
+input[type=tel],
+input[type=url],
+textarea, .wp-caption-text,
+.gallery-caption,
+.wp-caption-dd, img figcaption,
 .alignright figcaption,
 .alignleft figcaption,
 .aligncenter figcaption,
@@ -44,17 +54,7 @@ img figcaption,
 .size-large figcaption,
 .size-medium figcaption,
 .size-thumbnail figcaption,
-.wp-block-image figcaption, .wp-caption-text,
-.gallery-caption,
-.wp-caption-dd, input[type="text"],
-input[type="email"],
-input[type="password"],
-input[type="number"],
-input[type="search"],
-input[type="tel"],
-input[type="url"],
-textarea, input[type="submit"], .sticky-status, .comment-footer span,
-.comment-footer a, .site-footer .design-credit, .post-byline span, .post-tags a, .further-reading span, .single-attachment .attachment-caption {
+.wp-block-image figcaption {
   font-size: 0.75em;
   /* 12px / 16px */
   line-height: 1.5;
@@ -66,35 +66,35 @@ textarea, input[type="submit"], .sticky-status, .comment-footer span,
   letter-spacing: 0.05em;
 }
 
-.site-title a, .post-title a {
+.post-title a, .site-title a {
   color: #1A1A1A;
   text-decoration: none;
   -webkit-transition: color 0.2s ease;
           transition: color 0.2s ease;
 }
-.site-title a:link, .post-title a:link, .site-title a:visited, .post-title a:visited {
+.post-title a:link, .site-title a:link, .post-title a:visited, .site-title a:visited {
   color: #1A1A1A;
 }
-.site-title a:hover, .post-title a:hover, .site-title a:active, .post-title a:active, .site-title a:focus, .post-title a:focus {
+.post-title a:hover, .site-title a:hover, .post-title a:active, .site-title a:active, .post-title a:focus, .site-title a:focus {
   color: #4D4D4D;
 }
 
-.more-link, .social-media-icons a, .menu-primary a, .post-tags a {
+.post-tags a, .menu-primary a, .social-media-icons a, .more-link {
   color: white;
   text-decoration: none;
 }
-.more-link:link, .social-media-icons a:link, .menu-primary a:link, .post-tags a:link, .more-link:visited, .social-media-icons a:visited, .menu-primary a:visited, .post-tags a:visited, .more-link:hover, .social-media-icons a:hover, .menu-primary a:hover, .post-tags a:hover, .more-link:active, .social-media-icons a:active, .menu-primary a:active, .post-tags a:active, .more-link:focus, .social-media-icons a:focus, .menu-primary a:focus, .post-tags a:focus {
+.post-tags a:link, .menu-primary a:link, .social-media-icons a:link, .more-link:link, .post-tags a:visited, .menu-primary a:visited, .social-media-icons a:visited, .more-link:visited, .post-tags a:hover, .menu-primary a:hover, .social-media-icons a:hover, .more-link:hover, .post-tags a:active, .menu-primary a:active, .social-media-icons a:active, .more-link:active, .post-tags a:focus, .menu-primary a:focus, .social-media-icons a:focus, .more-link:focus {
   color: white;
 }
 
-.archive-header, .site-header, .pagination, .search-header, .search-bottom {
+.search-bottom, .search-header, .pagination, .site-header, .archive-header {
   background: white;
   padding: 1.5em 6.249%;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
 }
 
 @media all and (min-width: 50em) {
-  .archive-header, .site-header, .pagination, .search-header, .search-bottom {
+  .search-bottom, .search-header, .pagination, .site-header, .archive-header {
     background: white;
     padding: 1.5em 8.332%;
   }
@@ -212,6 +212,10 @@ code {
   padding: 0 0.375em;
 }
 
+pre code {
+  padding: 0;
+}
+
 blockquote {
   margin: 1.5em 0 1.5em 1.5em;
   padding-right: 1.5em;
@@ -323,13 +327,13 @@ img figcaption,
 }
 
 /* Form styles */
-input[type="text"],
-input[type="email"],
-input[type="password"],
-input[type="number"],
-input[type="search"],
-input[type="tel"],
-input[type="url"],
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=number],
+input[type=search],
+input[type=tel],
+input[type=url],
 textarea {
   width: 100%;
   font-family: "Open Sans", sans-serif;
@@ -343,13 +347,13 @@ textarea {
   -webkit-transition: background 0.2s ease;
           transition: background 0.2s ease;
 }
-input[type="text"]:focus,
-input[type="email"]:focus,
-input[type="password"]:focus,
-input[type="number"]:focus,
-input[type="search"]:focus,
-input[type="tel"]:focus,
-input[type="url"]:focus,
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=password]:focus,
+input[type=number]:focus,
+input[type=search]:focus,
+input[type=tel]:focus,
+input[type=url]:focus,
 textarea:focus {
   outline: none;
   background: white;
@@ -361,7 +365,7 @@ textarea {
   /* to hide scrollbar in IE */
 }
 
-input[type="submit"] {
+input[type=submit] {
   font-family: "Open Sans", sans-serif;
   padding: 15px 18px;
   min-width: 6em;
@@ -375,14 +379,14 @@ input[type="submit"] {
           transition: background 0.2s ease;
   vertical-align: top;
 }
-input[type="submit"]:hover {
+input[type=submit]:hover {
   cursor: pointer;
 }
-input[type="submit"]:hover, input[type="submit"]:active, input[type="submit"]:focus {
+input[type=submit]:hover, input[type=submit]:active, input[type=submit]:focus {
   background: #AB528C;
 }
 
-input[type="search"] {
+input[type=search] {
   padding-left: 0.375em;
   /* so safari 'x' doesn't get cut off */
 }
@@ -480,7 +484,7 @@ a img {
   background: #AB528C;
 }
 .more-link:after {
-  content: '\f101';
+  content: "";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   margin-right: 4px;
@@ -623,7 +627,6 @@ li.pingback ol ol {
   margin-top: 3em;
   clear: both;
 }
-
 .scroll-to-top {
   position: fixed;
   bottom: -45px;
@@ -832,14 +835,14 @@ li.pingback ol ol {
   left: 6.249%;
 }
 .pagination .next:after {
-  content: '\00BB';
+  content: "»";
   margin-right: 4px;
 }
 .pagination .prev {
   right: 6.249%;
 }
 .pagination .prev:before {
-  content: '\00AB';
+  content: "«";
   margin-left: 4px;
 }
 
@@ -909,7 +912,7 @@ li.pingback ol ol {
           transition: margin 0.2s ease;
 }
 .menu-primary-container:after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -960,7 +963,7 @@ li.pingback ol ol {
   position: relative;
 }
 .menu-primary li.current-menu-item > a:before, .menu-primary li.current-menu-item > a:after, .menu-primary li.current_page_item > a:before, .menu-primary li.current_page_item > a:after {
-  content: '';
+  content: "";
   position: absolute;
   top: 10px;
   width: 12px;
@@ -1078,7 +1081,7 @@ body.menu-open {
   font-size: 0;
 }
 .featured-image > a:after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -1244,7 +1247,7 @@ body.menu-open {
   }
 
   .wp-block-image.alignfull,
-  .wp-block-cover {
+.wp-block-cover {
     right: -10%;
     width: 120%;
   }
@@ -1378,7 +1381,7 @@ body.menu-open {
   width: 49% !important;
   padding: 10px 12px;
 }
-.woocommerce-cart .coupon input[type="text"] {
+.woocommerce-cart .coupon input[type=text] {
   font-size: 14px !important;
   padding: 7px 12px 8px !important;
 }

@@ -54,7 +54,7 @@ textarea, .wp-caption-text,
 .size-large figcaption,
 .size-medium figcaption,
 .size-thumbnail figcaption,
-.wp-block-image figcaption {
+.wp-block-image figcaption, .wp-block-table figcaption {
   font-size: 0.75em;
   /* 12px / 16px */
   line-height: 1.5;
@@ -253,6 +253,11 @@ th {
 .wp-block-table td,
 .wp-block-table th {
   border-color: #E6E6E6;
+}
+.wp-block-table figcaption {
+  margin: -18px 0 0 0;
+  color: #1A1A1A;
+  text-align: center;
 }
 
 .wp-block-table.is-style-stripes thead {

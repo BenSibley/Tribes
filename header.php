@@ -11,6 +11,12 @@
 
 <body id="<?php print get_stylesheet(); ?>" <?php body_class(); ?>>
 <?php do_action( 'ct_tribes_body_top' ); ?>
+<?php 
+if ( function_exists( 'wp_body_open' ) ) {
+			wp_body_open();
+	} else {
+			do_action( 'wp_body_open' );
+} ?>
 <a class="skip-content" href="#main"><?php esc_html_e( 'Press "Enter" to skip to content', 'tribes' ); ?></a>
 <div id="overflow-container" class="overflow-container">
 	<div id="theme-container" class="theme-container">

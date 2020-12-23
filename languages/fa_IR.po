@@ -1,0 +1,539 @@
+# Copyright (C) 2020 Compete Themes
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Tribes 1.16\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/support/theme/style\n"
+"POT-Creation-Date: 2020-08-21 14:41:37+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2020-10-10 17:57+0330\n"
+"Language-Team: \n"
+"X-Generator: Poedit 2.4.1\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=2; plural=(n==0 || n==1);\n"
+"Language: fa_IR\n"
+
+#: 404.php:6
+msgid "404: Page Not Found"
+msgstr "خطای 404: صفحه مورد نظر پیدا نشد"
+
+#: 404.php:9
+msgid ""
+"Looks like nothing was found on this url.  Double-check that the url is "
+"correct or try the search form below to find what you were looking for."
+msgstr ""
+"به نظر می رسد که این url مقصدی ندارد. مجددا بررسی کنید که لینک صحیح باشد و "
+"یا برای پیدا کردن مطلب مورد نظر خود از گزینه جستجوی سایت استفاده کنید."
+
+#: comments.php:10
+msgid "Be First to Comment"
+msgstr "اولین نظر را شما بدهید"
+
+#: comments.php:10
+msgid "One Comment"
+msgstr "یک نظر"
+
+#. translators: placeholder is link to the trackback URL
+#: comments.php:32
+msgid ""
+"Comments are closed, but <a href=\"%s\" title=\"Trackback URL for this post"
+"\">trackbacks</a> and pingbacks are open."
+msgstr ""
+"نظردهی بسته شده است، اما می توانید از <a href=\"%s\" title=\"Trackback URL "
+"for this post\">سیر گذشته</a> و تاریخچه قبلی استفاده کنید."
+
+#: comments.php:37
+msgid "Comments are closed."
+msgstr "نظر دهی بسته شده است."
+
+#: content/comments-link.php:2
+msgid "comment icon"
+msgstr "آیکون نظر"
+
+#: content/comments-link.php:5
+msgid "Comments closed"
+msgstr "کامنت  بسته است"
+
+#: content/comments-link.php:5 content/comments-link.php:8
+msgid "1 Comment"
+msgstr "1 نظر"
+
+#: content/comments-link.php:5 content/comments-link.php:8
+msgid "% Comments"
+msgstr "% نظر"
+
+#: content/comments-link.php:8
+msgid "Leave a Comment"
+msgstr "نظر بدهید"
+
+#: content/post-nav-attachment.php:3
+msgid "Previous Image"
+msgstr "تصویر قبلی"
+
+#: content/post-nav-attachment.php:6
+msgid "Next Image"
+msgstr "تصویر بعدی"
+
+#: content/post-nav.php:6
+msgid "Previous Post"
+msgstr "پست قبلی"
+
+#: content/post-nav.php:9
+msgid "No Older Posts"
+msgstr "پست قدیمی تر ندارد"
+
+#: content/post-nav.php:15 content/post-nav.php:28
+msgid "Return to Blog"
+msgstr "برگشت به وبلاگ"
+
+#: content/post-nav.php:19
+msgid "Next Post"
+msgstr "پست بعدی"
+
+#: content/post-nav.php:22
+msgid "No Newer Posts"
+msgstr "پست جدیدتر ندارد"
+
+#: content/post-tags.php:8
+msgid "View all posts tagged %s"
+msgstr "مشاهده تمامی پست های دارای برچسب %s"
+
+#: content/search-bar.php:11 searchform.php:3
+msgid "Search"
+msgstr "جستجو"
+
+#: content/search-bar.php:12
+msgid "Search..."
+msgstr "جستجو..."
+
+#: content/search-bar.php:13 searchform.php:5
+msgid "Search for:"
+msgstr "جستجو برای:"
+
+#: content-page.php:12 content.php:14
+msgid "Pages:"
+msgstr "صفحات:"
+
+#: footer.php:15
+msgid "<a href=\"%1$s\">%2$s WordPress Theme</a> by Compete Themes."
+msgstr "<a href=\"%1$s\">%2$s قالب وردپرس</a> توسط کامپت تم."
+
+#: functions.php:19
+msgid ""
+"Hey! Sorry to interrupt, but you've been using Tribes for a little while "
+"now. If you're happy with this theme, could you take a minute to leave a "
+"review? <i>You won't see this notice again after closing it.</i>"
+msgstr ""
+"سلام، از وقفه پیش آمده متاسفیم، اما شما چندوقت است که از قالب ترایب استفاده "
+"می کنید. اگر از قالب راضی هستید می توانید چند دقیقه وقت صرف کرده و نظر خود "
+"را بیان کنید؟ <i>بعد از بستن این پیام آن را دیگر مشاهده نخواهید کرد.</i>"
+
+#: functions.php:58
+msgid "Primary"
+msgstr "اصلی"
+
+#: functions.php:78
+msgid "small"
+msgstr "کوچک"
+
+#: functions.php:79
+msgid "S"
+msgstr "س"
+
+#: functions.php:84
+msgid "regular"
+msgstr "معمولی"
+
+#: functions.php:85
+msgid "M"
+msgstr "م"
+
+#: functions.php:90
+msgid "large"
+msgstr "بزرگ"
+
+#: functions.php:91
+msgid "L"
+msgstr "ل"
+
+#: functions.php:96
+msgid "larger"
+msgstr "بزرگتر"
+
+#: functions.php:97
+msgid "XL"
+msgstr "ایکس ال"
+
+#: functions.php:123
+msgid "Your comment is awaiting moderation."
+msgstr "نظر شما منتظر تایید مدیریت است."
+
+#: functions.php:147
+msgid "(optional)"
+msgstr "(اختیاری)"
+
+#: functions.php:166
+msgid "Website"
+msgstr "وبسایت"
+
+#: functions.php:224 functions.php:288
+msgid "Continue reading"
+msgstr "ادامه خواندن"
+
+#: functions.php:494
+msgid "Featured"
+msgstr "ویژه"
+
+#: functions.php:556
+msgid "Customizer settings deleted."
+msgstr "تنظیمات سفارشی ساز حذف شد."
+
+#: functions.php:718
+msgid "Scroll to the top"
+msgstr "رفتن به بالا"
+
+#: functions.php:737
+msgid "Last updated on"
+msgstr "آخرین به روزرسانی در"
+
+#: header.php:20
+msgid "Press \"Enter\" to skip to content"
+msgstr "برای نادیده گرفتن محتوا دکمه \"Enter\" را فشار دهید"
+
+#: inc/customizer.php:33
+msgid "Social Media Icons"
+msgstr "آیکون رسانه های اجتماعی"
+
+#: inc/customizer.php:35
+msgid "Add the URL for each of your social profiles."
+msgstr "برای هر یک از پروفایل های اجتماعی خود یک URL اضافه کنید."
+
+#: inc/customizer.php:48
+msgid "Email Address"
+msgstr "ایمیل آدرس"
+
+#: inc/customizer.php:59
+msgid "Phone"
+msgstr "تلفن"
+
+#: inc/customizer.php:69
+msgid "RSS"
+msgstr "RSS"
+
+#: inc/customizer.php:71
+msgid "SoundCloud"
+msgstr "ساندکلاود"
+
+#: inc/customizer.php:73
+msgid "SlideShare"
+msgstr "اسلایدشیر"
+
+#: inc/customizer.php:75
+msgid "CodePen"
+msgstr "کدپن"
+
+#: inc/customizer.php:77
+msgid "StumbleUpon"
+msgstr "استامبل آپن"
+
+#: inc/customizer.php:79
+msgid "DeviantArt"
+msgstr "دوینت آرت"
+
+#: inc/customizer.php:81
+msgid "Hacker News"
+msgstr "هکرنیوز"
+
+#: inc/customizer.php:83
+msgid "WhatsApp"
+msgstr "واتساپ"
+
+#: inc/customizer.php:85
+msgid "QQ"
+msgstr "کیوکیو"
+
+#: inc/customizer.php:87
+msgid "VK"
+msgstr "ویکی"
+
+#: inc/customizer.php:89
+msgid "OK.ru"
+msgstr "اوکی.رو"
+
+#: inc/customizer.php:91
+msgid "Google Wallet"
+msgstr "گوگل والت"
+
+#: inc/customizer.php:93
+msgid "WeChat"
+msgstr "وی چت"
+
+#: inc/customizer.php:95
+msgid "Tencent Weibo"
+msgstr "تنسنت ویبو"
+
+#: inc/customizer.php:97
+msgid "PayPal"
+msgstr "پی پال"
+
+#: inc/customizer.php:99
+msgid "Stack Overflow"
+msgstr "استک اورفلو"
+
+#: inc/customizer.php:101
+msgid "ArtStation"
+msgstr "ارتاستیشن"
+
+#: inc/customizer.php:103
+msgid "Contact Form"
+msgstr "فرم تماس"
+
+#: inc/customizer.php:115
+msgid ""
+"Accepts Skype link protocol (<a href=\"%s\" target=\"_blank\">learn more</a>)"
+msgstr ""
+"پذیرش پروتکل لینک اسکایپ (<a href=\"%s\" target=\"_blank\">اطلاعات بیشتر</a>)"
+
+#: inc/customizer.php:151
+msgid "Show full posts on blog?"
+msgstr "کل پست در وبلاگ نمایش داده شود؟"
+
+#: inc/customizer.php:156 inc/customizer.php:245 inc/customizer.php:269
+#: inc/customizer.php:336
+msgid "Yes"
+msgstr "بله"
+
+#: inc/customizer.php:157 inc/customizer.php:246 inc/customizer.php:270
+#: inc/customizer.php:337
+msgid "No"
+msgstr "خیر"
+
+#: inc/customizer.php:167
+msgid "Excerpt word count"
+msgstr "تعداد کلمات چکیده پست"
+
+#: inc/customizer.php:174
+msgid "Continue Reading"
+msgstr "ادامه خواندن"
+
+#: inc/customizer.php:179
+msgid "Read More button text"
+msgstr "متن دکمه ادامه مطلب"
+
+#: inc/customizer.php:189
+msgid "Display Controls"
+msgstr "نمایش کنترل ها"
+
+#: inc/customizer.php:191
+msgid ""
+"Want more options like these? Check out the <a target=\"_blank\" href=\"%1$s"
+"\"> %2$s Pro plugin</a>."
+msgstr ""
+"گزینه های بیشتری مثل این می خواهید؟ بنابراین <a target=\"_blank\" href=\"%1$s"
+"\"> %2$s پلاگین پرو</a> را چک کنید."
+
+#: inc/customizer.php:201
+msgid "Post author name in byline"
+msgstr "نمایش نام نویسنده در زیر مطلب"
+
+#: inc/customizer.php:205 inc/customizer.php:221 inc/customizer.php:317
+#: inc/customizer.php:346
+msgid "Show"
+msgstr "نمایش"
+
+#: inc/customizer.php:206 inc/customizer.php:222 inc/customizer.php:318
+#: inc/customizer.php:347
+msgid "Hide"
+msgstr "مخفی"
+
+#: inc/customizer.php:217
+msgid "Post date in byline"
+msgstr "نمایش تاریخ نوشته در زیر مطلب"
+
+#: inc/customizer.php:230
+msgid "Additional Options"
+msgstr "گزینه های بیشتر"
+
+#: inc/customizer.php:240
+msgid "Display the date each post was last updated?"
+msgstr "نمایش آخرین به روزرسانی هریک از نوشته ها؟"
+
+#: inc/customizer.php:254
+msgid "Scroll-to-Top Arrow"
+msgstr "پیکان رفتن به بالا"
+
+#: inc/customizer.php:264
+msgid "Display Scroll-to-top arrow?"
+msgstr "پیکان برو به بالا نمایش داده شود؟"
+
+#: inc/customizer.php:290
+msgid "Custom CSS"
+msgstr "CSS سفارشی"
+
+#: inc/customizer.php:301
+msgid "Add Custom CSS Here:"
+msgstr "CSS سفارشی خود را اینجا اضافه کنید:"
+
+#: inc/last-updated-meta-box.php:12
+msgid "Last Updated Date"
+msgstr "تاریخ آخرین به روزرسانی"
+
+#: inc/last-updated-meta-box.php:29
+msgid "Use Customizer setting"
+msgstr "استفاده از تنظیمات سفارشی ساز"
+
+#: inc/last-updated-meta-box.php:32
+msgid "Show the date"
+msgstr "نمایش تاریخ"
+
+#: inc/last-updated-meta-box.php:36
+msgid "Don't show the date"
+msgstr "عدم نمایش تاریخ"
+
+#: inc/review.php:113
+msgid "Click here to leave your review"
+msgstr "برای نظر دادن اینجا کلیک کنید"
+
+#: index.php:19
+msgid "Previous"
+msgstr "قبلی"
+
+#: index.php:20
+msgid "Next"
+msgstr "بعدی"
+
+#: search.php:9
+msgid "%1$d search result for \"%2$s\""
+msgid_plural "%1$d search results for \"%2$s\""
+msgstr[0] "%1$d نتایج جستجو برای \"%2$s\""
+msgstr[1] "%1$d نتیجه جستجو \"%2$s\""
+
+#: search.php:11
+msgid "No search results for \"%s\""
+msgstr "جستجوی \"%s\" نتیجه ای نداشت"
+
+#: search.php:35
+msgid "Can't find what you're looking for?  Try refining your search:"
+msgstr ""
+"نمی توانید چیزی که می خواهید را پیدا کنید؟سعی کنید جستجوی خود را تعدیل کنید:"
+
+#: searchform.php:6
+msgid "Go"
+msgstr "جستجو"
+
+#: theme-options.php:5 theme-options.php:6 theme-options.php:19
+msgid "%s Dashboard"
+msgstr "داشبورد %s"
+
+#. Description of the plugin/theme
+msgid ""
+"Tribes is a theme for publishers with powerful messages. This content-"
+"focused theme presents your posts beautifully across phones, tablets, and "
+"laptops thanks to its responsive design. Improve your readership and "
+"highlight your images with a distraction-free minimalist design. Tribes’ "
+"simple layout makes it great for blogging. Use it to write about business, "
+"food, music, or your personal travels. It even has support for WooCommerce "
+"allowing you to add an eCommerce store to your site. You can publish a "
+"resume, podcast, or use it to showcase your photography. Tribes is also "
+"fully compatible with the new Gutenberg post editor. Preview Tribes now on "
+"desktop, tablets, and mobile devices with the interactive live demo: https://"
+"www.competethemes.com/demos/?theme=tribes"
+msgstr ""
+"این یک قالب مناسب برای ناشران دارای پیام قوی است. این قالب محتوا محور نوشته "
+"های شما را به زیبایی در تلفن، تبلت و لپتاپ نمایش می دهد زیرا دارای طراحی "
+"ریسپانسیو است. مخاطبان شما را بهبود بخشیده و تصاویر شما را هایلایت می کند "
+"بدون اینکه طراحی آن انحراف حواسی داشته باشد. ظاهر ساده قالب ترایب آن را برای "
+"وبلاگ نویسی عالی کرده است. از این قالب برای نوشتن در مورد کسب خود، غذا، "
+"موسیقی، سفرهای شخصی خود استفاده کنید. حتی از ووکامرس هم پشتیبانی می کند و می "
+"توانید از ان برای ساخت فروشگاه استفاده کنید. می توانید رزومه، پادکست منتشر "
+"کنید یا از آن برای نمایش عکس های خود استفاده کنید. ترایب بطور کامل با "
+"ویرایشگر گوتنبرگ سازگار است. پیش نمایش ترایب بر دسکتاپ، تبلت و موبایل با دمو "
+"تعاملی در این آدرس موجود است: https://www.competethemes.com/demos/?"
+"theme=tribes"
+
+#: comments.php:10
+msgctxt "noun: 5 comments"
+msgid "% Comments"
+msgstr "% نظر"
+
+#: content/archive-header.php:4
+msgctxt "noun: Site Title's Posts"
+msgid "Posts"
+msgstr "نوشته ها"
+
+#: content/post-byline.php:15
+msgctxt "blog post BY author name"
+msgid "By"
+msgstr "توسط"
+
+#: content/post-byline.php:24
+msgctxt "post published ON date"
+msgid "on"
+msgstr "در"
+
+#: content/post-categories.php:9
+msgctxt " Published in post category"
+msgid "Published in:"
+msgstr "دسته"
+
+#: content/post-categories.php:11
+msgctxt "View all posts in post category"
+msgid "View all posts in %s"
+msgstr "نمایش تمامی نوشته های دسته %s"
+
+#: functions.php:131
+msgctxt "verb: Reply to this comment"
+msgid "Reply"
+msgstr "پاسخ به نظر"
+
+#: functions.php:135
+msgctxt "verb: Edit this comment"
+msgid "Edit"
+msgstr "ویرایش نظر"
+
+#: functions.php:152
+msgctxt "noun"
+msgid "Name"
+msgstr "نام"
+
+#: functions.php:159
+msgctxt "noun"
+msgid "Email"
+msgstr "ایمیل"
+
+#: functions.php:188
+msgctxt "noun"
+msgid "Comment"
+msgstr "نظر"
+
+#: functions.php:433
+msgctxt "noun"
+msgid "email"
+msgstr "ایمیل"
+
+#: functions.php:481 header.php:34 inc/scripts.php:16
+msgctxt "verb: open the menu"
+msgid "open menu"
+msgstr "باز کردن منو"
+
+#: inc/customizer.php:141
+msgctxt "noun: Blog section"
+msgid "Blog"
+msgstr "وبلاگ"
+
+#: inc/scripts.php:17
+msgctxt " verb: close the menu"
+msgid "close menu"
+msgstr "بستن منو"
+
+#: inc/scripts.php:18
+msgctxt "open the dropdown menu"
+msgid "open dropdown menu"
+msgstr "باز کردن منوی کشویی"
+
+#: inc/scripts.php:19
+msgctxt "close the dropdown menu"
+msgid "close dropdown menu"
+msgstr "بستن منوی کشویی"

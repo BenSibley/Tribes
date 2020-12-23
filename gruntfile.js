@@ -113,12 +113,12 @@ module.exports = function(grunt) {
             zip: {
                 command: [
                     // delete existing copies (if they exist)
-                    'rm -R /Users/bensibley/Documents/compete-themes/dist/tribes || true',
-                    'rm -R /Users/bensibley/Documents/compete-themes/dist/tribes.zip || true',
+                    'rm -R "/Users/bensibley/Dropbox/Compete Themes/Distribution/tribes" || true',
+                    'rm -R "/Users/bensibley/Dropbox/Compete Themes/Distribution/tribes.zip" || true',
                     // copy folder without any project/meta files
-                    'rsync -r "/Users/bensibley/Sites/tribes/wp-content/themes/tribes" /Users/bensibley/Documents/compete-themes/dist/ <%= excludeFiles %>',
+                    'rsync -r "/Users/bensibley/Sites/tribes/wp-content/themes/tribes" "/Users/bensibley/Dropbox/Compete Themes/Distribution/" <%= excludeFiles %>',
                     // open dist
-                    'cd /Users/bensibley/Documents/compete-themes/dist/',
+                    'cd "/Users/bensibley/Dropbox/Compete Themes/Distribution/"',
                     // zip the tribes folder
                     'zip -r tribes.zip tribes'
                 ].join('&&')

@@ -67,6 +67,8 @@ function ct_tribes_add_customizer_content( $wp_customize ) {
 
 			if ( $social_site == 'rss' ) {
 				$label = __('RSS', 'tribes');
+			} elseif ( $social_site == 'researchgate' ) {
+				$label = __('ResearchGate', 'tribes');
 			} elseif ( $social_site == 'soundcloud' ) {
 				$label = __('SoundCloud', 'tribes');
 			} elseif ( $social_site == 'slideshare' ) {

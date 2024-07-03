@@ -206,24 +206,6 @@ function ct_tribes_options_content()
 					<a href="https://independentwp.com" target="_blank">Learn More</a>
 				</div>
 			</div>
-			<div class="ad strive">
-				<div class="logo-container">
-					<img width="308px" height="62px" src="<?php echo trailingslashit(get_template_directory_uri()) . 'assets/images/strive.svg'; ?>" alt="Strive logo" />
-				</div>
-				<div class="features">
-					<div class="title">Content Calendar for WordPress</div>
-					<ul>
-						<li>Plan your posts visually</li>
-						<li>Track progress with post statuses</li>
-						<li>Create custom post checklists</li>
-						<li>Republish posts with revisions</li>
-						<li>Monitor content using the Pipeline</li>
-					</ul>
-				</div>
-				<div class="button">
-					<a href="https://strivecalendar.com/" target="_blank">Learn More</a>
-				</div>
-			</div>
 			<div class="dashboard-widget">
 				<h4>Reset Customizer Settings</h4>
 				<p><b>Warning:</b> Clicking this button will erase the Tribes theme's current settings in the Customizer.</p>

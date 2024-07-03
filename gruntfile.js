@@ -116,7 +116,7 @@ module.exports = function(grunt) {
                     'rm -R "/Users/bensibley/Dropbox/Compete Themes/Distribution/tribes" || true',
                     'rm -R "/Users/bensibley/Dropbox/Compete Themes/Distribution/tribes.zip" || true',
                     // copy folder without any project/meta files
-                    'rsync -r "/Users/bensibley/Sites/tribes/wp-content/themes/tribes" "/Users/bensibley/Dropbox/Compete Themes/Distribution/" <%= excludeFiles %>',
+                    'rsync -r "/Users/bensibley/Sites/Compete Themes/tribes/wp-content/themes/tribes" "/Users/bensibley/Dropbox/Compete Themes/Distribution/" <%= excludeFiles %>',
                     // open dist
                     'cd "/Users/bensibley/Dropbox/Compete Themes/Distribution/"',
                     // zip the tribes folder

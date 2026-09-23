@@ -355,6 +355,8 @@ if (! function_exists('ct_tribes_social_array')) {
             'linkedin'      => 'tribes_linkedin_profile',
             'pinterest'     => 'tribes_pinterest_profile',
             'youtube'       => 'tribes_youtube_profile',
+            'tiktok'        => 'tribes_tiktok_profile',
+            'threads'       => 'tribes_threads_profile',
             'rss'           => 'tribes_rss_profile',
             'email'         => 'tribes_email_profile',
             'phone'			=> 'tribes_phone_profile',

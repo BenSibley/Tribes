@@ -1,3 +1,5 @@
+const sass = require('sass');
+
 module.exports = function(grunt) {
 
     // 1. All configuration goes here
@@ -38,6 +40,10 @@ module.exports = function(grunt) {
             }
         },
         sass: {
+            options: {
+                implementation: sass,
+                sourceMap: false
+            },
             dist: {
                 files: {
                     'style.css': 'sass/style.scss',
@@ -130,10 +136,10 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.loadNpmTasks('grunt-contrib-sass');
+    grunt.loadNpmTasks('grunt-sass');
     grunt.loadNpmTasks('grunt-autoprefixer');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
-    grunt.loadNpmTasks('grunt-contrib-compress');
+    // grunt.loadNpmTasks('grunt-contrib-compress');
     grunt.loadNpmTasks('grunt-wp-i18n');
     grunt.loadNpmTasks('grunt-cssjanus');
     grunt.loadNpmTasks('grunt-shell');

@@ -5,15 +5,15 @@ Theme URI: https://www.competethemes.com/tribes/
 Author: Compete Themes
 Author URI: https://www.competethemes.com
 Description: Tribes is a theme for publishers with powerful messages. This content-focused theme presents your posts beautifully across phones, tablets, and laptops thanks to its responsive design. Improve your readership and highlight your images with a distraction-free minimalist design. Tribes’ simple layout makes it great for blogging. Use it to write about business, food, music, or your personal travels. It even has support for WooCommerce allowing you to add an eCommerce store to your site. You can publish a resume, podcast, or use it to showcase your photography. Tribes is also fully compatible with the new Gutenberg post editor. Preview Tribes now on desktop, tablets, and mobile devices with the interactive live demo: https://www.competethemes.com/demos/?theme=tribes
-Version: 1.20
+Version: 1.21
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags:  one-column, custom-logo, custom-menu, featured-images, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, blog, education, news
 Text Domain: tribes
-Tested up to: 6.5
+Tested up to: 7.1
 Requires PHP: 5.4
 
-Tribes WordPress Theme, Copyright 2024 Compete Themes
+Tribes WordPress Theme, Copyright 2026 Compete Themes
 Tribes is distributed under the terms of the GNU GPL
 */
 /*===== Variables =====*/
@@ -23,17 +23,13 @@ Tribes is distributed under the terms of the GNU GPL
 /*===== Mixins =====*/
 /***** Silent Classes *****/
 h1 {
-  font-size: 1.75em;
-  /* 28px / 16px */
-  line-height: 1.357;
-  /* 38px */
+  font-size: 1.75em; /* 28px / 16px */
+  line-height: 1.357; /* 38px */
 }
 
 .social-media-icons a, .tagline, .site-title, .comment-reply-title, h2 {
-  font-size: 1.3125em;
-  /* 21px / 16px */
-  line-height: 1.143;
-  /* 24px */
+  font-size: 1.3125em; /* 21px / 16px */
+  line-height: 1.143; /* 24px */
 }
 
 .single-attachment .attachment-caption, .further-reading span, .post-tags a, .post-byline span, .site-footer .design-credit, .comment-footer span,
@@ -57,10 +53,8 @@ textarea, .wp-caption-text,
 .size-medium figcaption,
 .size-thumbnail figcaption,
 .wp-block-image figcaption, .wp-block-table figcaption {
-  font-size: 0.75em;
-  /* 12px / 16px */
-  line-height: 1.5;
-  /* 18px */
+  font-size: 0.75em; /* 12px / 16px */
+  line-height: 1.5; /* 18px */
 }
 
 .woocommerce-account .woocommerce-MyAccount-navigation li a {
@@ -379,8 +373,7 @@ textarea:focus {
 
 textarea {
   max-width: 41.625em;
-  overflow: auto;
-  /* to hide scrollbar in IE */
+  overflow: auto; /* to hide scrollbar in IE */
 }
 
 input[type=submit] {
@@ -405,8 +398,7 @@ input[type=submit]:hover, input[type=submit]:active, input[type=submit]:focus {
 }
 
 input[type=search] {
-  padding-left: 0.375em;
-  /* so safari 'x' doesn't get cut off */
+  padding-left: 0.375em; /* so safari 'x' doesn't get cut off */
 }
 
 ::-webkit-input-placeholder {
@@ -432,20 +424,17 @@ a img {
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: landscape) {
   html {
-    -webkit-text-size-adjust: none;
-    /* none for no scaling */
+    -webkit-text-size-adjust: none; /* none for no scaling */
   }
 }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
   html {
-    -webkit-text-size-adjust: none;
-    /* none for no scaling */
+    -webkit-text-size-adjust: none; /* none for no scaling */
   }
 }
 .screen-reader-text {
   position: absolute;
-  clip: rect(1px 1px 1px 1px);
-  /* IE6, IE7 */
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
   clip: rect(1px, 1px, 1px, 1px);
   overflow: hidden;
   height: 1px;
@@ -502,7 +491,7 @@ a img {
   background: #AB528C;
 }
 .more-link:after {
-  content: "";
+  content: "\f101";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   margin-right: 4px;
@@ -630,11 +619,9 @@ li.pingback ol ol {
   .comments {
     padding: 3em 8.332% 1.5em;
   }
-
   #disqus_thread {
     padding: 3em 8.332% 1.5em;
   }
-
   .comments-number {
     margin-bottom: 3em;
   }
@@ -827,10 +814,8 @@ li.pingback ol ol {
 
 @media all and (min-width: 50em) {
   .site-title {
-    font-size: 1.75em;
-    /* 28px / 16px */
-    line-height: 1.357;
-    /* 38px */
+    font-size: 1.75em; /* 28px / 16px */
+    line-height: 1.357; /* 38px */
   }
 }
 .pagination {
@@ -965,7 +950,6 @@ li.pingback ol ol {
   opacity: 0;
   -webkit-transition: opacity 0.4s ease;
           transition: opacity 0.4s ease;
-  /***** Tier 2 *****/
 }
 .menu-primary ul {
   margin: 1.5em 0;
@@ -1000,6 +984,9 @@ li.pingback ol ol {
 .menu-primary a:hover, .menu-primary a:active, .menu-primary a:focus {
   text-decoration: underline;
 }
+.menu-primary {
+  /***** Tier 2 *****/
+}
 .menu-primary ul ul {
   position: relative;
   min-width: 250px;
@@ -1009,11 +996,11 @@ li.pingback ol ol {
   overflow: hidden;
   text-align: center;
 }
-.menu-primary ul ul li {
-  /***** Tier 3 *****/
-}
 .menu-primary ul ul li:last-child {
   margin-bottom: 0;
+}
+.menu-primary ul ul li {
+  /***** Tier 3 *****/
 }
 .menu-primary ul ul li.open > a {
   display: inline-block;
@@ -1133,8 +1120,8 @@ body.menu-open {
   top: 50%;
   left: 50%;
   right: auto;
-  -webkit-transform: translateX(50%) translateY(-50%);
-          transform: translateX(50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
 }
 .featured-image .ccfic {
   position: absolute;
@@ -1256,20 +1243,15 @@ body.menu-open {
   .post-container {
     padding: 2.25em 8.332% 1.5em;
   }
-
   .post-title {
-    font-size: 1.75em;
-    /* 28px / 16px */
-    line-height: 1.357;
-    /* 38px */
+    font-size: 1.75em; /* 28px / 16px */
+    line-height: 1.357; /* 38px */
   }
-
   .wp-block-image.alignfull,
-.wp-block-cover {
+  .wp-block-cover {
     right: -10%;
     width: 120%;
   }
-
   .wp-block-image.alignwide {
     position: relative;
     right: -7%;

@@ -65,8 +65,7 @@ textarea, .wp-caption-text,
 .post-title a, .site-title a {
   color: #1A1A1A;
   text-decoration: none;
-  -webkit-transition: color 0.2s ease;
-          transition: color 0.2s ease;
+  transition: color 0.2s ease;
 }
 .post-title a:link, .site-title a:link, .post-title a:visited, .site-title a:visited {
   color: #1A1A1A;
@@ -152,8 +151,7 @@ p {
 a {
   color: #924677;
   font-weight: 700;
-  -webkit-transition: color 0.2s ease;
-          transition: color 0.2s ease;
+  transition: color 0.2s ease;
 }
 a:link, a:visited {
   color: #1A1A1A;
@@ -356,8 +354,7 @@ textarea {
   border: solid 1px #E6E6E6;
   border-radius: 0;
   -webkit-appearance: none;
-  -webkit-transition: background 0.2s ease;
-          transition: background 0.2s ease;
+  transition: background 0.2s ease;
 }
 input[type=text]:focus,
 input[type=email]:focus,
@@ -386,8 +383,7 @@ input[type=submit] {
   border: none;
   border-radius: 0;
   -webkit-appearance: none;
-  -webkit-transition: background 0.2s ease;
-          transition: background 0.2s ease;
+  transition: background 0.2s ease;
   vertical-align: top;
 }
 input[type=submit]:hover {
@@ -452,8 +448,7 @@ a img {
   z-index: 119;
   padding: 1.5em;
   background: #924677;
-  -webkit-transition: top 0.2s ease-in-out;
-          transition: top 0.2s ease-in-out;
+  transition: top 0.2s ease-in-out;
 }
 .skip-content:focus {
   top: 0;
@@ -484,8 +479,7 @@ a img {
   background: #924677;
   font-weight: 400;
   font-style: italic;
-  -webkit-transition: background 0.2s ease;
-          transition: background 0.2s ease;
+  transition: background 0.2s ease;
 }
 .more-link:hover, .more-link:active, .more-link:focus {
   background: #AB528C;
@@ -642,8 +636,9 @@ li.pingback ol ol {
   color: #fff;
   padding: 9px 0;
   width: 60px;
-  -webkit-transition: background 0.2s, -webkit-transform 0.3s;
-          transition: background 0.2s, transform 0.3s;
+  transition: background 0.2s, -webkit-transform 0.3s;
+  transition: background 0.2s, transform 0.3s;
+  transition: background 0.2s, transform 0.3s, -webkit-transform 0.3s;
 }
 .scroll-to-top.visible {
   -webkit-transform: translateY(-45px);
@@ -659,8 +654,9 @@ li.pingback ol ol {
 }
 .scroll-to-top i {
   font-size: 21px;
-  -webkit-transition: -webkit-transform 0.2s;
-          transition: transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
 }
 
 @media all and (min-width: 50em) {
@@ -782,8 +778,7 @@ li.pingback ol ol {
   font-family: "Damion", "Open Sans", "sans-serif";
   margin: 36px auto;
   opacity: 0;
-  -webkit-transition: opacity 0.3s ease;
-          transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
 }
 
 .social-media-icons {
@@ -804,8 +799,7 @@ li.pingback ol ol {
   line-height: 42px;
   border: solid 1px white;
   border-radius: 50%;
-  -webkit-transition: background 0.2s ease, border 0.2s ease;
-          transition: background 0.2s ease, border 0.2s ease;
+  transition: background 0.2s ease, border 0.2s ease;
 }
 .social-media-icons a:hover, .social-media-icons a:active, .social-media-icons a:focus {
   background: #783A62;
@@ -881,8 +875,9 @@ li.pingback ol ol {
 }
 .toggle-navigation svg rect {
   opacity: 1;
-  -webkit-transition: -webkit-transform 0.3s ease, opacity 0.3s ease, x 0.3s ease, y 0.3s ease, width 0.3s ease, height 0.3s ease;
-          transition: transform 0.3s ease, opacity 0.3s ease, x 0.3s ease, y 0.3s ease, width 0.3s ease, height 0.3s ease;
+  transition: opacity 0.3s ease, x 0.3s ease, y 0.3s ease, width 0.3s ease, height 0.3s ease, -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease, opacity 0.3s ease, x 0.3s ease, y 0.3s ease, width 0.3s ease, height 0.3s ease;
+  transition: transform 0.3s ease, opacity 0.3s ease, x 0.3s ease, y 0.3s ease, width 0.3s ease, height 0.3s ease, -webkit-transform 0.3s ease;
 }
 .toggle-navigation.open svg g {
   fill: white;
@@ -911,8 +906,7 @@ li.pingback ol ol {
   text-align: center;
   margin: 0.75em;
   opacity: 0;
-  -webkit-transition: margin 0.2s ease;
-          transition: margin 0.2s ease;
+  transition: margin 0.2s ease;
 }
 .menu-primary-container:after {
   content: "";
@@ -948,8 +942,7 @@ li.pingback ol ol {
 .menu-primary {
   margin: 2.25em auto;
   opacity: 0;
-  -webkit-transition: opacity 0.4s ease;
-          transition: opacity 0.4s ease;
+  transition: opacity 0.4s ease;
 }
 .menu-primary ul {
   margin: 1.5em 0;
@@ -1031,8 +1024,7 @@ li.pingback ol ol {
   height: 1.5em;
   margin: 0 8px 0 0;
   padding: 0;
-  -webkit-transition: background 0.2s ease, border-color 0.2s ease;
-          transition: background 0.2s ease, border-color 0.2s ease;
+  transition: background 0.2s ease, border-color 0.2s ease;
 }
 .toggle-dropdown:hover {
   cursor: pointer;
@@ -1094,8 +1086,7 @@ body.menu-open {
   right: 0;
   background: white;
   opacity: 0;
-  -webkit-transition: opacity 0.1s ease-in-out;
-          transition: opacity 0.1s ease-in-out;
+  transition: opacity 0.1s ease-in-out;
 }
 .featured-image > a:focus:after {
   opacity: 0.2;
@@ -1196,8 +1187,7 @@ body.menu-open {
   color: white;
   margin-left: 6px;
   font-weight: 400;
-  -webkit-transition: background 0.2s ease;
-          transition: background 0.2s ease;
+  transition: background 0.2s ease;
 }
 .post-tags a:hover, .post-tags a:active, .post-tags a:focus {
   background: #AB528C;

@@ -105,6 +105,8 @@ function ct_tribes_add_customizer_content( $wp_customize ) {
 				$label = __('Contact Form', 'tribes');
 			} elseif ( $social_site == 'twitter' ) {
 				$label = __('X (Twitter)', 'tribes');
+			} elseif ( $social_site == 'tiktok' ) {
+				$label = __('TikTok', 'tribes');
 			}
 
 			if ( $social_site == 'skype' ) {
